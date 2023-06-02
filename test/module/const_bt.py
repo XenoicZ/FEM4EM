@@ -1,0 +1,11 @@
+mark_h = '% '
+mark_t = '\n'
+time_h = '时间经过了 '
+time_t = ' 秒。'
+accuracy_h = 'double\n\n   '
+accuracy_t = '\n\n'
+error_flag = 'Error'
+block_file = '/test/block.m' # Need further generalization
+block_cmd = block_file
+error_message = 'Warning. Outputs report one or more errors.'
+cmd_option = ' -m '

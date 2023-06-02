@@ -77,6 +77,7 @@ for test_file in tqdm(test_files, position=0, leave=True):
         matlab = Popen(cmd_line, shell=True, stdout=PIPE, stderr=PIPE)
         text = matlab.stdout.read().decode('utf-8')
         matlab.terminate()
+        
         # Track MATLAB output
         time = track_output(text, time_h, time_t)
         accuracy = track_output(text, accuracy_h, accuracy_t)
