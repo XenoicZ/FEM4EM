@@ -1,0 +1,133 @@
+,函数,稀疏性,运算,接口,时间(s),精度
+0,cgs,dense\dense,M\v1,NA,0.061307,  7.365152383487030e+00
+1,cgs,dense\sparse,M\v1,NA,0.059305,  7.365152383487030e+00
+2,cgs,sparse\dense,M\v1,NA,0.058107,  7.365152383487030e+00
+3,cgs,sparse\sparse,M\v1,NA,0.056025,  7.365152383487030e+00
+4,cgs,dense\dense,MCol\v1,NA,Error,Error
+5,cgs,dense\sparse,MCol\v1,NA,Error,Error
+6,cgs,sparse\dense,MCol\v1,NA,Error,Error
+7,cgs,sparse\sparse,MCol\v1,NA,Error,Error
+8,cgs,dense\dense,MRow\v2,NA,Error,Error
+9,cgs,dense\sparse,MRow\v2,NA,Error,Error
+10,cgs,sparse\dense,MRow\v2,NA,Error,Error
+11,cgs,sparse\sparse,MRow\v2,NA,Error,Error
+0,pcg,dense\dense,M\v1,NA,0.047150,  7.396763073236244e+00
+1,pcg,dense\sparse,M\v1,NA,0.046908,  7.396763073236244e+00
+2,pcg,sparse\dense,M\v1,NA,0.045443,  7.396763073236244e+00
+3,pcg,sparse\sparse,M\v1,NA,0.043691,  7.396763073236244e+00
+4,pcg,dense\dense,MCol\v1,NA,Error,Error
+5,pcg,dense\sparse,MCol\v1,NA,Error,Error
+6,pcg,sparse\dense,MCol\v1,NA,Error,Error
+7,pcg,sparse\sparse,MCol\v1,NA,Error,Error
+8,pcg,dense\dense,MRow\v2,NA,Error,Error
+9,pcg,dense\sparse,MRow\v2,NA,Error,Error
+10,pcg,sparse\dense,MRow\v2,NA,Error,Error
+11,pcg,sparse\sparse,MRow\v2,NA,Error,Error
+0,bicg,dense\dense,M\v1,NA,0.062339,  7.396763073236244e+00
+1,bicg,dense\sparse,M\v1,NA,0.057012,  7.396763073236244e+00
+2,bicg,sparse\dense,M\v1,NA,0.052328,  7.396763073236244e+00
+3,bicg,sparse\sparse,M\v1,NA,0.054678,  7.396763073236244e+00
+4,bicg,dense\dense,MCol\v1,NA,Error,Error
+5,bicg,dense\sparse,MCol\v1,NA,Error,Error
+6,bicg,sparse\dense,MCol\v1,NA,Error,Error
+7,bicg,sparse\sparse,MCol\v1,NA,Error,Error
+8,bicg,dense\dense,MRow\v2,NA,Error,Error
+9,bicg,dense\sparse,MRow\v2,NA,Error,Error
+10,bicg,sparse\dense,MRow\v2,NA,Error,Error
+11,bicg,sparse\sparse,MRow\v2,NA,Error,Error
+0,bicgstab,dense\dense,M\v1,NA,0.053329,  6.953925514255335e+00
+1,bicgstab,dense\sparse,M\v1,NA,0.055402,  6.953925514255335e+00
+2,bicgstab,sparse\dense,M\v1,NA,0.048384,  6.953925514255335e+00
+3,bicgstab,sparse\sparse,M\v1,NA,0.051777,  6.953925514255335e+00
+4,bicgstab,dense\dense,MCol\v1,NA,Error,Error
+5,bicgstab,dense\sparse,MCol\v1,NA,Error,Error
+6,bicgstab,sparse\dense,MCol\v1,NA,Error,Error
+7,bicgstab,sparse\sparse,MCol\v1,NA,Error,Error
+8,bicgstab,dense\dense,MRow\v2,NA,Error,Error
+9,bicgstab,dense\sparse,MRow\v2,NA,Error,Error
+10,bicgstab,sparse\dense,MRow\v2,NA,Error,Error
+11,bicgstab,sparse\sparse,MRow\v2,NA,Error,Error
+0,bicgstabl,dense\dense,M\v1,NA,0.073977,  7.396763073236244e+00
+1,bicgstabl,dense\sparse,M\v1,NA,0.075800,  7.396763073236244e+00
+2,bicgstabl,sparse\dense,M\v1,NA,0.066440,  7.396763073236244e+00
+3,bicgstabl,sparse\sparse,M\v1,NA,0.070427,  7.396763073236244e+00
+4,bicgstabl,dense\dense,MCol\v1,NA,Error,Error
+5,bicgstabl,dense\sparse,MCol\v1,NA,Error,Error
+6,bicgstabl,sparse\dense,MCol\v1,NA,Error,Error
+7,bicgstabl,sparse\sparse,MCol\v1,NA,Error,Error
+8,bicgstabl,dense\dense,MRow\v2,NA,Error,Error
+9,bicgstabl,dense\sparse,MRow\v2,NA,Error,Error
+10,bicgstabl,sparse\dense,MRow\v2,NA,Error,Error
+11,bicgstabl,sparse\sparse,MRow\v2,NA,Error,Error
+0,gmres,dense\dense,M\v1,NA,0.063177,  5.867605385328511e+00
+1,gmres,dense\sparse,M\v1,NA,0.063360,  5.867605385328511e+00
+2,gmres,sparse\dense,M\v1,NA,0.060250,  5.867605385328511e+00
+3,gmres,sparse\sparse,M\v1,NA,0.061887,  5.867605385328511e+00
+4,gmres,dense\dense,MCol\v1,NA,Error,Error
+5,gmres,dense\sparse,MCol\v1,NA,Error,Error
+6,gmres,sparse\dense,MCol\v1,NA,Error,Error
+7,gmres,sparse\sparse,MCol\v1,NA,Error,Error
+8,gmres,dense\dense,MRow\v2,NA,Error,Error
+9,gmres,dense\sparse,MRow\v2,NA,Error,Error
+10,gmres,sparse\dense,MRow\v2,NA,Error,Error
+11,gmres,sparse\sparse,MRow\v2,NA,Error,Error
+0,minres,dense\dense,M\v1,NA,0.077095,  8.749785938833893e+00
+1,minres,dense\sparse,M\v1,NA,0.075483,  8.749785938833893e+00
+2,minres,sparse\dense,M\v1,NA,0.070154,  8.749785938833895e+00
+3,minres,sparse\sparse,M\v1,NA,0.075844,  8.749785938833895e+00
+4,minres,dense\dense,MCol\v1,NA,Error,Error
+5,minres,dense\sparse,MCol\v1,NA,Error,Error
+6,minres,sparse\dense,MCol\v1,NA,Error,Error
+7,minres,sparse\sparse,MCol\v1,NA,Error,Error
+8,minres,dense\dense,MRow\v2,NA,Error,Error
+9,minres,dense\sparse,MRow\v2,NA,Error,Error
+10,minres,sparse\dense,MRow\v2,NA,Error,Error
+11,minres,sparse\sparse,MRow\v2,NA,Error,Error
+0,lsqr,dense\dense,M\v1,NA,0.070542,  1.669802056539423e+00
+1,lsqr,dense\sparse,M\v1,NA,0.075162,  1.669802056039368e+00
+2,lsqr,sparse\dense,M\v1,NA,0.072377,  1.669802056113835e+00
+3,lsqr,sparse\sparse,M\v1,NA,0.075320,  1.669802056113835e+00
+4,lsqr,dense\dense,MCol\v1,NA,0.075967,  4.758815517235578e+00
+5,lsqr,dense\sparse,MCol\v1,NA,0.072185,  4.758815412415323e+00
+6,lsqr,sparse\dense,MCol\v1,NA,0.071702,  4.758815520935098e+00
+7,lsqr,sparse\sparse,MCol\v1,NA,0.076822,  4.758815520935098e+00
+8,lsqr,dense\dense,MRow\v2,NA,0.070472,  1.208103388168928e-02
+9,lsqr,dense\sparse,MRow\v2,NA,0.071124,  1.207157053985107e-02
+10,lsqr,sparse\dense,MRow\v2,NA,0.078971,  1.205537444585150e-02
+11,lsqr,sparse\sparse,MRow\v2,NA,0.078746,  1.205537444585150e-02
+0,qmr,dense\dense,M\v1,NA,0.084726,  5.916553377711247e+00
+1,qmr,dense\sparse,M\v1,NA,0.083240,  5.916553377711247e+00
+2,qmr,sparse\dense,M\v1,NA,0.078416,  5.916553377711031e+00
+3,qmr,sparse\sparse,M\v1,NA,0.088393,  5.916553377711031e+00
+4,qmr,dense\dense,MCol\v1,NA,Error,Error
+5,qmr,dense\sparse,MCol\v1,NA,Error,Error
+6,qmr,sparse\dense,MCol\v1,NA,Error,Error
+7,qmr,sparse\sparse,MCol\v1,NA,Error,Error
+8,qmr,dense\dense,MRow\v2,NA,Error,Error
+9,qmr,dense\sparse,MRow\v2,NA,Error,Error
+10,qmr,sparse\dense,MRow\v2,NA,Error,Error
+11,qmr,sparse\sparse,MRow\v2,NA,Error,Error
+0,tfqmr,dense\dense,M\v1,NA,0.074865,  6.064171696829922e+00
+1,tfqmr,dense\sparse,M\v1,NA,0.076047,  6.064171696829922e+00
+2,tfqmr,sparse\dense,M\v1,NA,0.077961,  6.064171696829923e+00
+3,tfqmr,sparse\sparse,M\v1,NA,0.082726,  6.064171696829923e+00
+4,tfqmr,dense\dense,MCol\v1,NA,Error,Error
+5,tfqmr,dense\sparse,MCol\v1,NA,Error,Error
+6,tfqmr,sparse\dense,MCol\v1,NA,Error,Error
+7,tfqmr,sparse\sparse,MCol\v1,NA,Error,Error
+8,tfqmr,dense\dense,MRow\v2,NA,Error,Error
+9,tfqmr,dense\sparse,MRow\v2,NA,Error,Error
+10,tfqmr,sparse\dense,MRow\v2,NA,Error,Error
+11,tfqmr,sparse\sparse,MRow\v2,NA,Error,Error
+0,symmlq,dense\dense,M\v1,NA,0.079050,  6.538651275870627e+00
+1,symmlq,dense\sparse,M\v1,NA,0.074285,  6.538651275870627e+00
+2,symmlq,sparse\dense,M\v1,NA,0.074443,  6.538651275870627e+00
+3,symmlq,sparse\sparse,M\v1,NA,0.080856,  6.538651275870627e+00
+4,symmlq,dense\dense,MCol\v1,NA,Error,Error
+5,symmlq,dense\sparse,MCol\v1,NA,Error,Error
+6,symmlq,sparse\dense,MCol\v1,NA,Error,Error
+7,symmlq,sparse\sparse,MCol\v1,NA,Error,Error
+8,symmlq,dense\dense,MRow\v2,NA,Error,Error
+9,symmlq,dense\sparse,MRow\v2,NA,Error,Error
+10,symmlq,sparse\dense,MRow\v2,NA,Error,Error
+11,symmlq,sparse\sparse,MRow\v2,NA,Error,Error

@@ -1,12 +1,12 @@
 format long e
 n = 341;
 s = rand(1);
-B = rand(n);
 Col = rand(n,1);
 Row = rand(1,n);
-sB = sparse(B);
 sCol = sparse(Col);
 sRow = sparse(Row);
+sB = load('../matrix/B.mat').B;
+B = full(sB);
 
 % dense.*dense, M.*M
 tic; B.*B; toc

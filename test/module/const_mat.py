@@ -5,7 +5,7 @@ time_t = ' seconds.'
 accuracy_h = 'ans =\n\n   '
 accuracy_t = '\n\n'
 error_flag = 'Error'
-block_file = 'block'
+block_file = 'block.m'
 block_cmd = "\"try,run(\'block\');end, quit\""
 error_message = 'Warning. Outputs report one or more errors.'
 cmd_option = ' -nodisplay -nosplash -nodesktop -r '

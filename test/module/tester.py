@@ -25,7 +25,7 @@ results = pd.DataFrame()
 
 for test_file in tqdm(test_files, position=0, leave=True):
 
-    marks = track_marks(software_path, test_file)
+    marks = track_marks(test_file, mark_h, mark_t)
     
     # Read input file, split in block.m
     with open(work_dir+test_file+'.m') as f:
@@ -58,5 +58,4 @@ for test_file in tqdm(test_files, position=0, leave=True):
     result = np.concatenate([marks, times, accuracies], axis=1)
     result = pd.DataFrame(result, columns=['函数','稀疏性','运算','接口','时间(s)','精度'])
     results = pd.concat([results, result])
-results.to_csv(save_path)
-results
+    results.to_csv(save_path)

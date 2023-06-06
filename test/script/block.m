@@ -1,13 +1,7 @@
-n = 341;
-s = rand(1);
-B = rand(n);
-Col = rand(n,1);
-Row = rand(1,n);
-sB = sparse(B);
-sCol = sparse(Col);
-sRow = sparse(Row);
+format long e
+sB = load('../matrix/B.mat').B;
+B = full(sB);
 
-% scalar+dense, s+Col
-tic; s+Col; toc;
-norm(full(s+Col-(s+Col)))
+% sparse, M, P=dmperm(S)
+tic; [p,q,r,s,cc,rr]=dmperm(sB); toc
 exit

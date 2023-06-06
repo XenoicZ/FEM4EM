@@ -1,0 +1,321 @@
+,函数,稀疏性,运算,接口,时间(s),精度
+0,add,dense+dense,M+M,NA,0.002471,  0
+1,add,dense+dense,M+Col,NA,0.001972,  0
+2,add,dense+dense,M+Row,NA,0.002642,  0
+3,add,dense+scalar,M+s,NA,0.001870,  0
+4,add,dense+dense,Col+M,NA,0.002076,  0
+5,add,dense+dense,Col+Col,NA,0.002128,  0
+6,add,dense+dense,Col+Row,NA,0.002167,  0
+7,add,dense+scalar,Col+s,NA,0.001742,  0
+8,add,dense+dense,Row+M,NA,0.002395,  0
+9,add,dense+dense,Row+Col,NA,0.002064,  0
+10,add,dense+dense,Row+Row,NA,0.001628,  0
+11,add,dense+scalar,Row+s,NA,0.001508,  0
+12,add,scalar+dense,s+M,NA,0.002102,  0
+13,add,scalar+dense,s+Col,NA,0.001577,  0
+14,add,scalar+dense,s+Row,NA,0.001902,  0
+15,add,scalar+scalar,s+s,NA,0.000980,  0
+16,add,dense+sparse,M+M,NA,0.005160,  0
+17,add,dense+sparse,M+Col,NA,0.004512,  0
+18,add,dense+sparse,M+Row,NA,0.004733,  0
+19,add,dense+sparse,Col+M,NA,0.004840,  0
+20,add,dense+sparse,Col+Col,NA,0.007299,  0
+21,add,dense+sparse,Col+Row,NA,0.004711,  0
+22,add,dense+sparse,Row+M,NA,0.005881,  0
+23,add,dense+sparse,Row+Col,NA,0.004913,  0
+24,add,dense+sparse,Row+Row,NA,0.004525,  0
+25,add,scalar+sparse,s+M,NA,0.005506,  0
+26,add,scalar+sparse,s+Col,NA,0.003811,  0
+27,add,scalar+sparse,s+Row,NA,0.004847,  0
+28,add,sparse+dense,M+M,NA,0.004572,  0
+29,add,sparse+dense,M+Col,NA,0.005310,  0
+30,add,sparse+dense,M+Row,NA,0.004967,  0
+31,add,sparse+scalar,M+s,NA,0.004579,  0
+32,add,sparse+dense,Col+M,NA,0.004588,  0
+33,add,sparse+dense,Col+Col,NA,0.005186,  0
+34,add,sparse+dense,Col+Row,NA,0.004881,  0
+35,add,sparse+scalar,Col+s,NA,0.004300,  0
+36,add,sparse+dense,Row+M,NA,0.004888,  0
+37,add,sparse+dense,Row+Col,NA,0.004964,  0
+38,add,sparse+dense,Row+Row,NA,0.004583,  0
+39,add,sparse+scalar,Row+s,NA,0.004171,  0
+0,amultiply,dense.*dense,M.*M,NA,0.002085,  0
+1,amultiply,dense.*dense,M.*Col,NA,0.002274,  0
+2,amultiply,dense.*dense,M.*Row,NA,0.002013,  0
+3,amultiply,dense.*scalar,M.*s,NA,0.002615,  0
+4,amultiply,dense.*dense,Col.*M,NA,0.002413,  0
+5,amultiply,dense.*dense,Col.*Col,NA,0.001499,  0
+6,amultiply,dense.*dense,Col.*Row,NA,0.002379,  0
+7,amultiply,dense.*scalar,Col.*s,NA,0.001601,  0
+8,amultiply,dense.*dense,Row.*M,NA,0.002006,  0
+9,amultiply,dense.*dense,Row.*Col,NA,0.001943,  0
+10,amultiply,dense.*dense,Row.*Row,NA,0.001721,  0
+11,amultiply,dense.*scalar,Row.*s,NA,0.001542,  0
+12,amultiply,scalar.*dense,s.*M,NA,0.001867,  0
+13,amultiply,scalar.*dense,s.*Col,NA,0.001623,  0
+14,amultiply,scalar.*dense,s.*Row,NA,0.001468,  0
+15,amultiply,scalar.*scalar,s.*s,NA,0.000898,  0
+16,amultiply,dense.*sparse,M.*M,NA,0.005133,  0
+17,amultiply,dense.*sparse,M.*Col,NA,0.005055,  0
+18,amultiply,dense.*sparse,M.*Row,NA,0.005511,  0
+19,amultiply,dense.*sparse,Col.*M,NA,0.004928,  0
+20,amultiply,dense.*sparse,Col.*Col,NA,0.005078,  0
+21,amultiply,dense.*sparse,Col.*Row,NA,0.005819,  0
+22,amultiply,dense.*sparse,Row.*M,NA,0.004708,  0
+23,amultiply,dense.*sparse,Row.*Col,NA,0.006138,  0
+24,amultiply,dense.*sparse,Row.*Row,NA,0.004886,  0
+25,amultiply,scalar.*sparse,s.*M,NA,0.004707,  0
+26,amultiply,scalar.*sparse,s.*Col,NA,0.004527,  0
+27,amultiply,scalar.*sparse,s.*Row,NA,0.004268,  0
+28,amultiply,sparse.*dense,M.*M,NA,0.004589,  0
+29,amultiply,sparse.*dense,M.*Col,NA,0.004684,  0
+30,amultiply,sparse.*dense,M.*Row,NA,0.004943,  0
+31,amultiply,sparse.*scalar,M.*s,NA,0.004326,  0
+32,amultiply,sparse.*dense,Col.*M,NA,0.004931,  0
+33,amultiply,sparse.*dense,Col.*Col,NA,0.004552,  0
+34,amultiply,sparse.*dense,Col.*Row,NA,0.006101,  0
+35,amultiply,sparse.*scalar,Col.*s,NA,0.004581,  0
+36,amultiply,sparse.*dense,Row.*M,NA,0.005569,  0
+37,amultiply,sparse.*dense,Row.*Col,NA,0.005841,  0
+38,amultiply,sparse.*dense,Row.*Row,NA,0.004443,  0
+39,amultiply,sparse.*scalar,Row.*s,NA,0.004772,  0
+0,ldivide,dense.\dense,M.\M,NA,0.003937,NaN
+1,ldivide,dense.\dense,M.\Col,NA,0.001635,NaN
+2,ldivide,dense.\dense,M.\Row,NA,0.001652,NaN
+3,ldivide,dense.\scalar,M.\s,NA,0.001606,NaN
+4,ldivide,dense.\dense,Col.\M,NA,0.001797,  0
+5,ldivide,dense.\dense,Col.\Col,NA,0.001502,  0
+6,ldivide,dense.\dense,Col.\Row,NA,0.001655,  0
+7,ldivide,dense.\scalar,Col.\s,NA,0.001196,  0
+8,ldivide,dense.\dense,Row.\M,NA,0.001839,  0
+9,ldivide,dense.\dense,Row.\Col,NA,0.001851,  0
+10,ldivide,dense.\dense,Row.\Row,NA,0.001253,  0
+11,ldivide,dense.\scalar,Row.\s,NA,0.001295,  0
+12,ldivide,scalar.\dense,s.\M,NA,0.002733,  0
+13,ldivide,scalar.\dense,s.\Col,NA,0.001889,  0
+14,ldivide,scalar.\dense,s.\Row,NA,0.001292,  0
+15,ldivide,scalar.\scalar,s.\s,NA,0.000865,  0
+16,ldivide,dense.\sparse,M.\M,NA,0.007036,NaN
+17,ldivide,dense.\sparse,M.\Col,NA,0.005829,NaN
+18,ldivide,dense.\sparse,M.\Row,NA,0.005128,NaN
+19,ldivide,dense.\sparse,Col.\M,NA,0.003955,  0
+20,ldivide,dense.\sparse,Col.\Col,NA,0.004316,  0
+21,ldivide,dense.\sparse,Col.\Row,NA,0.005097,  0
+22,ldivide,dense.\sparse,Row.\M,NA,0.004713,  0
+23,ldivide,dense.\sparse,Row.\Col,NA,0.005558,  0
+24,ldivide,dense.\sparse,Row.\Row,NA,0.004753,  0
+25,ldivide,scalar.\sparse,s.\M,NA,0.003840,  0
+26,ldivide,scalar.\sparse,s.\Col,NA,0.004007,  0
+27,ldivide,scalar.\sparse,s.\Row,NA,0.004218,  0
+28,ldivide,sparse.\dense,M.\M,NA,0.004586,NaN
+29,ldivide,sparse.\dense,M.\Col,NA,0.004870,NaN
+30,ldivide,sparse.\dense,M.\Row,NA,0.005459,NaN
+31,ldivide,sparse.\scalar,M.\s,NA,0.005697,NaN
+32,ldivide,sparse.\dense,Col.\M,NA,0.004709,  0
+33,ldivide,sparse.\dense,Col.\Col,NA,0.003754,  0
+34,ldivide,sparse.\dense,Col.\Row,NA,0.005877,  0
+35,ldivide,sparse.\scalar,Col.\s,NA,0.004119,  0
+36,ldivide,sparse.\dense,Row.\M,NA,0.004792,  0
+37,ldivide,sparse.\dense,Row.\Col,NA,0.004973,  0
+38,ldivide,sparse.\dense,Row.\Row,NA,0.003939,  0
+39,ldivide,sparse.\scalar,Row.\s,NA,0.003669,  0
+0,minus,dense-dense,M-M,NA,0.002051,  0
+1,minus,dense-dense,M-Col,NA,0.003018,  0
+2,minus,dense-dense,M-Row,NA,0.001996,  0
+3,minus,dense-scalar,M-s,NA,0.002193,  0
+4,minus,dense-dense,Col-M,NA,0.002665,  0
+5,minus,dense-dense,Col-Col,NA,0.001638,  0
+6,minus,dense-dense,Col-Row,NA,0.001971,  0
+7,minus,dense-scalar,Col-s,NA,0.001497,  0
+8,minus,dense-dense,Row-M,NA,0.002092,  0
+9,minus,dense-dense,Row-Col,NA,0.002137,  0
+10,minus,dense-dense,Row-Row,NA,0.002074,  0
+11,minus,dense-scalar,Row-s,NA,0.001773,  0
+12,minus,scalar-dense,s-M,NA,0.001918,  0
+13,minus,scalar-dense,s-Col,NA,0.001532,  0
+14,minus,scalar-dense,s-Row,NA,0.001809,  0
+15,minus,scalar-scalar,s-s,NA,0.001143,  0
+16,minus,dense-sparse,M-M,NA,0.004437,  0
+17,minus,dense-sparse,M-Col,NA,0.004697,  0
+18,minus,dense-sparse,M-Row,NA,0.005331,  0
+19,minus,dense-sparse,Col-M,NA,0.004549,  0
+20,minus,dense-sparse,Col-Col,NA,0.004389,  0
+21,minus,dense-sparse,Col-Row,NA,0.004565,  0
+22,minus,dense-sparse,Row-M,NA,0.005092,  0
+23,minus,dense-sparse,Row-Col,NA,0.004996,  0
+24,minus,dense-sparse,Row-Row,NA,0.004601,  0
+25,minus,scalar-sparse,s-M,NA,0.005320,  0
+26,minus,scalar-sparse,s-Col,NA,0.004381,  0
+27,minus,scalar-sparse,s-Row,NA,0.004188,  0
+28,minus,sparse-dense,M-M,NA,0.004688,  0
+29,minus,sparse-dense,M-Col,NA,0.004630,  0
+30,minus,sparse-dense,M-Row,NA,0.005247,  0
+31,minus,sparse-scalar,M-s,NA,0.004444,  0
+32,minus,sparse-dense,Col-M,NA,0.004457,  0
+33,minus,sparse-dense,Col-Col,NA,0.004948,  0
+34,minus,sparse-dense,Col-Row,NA,0.004795,  0
+35,minus,sparse-scalar,Col-s,NA,0.005322,  0
+36,minus,sparse-dense,Row-M,NA,0.005032,  0
+37,minus,sparse-dense,Row-Col,NA,0.005389,  0
+38,minus,sparse-dense,Row-Row,NA,0.004435,  0
+39,minus,sparse-scalar,Row-s,NA,0.003988,  0
+0,mldivide,dense\dense,M\M,NA,0.015987,  0
+1,mldivide,dense\dense,M\Col,NA,0.008597,  0
+2,mldivide,dense\dense,M\Row,NA,Error,Error
+3,mldivide,dense\scalar,M\s,NA,Error,Error
+4,mldivide,dense\dense,Col\M,NA,0.011259,  0
+5,mldivide,dense\dense,Col\Col,NA,0.008786,  0
+6,mldivide,dense\dense,Col\Row,NA,Error,Error
+7,mldivide,dense\scalar,Col\s,NA,Error,Error
+8,mldivide,dense\dense,Row\M,NA,Error,Error
+9,mldivide,dense\dense,Row\Col,NA,Error,Error
+10,mldivide,dense\dense,Row\Row,NA,0.007367,  0
+11,mldivide,dense\scalar,Row\s,NA,0.007361,  0
+12,mldivide,scalar\dense,s\M,NA,0.001742,  0
+13,mldivide,scalar\dense,s\Col,NA,0.001317,  0
+14,mldivide,scalar\dense,s\Row,NA,0.001137,  0
+15,mldivide,scalar\scalar,s\s,NA,0.000850,  0
+16,mldivide,dense\sparse,M\M,NA,0.010101,  0
+17,mldivide,dense\sparse,M\Col,NA,0.009500,  0
+18,mldivide,dense\sparse,M\Row,NA,Error,Error
+19,mldivide,dense\sparse,Col\M,NA,0.008690,  0
+20,mldivide,dense\sparse,Col\Col,NA,0.008187,  0
+21,mldivide,dense\sparse,Col\Row,NA,Error,Error
+22,mldivide,dense\sparse,Row\M,NA,Error,Error
+23,mldivide,dense\sparse,Row\Col,NA,Error,Error
+24,mldivide,dense\sparse,Row\Row,NA,0.008067,  0
+25,mldivide,scalar\sparse,s\M,NA,0.003702,  0
+26,mldivide,scalar\sparse,s\Col,NA,0.003324,  0
+27,mldivide,scalar\sparse,s\Row,NA,0.003404,  0
+28,mldivide,sparse\dense,M\M,NA,0.025762,  3.573552286016514e-12
+29,mldivide,sparse\dense,M\Col,NA,0.009104,  1.691518560041106e-11
+30,mldivide,sparse\dense,M\Row,NA,Error,Error
+31,mldivide,sparse\scalar,M\s,NA,Error,Error
+32,mldivide,sparse\dense,Col\M,NA,0.010375,  8.252708785069462e-17
+33,mldivide,sparse\dense,Col\Col,NA,0.007307,  0
+34,mldivide,sparse\dense,Col\Row,NA,Error,Error
+35,mldivide,sparse\scalar,Col\s,NA,Error,Error
+36,mldivide,sparse\dense,Row\M,NA,Error,Error
+37,mldivide,sparse\dense,Row\Col,NA,Error,Error
+38,mldivide,sparse\dense,Row\Row,NA,0.006692,  2.003582304765146e+02
+39,mldivide,sparse\scalar,Row\s,NA,0.005560,  0
+0,mrdivide,dense/dense,M/M,NA,0.011165,  0
+1,mrdivide,dense/dense,M/Col,NA,Error,Error
+2,mrdivide,dense/dense,M/Row,NA,0.008773,  0
+3,mrdivide,dense/scalar,M/s,NA,0.002374,  0
+4,mrdivide,dense/dense,Col/M,NA,Error,Error
+5,mrdivide,dense/dense,Col/Col,NA,0.007959,  0
+6,mrdivide,dense/dense,Col/Row,NA,Error,Error
+7,mrdivide,dense/scalar,Col/s,NA,0.001332,  0
+8,mrdivide,dense/dense,Row/M,NA,0.009299,  0
+9,mrdivide,dense/dense,Row/Col,NA,Error,Error
+10,mrdivide,dense/dense,Row/Row,NA,0.008283,  0
+11,mrdivide,dense/scalar,Row/s,NA,0.001244,  0
+12,mrdivide,scalar/dense,s/M,NA,Error,Error
+13,mrdivide,scalar/dense,s/Col,NA,0.008716,  0
+14,mrdivide,scalar/dense,s/Row,NA,Error,Error
+15,mrdivide,scalar/scalar,s/s,NA,0.000885,  0
+16,mrdivide,dense/sparse,M/M,NA,0.020825,  2.968215104684298e-12
+17,mrdivide,dense/sparse,M/Col,NA,Error,Error
+18,mrdivide,dense/sparse,M/Row,NA,0.012881,  9.299800619644451e-17
+19,mrdivide,dense/sparse,Col/M,NA,Error,Error
+20,mrdivide,dense/sparse,Col/Col,NA,0.006164,  1.579240687598242e+01
+21,mrdivide,dense/sparse,Col/Row,NA,Error,Error
+22,mrdivide,dense/sparse,Row/M,NA,0.010597,  2.435599354594598e-11
+23,mrdivide,dense/sparse,Row/Col,NA,Error,Error
+24,mrdivide,dense/sparse,Row/Row,NA,0.006718,  2.220446049250313e-16
+25,mrdivide,scalar/sparse,s/M,NA,Error,Error
+26,mrdivide,scalar/sparse,s/Col,NA,0.005877,  1.215715582245618e+00
+27,mrdivide,scalar/sparse,s/Row,NA,Error,Error
+28,mrdivide,sparse/dense,M/M,NA,0.011151,  0
+29,mrdivide,sparse/dense,M/Col,NA,Error,Error
+30,mrdivide,sparse/dense,M/Row,NA,0.008184,  0
+31,mrdivide,sparse/scalar,M/s,NA,0.003189,  0
+32,mrdivide,sparse/dense,Col/M,NA,Error,Error
+33,mrdivide,sparse/dense,Col/Col,NA,0.008016,  0
+34,mrdivide,sparse/dense,Col/Row,NA,Error,Error
+35,mrdivide,sparse/scalar,Col/s,NA,0.003290,  0
+36,mrdivide,sparse/dense,Row/M,NA,0.008740,  0
+37,mrdivide,sparse/dense,Row/Col,NA,Error,Error
+38,mrdivide,sparse/dense,Row/Row,NA,0.006916,  0
+39,mrdivide,sparse/scalar,Row/s,NA,0.003254,  0
+0,multiply,dense*dense,M*M,NA,0.004293,  0
+1,multiply,dense*dense,M*Col,NA,0.003732,  0
+2,multiply,dense*dense,M*Row,NA,Error,Error
+3,multiply,dense*scalar,M*s,NA,0.001636,  0
+4,multiply,dense*dense,Col*M,NA,Error,Error
+5,multiply,dense*dense,Col*Col,NA,Error,Error
+6,multiply,dense*dense,Col*Row,NA,0.003294,  0
+7,multiply,dense*scalar,Col*s,NA,0.001231,  0
+8,multiply,dense*dense,Row*M,NA,0.003170,  0
+9,multiply,dense*dense,Row*Col,NA,0.002707,  0
+10,multiply,dense*dense,Row*Row,NA,Error,Error
+11,multiply,dense*scalar,Row*s,NA,0.001177,  0
+12,multiply,scalar*dense,s*M,NA,0.001616,  0
+13,multiply,scalar*dense,s*Col,NA,0.001254,  0
+14,multiply,scalar*dense,s*Row,NA,0.001295,  0
+15,multiply,scalar*scalar,s*s,NA,0.000860,  0
+16,multiply,dense*sparse,M*M,NA,0.004241,  8.463436290532539e-16
+17,multiply,dense*sparse,M*Col,NA,0.003485,  8.700210862173681e-15
+18,multiply,dense*sparse,M*Row,NA,Error,Error
+19,multiply,dense*sparse,Col*M,NA,Error,Error
+20,multiply,dense*sparse,Col*Col,NA,Error,Error
+21,multiply,dense*sparse,Col*Row,NA,0.003792,  0
+22,multiply,dense*sparse,Row*M,NA,0.003591,  9.787609318816144e-15
+23,multiply,dense*sparse,Row*Col,NA,0.003376,  7.105427357601002e-14
+24,multiply,dense*sparse,Row*Row,NA,Error,Error
+25,multiply,scalar*sparse,s*M,NA,0.003672,  0
+26,multiply,scalar*sparse,s*Col,NA,0.003125,  0
+27,multiply,scalar*sparse,s*Row,NA,0.003042,  0
+28,multiply,sparse*dense,M*M,NA,0.004445,  8.463436290532539e-16
+29,multiply,sparse*dense,M*Col,NA,0.003270,  8.700210862173681e-15
+30,multiply,sparse*dense,M*Row,NA,Error,Error
+31,multiply,sparse*scalar,M*s,NA,0.003211,  0
+32,multiply,sparse*dense,Col*M,NA,Error,Error
+33,multiply,sparse*dense,Col*Col,NA,Error,Error
+34,multiply,sparse*dense,Col*Row,NA,0.004211,  0
+35,multiply,sparse*scalar,Col*s,NA,0.003158,  0
+36,multiply,sparse*dense,Row*M,NA,0.003286,  9.787609318816144e-15
+37,multiply,sparse*dense,Row*Col,NA,0.003385,  7.105427357601002e-14
+38,multiply,sparse*dense,Row*Row,NA,Error,Error
+39,multiply,sparse*scalar,Row*s,NA,0.004194,  0
+0,rdivide,dense./dense,M./M,NA,0.001720,NaN
+1,rdivide,dense./dense,M./Col,NA,0.001812,  0
+2,rdivide,dense./dense,M./Row,NA,0.001785,  0
+3,rdivide,dense./scalar,M./s,NA,0.001933,  0
+4,rdivide,dense./dense,Col./M,NA,0.001704,NaN
+5,rdivide,dense./dense,Col./Col,NA,0.001422,  0
+6,rdivide,dense./dense,Col./Row,NA,0.002089,  0
+7,rdivide,dense./scalar,Col./s,NA,0.001306,  0
+8,rdivide,dense./dense,Row./M,NA,0.001842,NaN
+9,rdivide,dense./dense,Row./Col,NA,0.001763,  0
+10,rdivide,dense./dense,Row./Row,NA,0.001287,  0
+11,rdivide,dense./scalar,Row./s,NA,0.001234,  0
+12,rdivide,scalar./dense,s./M,NA,0.002059,NaN
+13,rdivide,scalar./dense,s./Col,NA,0.001676,  0
+14,rdivide,scalar./dense,s./Row,NA,0.002865,  0
+15,rdivide,scalar./scalar,s./s,NA,0.000887,  0
+16,rdivide,dense./sparse,M./M,NA,0.005594,NaN
+17,rdivide,dense./sparse,M./Col,NA,0.004590,  0
+18,rdivide,dense./sparse,M./Row,NA,0.004451,  0
+19,rdivide,dense./sparse,Col./M,NA,0.005046,NaN
+20,rdivide,dense./sparse,Col./Col,NA,0.004238,  0
+21,rdivide,dense./sparse,Col./Row,NA,0.005426,  0
+22,rdivide,dense./sparse,Row./M,NA,0.004411,NaN
+23,rdivide,dense./sparse,Row./Col,NA,0.004929,  0
+24,rdivide,dense./sparse,Row./Row,NA,0.003880,  0
+25,rdivide,scalar./sparse,s./M,NA,0.004257,NaN
+26,rdivide,scalar./sparse,s./Col,NA,0.003497,  0
+27,rdivide,scalar./sparse,s./Row,NA,0.004344,  0
+28,rdivide,sparse./dense,M./M,NA,0.005274,NaN
+29,rdivide,sparse./dense,M./Col,NA,0.004220,  0
+30,rdivide,sparse./dense,M./Row,NA,0.003856,  0
+31,rdivide,sparse./scalar,M./s,NA,0.003640,  0
+32,rdivide,sparse./dense,Col./M,NA,0.005014,NaN
+33,rdivide,sparse./dense,Col./Col,NA,0.004104,  0
+34,rdivide,sparse./dense,Col./Row,NA,0.005247,  0
+35,rdivide,sparse./scalar,Col./s,NA,0.004520,  0
+36,rdivide,sparse./dense,Row./M,NA,0.005048,NaN
+37,rdivide,sparse./dense,Row./Col,NA,0.004767,  0
+38,rdivide,sparse./dense,Row./Row,NA,0.003965,  0
+39,rdivide,sparse./scalar,Row./s,NA,0.003746,  0
