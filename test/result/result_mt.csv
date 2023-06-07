@@ -1,0 +1,907 @@
+,Unnamed: 0,函数,稀疏性,运算,接口,时间(s),精度
+0,0,add,dense+dense,M+M,,0.002471,  0
+1,1,add,dense+dense,M+Col,,0.001972,  0
+2,2,add,dense+dense,M+Row,,0.002642,  0
+3,3,add,dense+scalar,M+s,,0.001870,  0
+4,4,add,dense+dense,Col+M,,0.002076,  0
+5,5,add,dense+dense,Col+Col,,0.002128,  0
+6,6,add,dense+dense,Col+Row,,0.002167,  0
+7,7,add,dense+scalar,Col+s,,0.001742,  0
+8,8,add,dense+dense,Row+M,,0.002395,  0
+9,9,add,dense+dense,Row+Col,,0.002064,  0
+10,10,add,dense+dense,Row+Row,,0.001628,  0
+11,11,add,dense+scalar,Row+s,,0.001508,  0
+12,12,add,scalar+dense,s+M,,0.002102,  0
+13,13,add,scalar+dense,s+Col,,0.001577,  0
+14,14,add,scalar+dense,s+Row,,0.001902,  0
+15,15,add,scalar+scalar,s+s,,0.000980,  0
+16,16,add,dense+sparse,M+M,,0.005160,  0
+17,17,add,dense+sparse,M+Col,,0.004512,  0
+18,18,add,dense+sparse,M+Row,,0.004733,  0
+19,19,add,dense+sparse,Col+M,,0.004840,  0
+20,20,add,dense+sparse,Col+Col,,0.007299,  0
+21,21,add,dense+sparse,Col+Row,,0.004711,  0
+22,22,add,dense+sparse,Row+M,,0.005881,  0
+23,23,add,dense+sparse,Row+Col,,0.004913,  0
+24,24,add,dense+sparse,Row+Row,,0.004525,  0
+25,25,add,scalar+sparse,s+M,,0.005506,  0
+26,26,add,scalar+sparse,s+Col,,0.003811,  0
+27,27,add,scalar+sparse,s+Row,,0.004847,  0
+28,28,add,sparse+dense,M+M,,0.004572,  0
+29,29,add,sparse+dense,M+Col,,0.005310,  0
+30,30,add,sparse+dense,M+Row,,0.004967,  0
+31,31,add,sparse+scalar,M+s,,0.004579,  0
+32,32,add,sparse+dense,Col+M,,0.004588,  0
+33,33,add,sparse+dense,Col+Col,,0.005186,  0
+34,34,add,sparse+dense,Col+Row,,0.004881,  0
+35,35,add,sparse+scalar,Col+s,,0.004300,  0
+36,36,add,sparse+dense,Row+M,,0.004888,  0
+37,37,add,sparse+dense,Row+Col,,0.004964,  0
+38,38,add,sparse+dense,Row+Row,,0.004583,  0
+39,39,add,sparse+scalar,Row+s,,0.004171,  0
+40,0,amultiply,dense.*dense,M.*M,,0.002085,  0
+41,1,amultiply,dense.*dense,M.*Col,,0.002274,  0
+42,2,amultiply,dense.*dense,M.*Row,,0.002013,  0
+43,3,amultiply,dense.*scalar,M.*s,,0.002615,  0
+44,4,amultiply,dense.*dense,Col.*M,,0.002413,  0
+45,5,amultiply,dense.*dense,Col.*Col,,0.001499,  0
+46,6,amultiply,dense.*dense,Col.*Row,,0.002379,  0
+47,7,amultiply,dense.*scalar,Col.*s,,0.001601,  0
+48,8,amultiply,dense.*dense,Row.*M,,0.002006,  0
+49,9,amultiply,dense.*dense,Row.*Col,,0.001943,  0
+50,10,amultiply,dense.*dense,Row.*Row,,0.001721,  0
+51,11,amultiply,dense.*scalar,Row.*s,,0.001542,  0
+52,12,amultiply,scalar.*dense,s.*M,,0.001867,  0
+53,13,amultiply,scalar.*dense,s.*Col,,0.001623,  0
+54,14,amultiply,scalar.*dense,s.*Row,,0.001468,  0
+55,15,amultiply,scalar.*scalar,s.*s,,0.000898,  0
+56,16,amultiply,dense.*sparse,M.*M,,0.005133,  0
+57,17,amultiply,dense.*sparse,M.*Col,,0.005055,  0
+58,18,amultiply,dense.*sparse,M.*Row,,0.005511,  0
+59,19,amultiply,dense.*sparse,Col.*M,,0.004928,  0
+60,20,amultiply,dense.*sparse,Col.*Col,,0.005078,  0
+61,21,amultiply,dense.*sparse,Col.*Row,,0.005819,  0
+62,22,amultiply,dense.*sparse,Row.*M,,0.004708,  0
+63,23,amultiply,dense.*sparse,Row.*Col,,0.006138,  0
+64,24,amultiply,dense.*sparse,Row.*Row,,0.004886,  0
+65,25,amultiply,scalar.*sparse,s.*M,,0.004707,  0
+66,26,amultiply,scalar.*sparse,s.*Col,,0.004527,  0
+67,27,amultiply,scalar.*sparse,s.*Row,,0.004268,  0
+68,28,amultiply,sparse.*dense,M.*M,,0.004589,  0
+69,29,amultiply,sparse.*dense,M.*Col,,0.004684,  0
+70,30,amultiply,sparse.*dense,M.*Row,,0.004943,  0
+71,31,amultiply,sparse.*scalar,M.*s,,0.004326,  0
+72,32,amultiply,sparse.*dense,Col.*M,,0.004931,  0
+73,33,amultiply,sparse.*dense,Col.*Col,,0.004552,  0
+74,34,amultiply,sparse.*dense,Col.*Row,,0.006101,  0
+75,35,amultiply,sparse.*scalar,Col.*s,,0.004581,  0
+76,36,amultiply,sparse.*dense,Row.*M,,0.005569,  0
+77,37,amultiply,sparse.*dense,Row.*Col,,0.005841,  0
+78,38,amultiply,sparse.*dense,Row.*Row,,0.004443,  0
+79,39,amultiply,sparse.*scalar,Row.*s,,0.004772,  0
+80,0,ldivide,dense.\dense,M.\M,,0.003937,
+81,1,ldivide,dense.\dense,M.\Col,,0.001635,
+82,2,ldivide,dense.\dense,M.\Row,,0.001652,
+83,3,ldivide,dense.\scalar,M.\s,,0.001606,
+84,4,ldivide,dense.\dense,Col.\M,,0.001797,  0
+85,5,ldivide,dense.\dense,Col.\Col,,0.001502,  0
+86,6,ldivide,dense.\dense,Col.\Row,,0.001655,  0
+87,7,ldivide,dense.\scalar,Col.\s,,0.001196,  0
+88,8,ldivide,dense.\dense,Row.\M,,0.001839,  0
+89,9,ldivide,dense.\dense,Row.\Col,,0.001851,  0
+90,10,ldivide,dense.\dense,Row.\Row,,0.001253,  0
+91,11,ldivide,dense.\scalar,Row.\s,,0.001295,  0
+92,12,ldivide,scalar.\dense,s.\M,,0.002733,  0
+93,13,ldivide,scalar.\dense,s.\Col,,0.001889,  0
+94,14,ldivide,scalar.\dense,s.\Row,,0.001292,  0
+95,15,ldivide,scalar.\scalar,s.\s,,0.000865,  0
+96,16,ldivide,dense.\sparse,M.\M,,0.007036,
+97,17,ldivide,dense.\sparse,M.\Col,,0.005829,
+98,18,ldivide,dense.\sparse,M.\Row,,0.005128,
+99,19,ldivide,dense.\sparse,Col.\M,,0.003955,  0
+100,20,ldivide,dense.\sparse,Col.\Col,,0.004316,  0
+101,21,ldivide,dense.\sparse,Col.\Row,,0.005097,  0
+102,22,ldivide,dense.\sparse,Row.\M,,0.004713,  0
+103,23,ldivide,dense.\sparse,Row.\Col,,0.005558,  0
+104,24,ldivide,dense.\sparse,Row.\Row,,0.004753,  0
+105,25,ldivide,scalar.\sparse,s.\M,,0.003840,  0
+106,26,ldivide,scalar.\sparse,s.\Col,,0.004007,  0
+107,27,ldivide,scalar.\sparse,s.\Row,,0.004218,  0
+108,28,ldivide,sparse.\dense,M.\M,,0.004586,
+109,29,ldivide,sparse.\dense,M.\Col,,0.004870,
+110,30,ldivide,sparse.\dense,M.\Row,,0.005459,
+111,31,ldivide,sparse.\scalar,M.\s,,0.005697,
+112,32,ldivide,sparse.\dense,Col.\M,,0.004709,  0
+113,33,ldivide,sparse.\dense,Col.\Col,,0.003754,  0
+114,34,ldivide,sparse.\dense,Col.\Row,,0.005877,  0
+115,35,ldivide,sparse.\scalar,Col.\s,,0.004119,  0
+116,36,ldivide,sparse.\dense,Row.\M,,0.004792,  0
+117,37,ldivide,sparse.\dense,Row.\Col,,0.004973,  0
+118,38,ldivide,sparse.\dense,Row.\Row,,0.003939,  0
+119,39,ldivide,sparse.\scalar,Row.\s,,0.003669,  0
+120,0,minus,dense-dense,M-M,,0.002051,  0
+121,1,minus,dense-dense,M-Col,,0.003018,  0
+122,2,minus,dense-dense,M-Row,,0.001996,  0
+123,3,minus,dense-scalar,M-s,,0.002193,  0
+124,4,minus,dense-dense,Col-M,,0.002665,  0
+125,5,minus,dense-dense,Col-Col,,0.001638,  0
+126,6,minus,dense-dense,Col-Row,,0.001971,  0
+127,7,minus,dense-scalar,Col-s,,0.001497,  0
+128,8,minus,dense-dense,Row-M,,0.002092,  0
+129,9,minus,dense-dense,Row-Col,,0.002137,  0
+130,10,minus,dense-dense,Row-Row,,0.002074,  0
+131,11,minus,dense-scalar,Row-s,,0.001773,  0
+132,12,minus,scalar-dense,s-M,,0.001918,  0
+133,13,minus,scalar-dense,s-Col,,0.001532,  0
+134,14,minus,scalar-dense,s-Row,,0.001809,  0
+135,15,minus,scalar-scalar,s-s,,0.001143,  0
+136,16,minus,dense-sparse,M-M,,0.004437,  0
+137,17,minus,dense-sparse,M-Col,,0.004697,  0
+138,18,minus,dense-sparse,M-Row,,0.005331,  0
+139,19,minus,dense-sparse,Col-M,,0.004549,  0
+140,20,minus,dense-sparse,Col-Col,,0.004389,  0
+141,21,minus,dense-sparse,Col-Row,,0.004565,  0
+142,22,minus,dense-sparse,Row-M,,0.005092,  0
+143,23,minus,dense-sparse,Row-Col,,0.004996,  0
+144,24,minus,dense-sparse,Row-Row,,0.004601,  0
+145,25,minus,scalar-sparse,s-M,,0.005320,  0
+146,26,minus,scalar-sparse,s-Col,,0.004381,  0
+147,27,minus,scalar-sparse,s-Row,,0.004188,  0
+148,28,minus,sparse-dense,M-M,,0.004688,  0
+149,29,minus,sparse-dense,M-Col,,0.004630,  0
+150,30,minus,sparse-dense,M-Row,,0.005247,  0
+151,31,minus,sparse-scalar,M-s,,0.004444,  0
+152,32,minus,sparse-dense,Col-M,,0.004457,  0
+153,33,minus,sparse-dense,Col-Col,,0.004948,  0
+154,34,minus,sparse-dense,Col-Row,,0.004795,  0
+155,35,minus,sparse-scalar,Col-s,,0.005322,  0
+156,36,minus,sparse-dense,Row-M,,0.005032,  0
+157,37,minus,sparse-dense,Row-Col,,0.005389,  0
+158,38,minus,sparse-dense,Row-Row,,0.004435,  0
+159,39,minus,sparse-scalar,Row-s,,0.003988,  0
+160,0,mldivide,dense\dense,M\M,,0.015987,  0
+161,1,mldivide,dense\dense,M\Col,,0.008597,  0
+162,2,mldivide,dense\dense,M\Row,,Error,Error
+163,3,mldivide,dense\scalar,M\s,,Error,Error
+164,4,mldivide,dense\dense,Col\M,,0.011259,  0
+165,5,mldivide,dense\dense,Col\Col,,0.008786,  0
+166,6,mldivide,dense\dense,Col\Row,,Error,Error
+167,7,mldivide,dense\scalar,Col\s,,Error,Error
+168,8,mldivide,dense\dense,Row\M,,Error,Error
+169,9,mldivide,dense\dense,Row\Col,,Error,Error
+170,10,mldivide,dense\dense,Row\Row,,0.007367,  0
+171,11,mldivide,dense\scalar,Row\s,,0.007361,  0
+172,12,mldivide,scalar\dense,s\M,,0.001742,  0
+173,13,mldivide,scalar\dense,s\Col,,0.001317,  0
+174,14,mldivide,scalar\dense,s\Row,,0.001137,  0
+175,15,mldivide,scalar\scalar,s\s,,0.000850,  0
+176,16,mldivide,dense\sparse,M\M,,0.010101,  0
+177,17,mldivide,dense\sparse,M\Col,,0.009500,  0
+178,18,mldivide,dense\sparse,M\Row,,Error,Error
+179,19,mldivide,dense\sparse,Col\M,,0.008690,  0
+180,20,mldivide,dense\sparse,Col\Col,,0.008187,  0
+181,21,mldivide,dense\sparse,Col\Row,,Error,Error
+182,22,mldivide,dense\sparse,Row\M,,Error,Error
+183,23,mldivide,dense\sparse,Row\Col,,Error,Error
+184,24,mldivide,dense\sparse,Row\Row,,0.008067,  0
+185,25,mldivide,scalar\sparse,s\M,,0.003702,  0
+186,26,mldivide,scalar\sparse,s\Col,,0.003324,  0
+187,27,mldivide,scalar\sparse,s\Row,,0.003404,  0
+188,28,mldivide,sparse\dense,M\M,,0.025762,  3.573552286016514e-12
+189,29,mldivide,sparse\dense,M\Col,,0.009104,  1.691518560041106e-11
+190,30,mldivide,sparse\dense,M\Row,,Error,Error
+191,31,mldivide,sparse\scalar,M\s,,Error,Error
+192,32,mldivide,sparse\dense,Col\M,,0.010375,  8.252708785069462e-17
+193,33,mldivide,sparse\dense,Col\Col,,0.007307,  0
+194,34,mldivide,sparse\dense,Col\Row,,Error,Error
+195,35,mldivide,sparse\scalar,Col\s,,Error,Error
+196,36,mldivide,sparse\dense,Row\M,,Error,Error
+197,37,mldivide,sparse\dense,Row\Col,,Error,Error
+198,38,mldivide,sparse\dense,Row\Row,,0.006692,  2.003582304765146e+02
+199,39,mldivide,sparse\scalar,Row\s,,0.005560,  0
+200,0,mrdivide,dense/dense,M/M,,0.011165,  0
+201,1,mrdivide,dense/dense,M/Col,,Error,Error
+202,2,mrdivide,dense/dense,M/Row,,0.008773,  0
+203,3,mrdivide,dense/scalar,M/s,,0.002374,  0
+204,4,mrdivide,dense/dense,Col/M,,Error,Error
+205,5,mrdivide,dense/dense,Col/Col,,0.007959,  0
+206,6,mrdivide,dense/dense,Col/Row,,Error,Error
+207,7,mrdivide,dense/scalar,Col/s,,0.001332,  0
+208,8,mrdivide,dense/dense,Row/M,,0.009299,  0
+209,9,mrdivide,dense/dense,Row/Col,,Error,Error
+210,10,mrdivide,dense/dense,Row/Row,,0.008283,  0
+211,11,mrdivide,dense/scalar,Row/s,,0.001244,  0
+212,12,mrdivide,scalar/dense,s/M,,Error,Error
+213,13,mrdivide,scalar/dense,s/Col,,0.008716,  0
+214,14,mrdivide,scalar/dense,s/Row,,Error,Error
+215,15,mrdivide,scalar/scalar,s/s,,0.000885,  0
+216,16,mrdivide,dense/sparse,M/M,,0.020825,  2.968215104684298e-12
+217,17,mrdivide,dense/sparse,M/Col,,Error,Error
+218,18,mrdivide,dense/sparse,M/Row,,0.012881,  9.299800619644451e-17
+219,19,mrdivide,dense/sparse,Col/M,,Error,Error
+220,20,mrdivide,dense/sparse,Col/Col,,0.006164,  1.579240687598242e+01
+221,21,mrdivide,dense/sparse,Col/Row,,Error,Error
+222,22,mrdivide,dense/sparse,Row/M,,0.010597,  2.435599354594598e-11
+223,23,mrdivide,dense/sparse,Row/Col,,Error,Error
+224,24,mrdivide,dense/sparse,Row/Row,,0.006718,  2.220446049250313e-16
+225,25,mrdivide,scalar/sparse,s/M,,Error,Error
+226,26,mrdivide,scalar/sparse,s/Col,,0.005877,  1.215715582245618e+00
+227,27,mrdivide,scalar/sparse,s/Row,,Error,Error
+228,28,mrdivide,sparse/dense,M/M,,0.011151,  0
+229,29,mrdivide,sparse/dense,M/Col,,Error,Error
+230,30,mrdivide,sparse/dense,M/Row,,0.008184,  0
+231,31,mrdivide,sparse/scalar,M/s,,0.003189,  0
+232,32,mrdivide,sparse/dense,Col/M,,Error,Error
+233,33,mrdivide,sparse/dense,Col/Col,,0.008016,  0
+234,34,mrdivide,sparse/dense,Col/Row,,Error,Error
+235,35,mrdivide,sparse/scalar,Col/s,,0.003290,  0
+236,36,mrdivide,sparse/dense,Row/M,,0.008740,  0
+237,37,mrdivide,sparse/dense,Row/Col,,Error,Error
+238,38,mrdivide,sparse/dense,Row/Row,,0.006916,  0
+239,39,mrdivide,sparse/scalar,Row/s,,0.003254,  0
+240,0,multiply,dense*dense,M*M,,0.004293,  0
+241,1,multiply,dense*dense,M*Col,,0.003732,  0
+242,2,multiply,dense*dense,M*Row,,Error,Error
+243,3,multiply,dense*scalar,M*s,,0.001636,  0
+244,4,multiply,dense*dense,Col*M,,Error,Error
+245,5,multiply,dense*dense,Col*Col,,Error,Error
+246,6,multiply,dense*dense,Col*Row,,0.003294,  0
+247,7,multiply,dense*scalar,Col*s,,0.001231,  0
+248,8,multiply,dense*dense,Row*M,,0.003170,  0
+249,9,multiply,dense*dense,Row*Col,,0.002707,  0
+250,10,multiply,dense*dense,Row*Row,,Error,Error
+251,11,multiply,dense*scalar,Row*s,,0.001177,  0
+252,12,multiply,scalar*dense,s*M,,0.001616,  0
+253,13,multiply,scalar*dense,s*Col,,0.001254,  0
+254,14,multiply,scalar*dense,s*Row,,0.001295,  0
+255,15,multiply,scalar*scalar,s*s,,0.000860,  0
+256,16,multiply,dense*sparse,M*M,,0.004241,  8.463436290532539e-16
+257,17,multiply,dense*sparse,M*Col,,0.003485,  8.700210862173681e-15
+258,18,multiply,dense*sparse,M*Row,,Error,Error
+259,19,multiply,dense*sparse,Col*M,,Error,Error
+260,20,multiply,dense*sparse,Col*Col,,Error,Error
+261,21,multiply,dense*sparse,Col*Row,,0.003792,  0
+262,22,multiply,dense*sparse,Row*M,,0.003591,  9.787609318816144e-15
+263,23,multiply,dense*sparse,Row*Col,,0.003376,  7.105427357601002e-14
+264,24,multiply,dense*sparse,Row*Row,,Error,Error
+265,25,multiply,scalar*sparse,s*M,,0.003672,  0
+266,26,multiply,scalar*sparse,s*Col,,0.003125,  0
+267,27,multiply,scalar*sparse,s*Row,,0.003042,  0
+268,28,multiply,sparse*dense,M*M,,0.004445,  8.463436290532539e-16
+269,29,multiply,sparse*dense,M*Col,,0.003270,  8.700210862173681e-15
+270,30,multiply,sparse*dense,M*Row,,Error,Error
+271,31,multiply,sparse*scalar,M*s,,0.003211,  0
+272,32,multiply,sparse*dense,Col*M,,Error,Error
+273,33,multiply,sparse*dense,Col*Col,,Error,Error
+274,34,multiply,sparse*dense,Col*Row,,0.004211,  0
+275,35,multiply,sparse*scalar,Col*s,,0.003158,  0
+276,36,multiply,sparse*dense,Row*M,,0.003286,  9.787609318816144e-15
+277,37,multiply,sparse*dense,Row*Col,,0.003385,  7.105427357601002e-14
+278,38,multiply,sparse*dense,Row*Row,,Error,Error
+279,39,multiply,sparse*scalar,Row*s,,0.004194,  0
+280,0,rdivide,dense./dense,M./M,,0.001720,
+281,1,rdivide,dense./dense,M./Col,,0.001812,  0
+282,2,rdivide,dense./dense,M./Row,,0.001785,  0
+283,3,rdivide,dense./scalar,M./s,,0.001933,  0
+284,4,rdivide,dense./dense,Col./M,,0.001704,
+285,5,rdivide,dense./dense,Col./Col,,0.001422,  0
+286,6,rdivide,dense./dense,Col./Row,,0.002089,  0
+287,7,rdivide,dense./scalar,Col./s,,0.001306,  0
+288,8,rdivide,dense./dense,Row./M,,0.001842,
+289,9,rdivide,dense./dense,Row./Col,,0.001763,  0
+290,10,rdivide,dense./dense,Row./Row,,0.001287,  0
+291,11,rdivide,dense./scalar,Row./s,,0.001234,  0
+292,12,rdivide,scalar./dense,s./M,,0.002059,
+293,13,rdivide,scalar./dense,s./Col,,0.001676,  0
+294,14,rdivide,scalar./dense,s./Row,,0.002865,  0
+295,15,rdivide,scalar./scalar,s./s,,0.000887,  0
+296,16,rdivide,dense./sparse,M./M,,0.005594,
+297,17,rdivide,dense./sparse,M./Col,,0.004590,  0
+298,18,rdivide,dense./sparse,M./Row,,0.004451,  0
+299,19,rdivide,dense./sparse,Col./M,,0.005046,
+300,20,rdivide,dense./sparse,Col./Col,,0.004238,  0
+301,21,rdivide,dense./sparse,Col./Row,,0.005426,  0
+302,22,rdivide,dense./sparse,Row./M,,0.004411,
+303,23,rdivide,dense./sparse,Row./Col,,0.004929,  0
+304,24,rdivide,dense./sparse,Row./Row,,0.003880,  0
+305,25,rdivide,scalar./sparse,s./M,,0.004257,
+306,26,rdivide,scalar./sparse,s./Col,,0.003497,  0
+307,27,rdivide,scalar./sparse,s./Row,,0.004344,  0
+308,28,rdivide,sparse./dense,M./M,,0.005274,
+309,29,rdivide,sparse./dense,M./Col,,0.004220,  0
+310,30,rdivide,sparse./dense,M./Row,,0.003856,  0
+311,31,rdivide,sparse./scalar,M./s,,0.003640,  0
+312,32,rdivide,sparse./dense,Col./M,,0.005014,
+313,33,rdivide,sparse./dense,Col./Col,,0.004104,  0
+314,34,rdivide,sparse./dense,Col./Row,,0.005247,  0
+315,35,rdivide,sparse./scalar,Col./s,,0.004520,  0
+316,36,rdivide,sparse./dense,Row./M,,0.005048,
+317,37,rdivide,sparse./dense,Row./Col,,0.004767,  0
+318,38,rdivide,sparse./dense,Row./Row,,0.003965,  0
+319,39,rdivide,sparse./scalar,Row./s,,0.003746,  0
+0,0,amd,dense,M,P=amd(S),0.003839,Error
+1,1,amd,sparse,M,P=amd(S),0.003927,Error
+2,0,colamd,dense,M,P=colamd(S),0.026505,Error
+3,1,colamd,sparse,M,P=colamd(S),0.019008,Error
+4,2,colamd,dense,M,"[P,stats]=colamd(S,[10,10,0])",0.019228,Error
+5,3,colamd,sparse,M,"[P,stats]=colamd(S,[10,10,0])",0.020712,Error
+6,4,colamd,dense,M,"[P,stats]=colamd(S,[10,10,1])",0.022062000000000002,Error
+7,5,colamd,sparse,M,"[P,stats]=colamd(S,[10,10,1])",0.018932,Error
+8,6,colamd,dense,M,"[P,stats]=colamd(S,[-10,-10,0])",0.01964,Error
+9,7,colamd,sparse,M,"[P,stats]=colamd(S,[-10,-10,0])",0.018072,Error
+10,8,colamd,dense,M,"[P,stats]=colamd(S,[-10,-10,1])",0.017903,Error
+11,9,colamd,sparse,M,"[P,stats]=colamd(S,[-10,-10,1])",0.01697,Error
+12,0,symamd,dense,M,P=symamd(S),0.022624000000000002,Error
+13,1,symamd,sparse,M,P=symamd(S),0.020657,Error
+14,2,symamd,dense,M,"[P,stats]=symamd(S,[10,0])",0.019954,Error
+15,3,symamd,sparse,M,"[P,stats]=symamd(S,[10,0])",0.018734999999999998,Error
+16,4,symamd,dense,M,"[P,stats]=symamd(S,[10,1])",0.021225,Error
+17,5,symamd,sparse,M,"[P,stats]=symamd(S,[10,1])",0.019201,Error
+0,0,eig,dense,M,E=eig(A),0.045358,Error
+1,1,eig,sparse,M,E=eig(A),Error,Error
+2,2,eig,dense,M,"[V,D]=eig(A)",0.056785,  6.828460678834629e-14
+3,3,eig,sparse,M,"[V,D]=eig(A)",Error,Error
+4,4,eig,dense,M,"[V,D,W]=eig(A)",0.066877,  5.045329647361759e-14
+5,5,eig,sparse,M,"[V,D,W]=eig(A)",Error,Error
+6,6,eig,"(dense,dense)","(M,M)","E=eig(A,B)",0.061956,Error
+7,7,eig,"(dense,sparse)","(M,M)","E=eig(A,B)",Error,Error
+8,8,eig,"(sparse,dense)","(M,M)","E=eig(A,B)",Error,Error
+9,9,eig,"(sparse,sparse)","(M,M)","E=eig(A,B)",Error,Error
+10,10,eig,"(dense,dense)","(M,M)","[V,D]=eig(A,B)",0.067921,  1.985308636775659e-14
+11,11,eig,"(dense,sparse)","(M,M)","[V,D]=eig(A,B)",Error,Error
+12,12,eig,"(sparse,dense)","(M,M)","[V,D]=eig(A,B)",Error,Error
+13,13,eig,"(sparse,sparse)","(M,M)","[V,D]=eig(A,B)",Error,Error
+14,14,eig,"(dense,dense)","(M,M)","[V,D,W]=eig(A,B)",0.087760,  7.463360068051663e-14
+15,15,eig,"(dense,sparse)","(M,M)","[V,D,W]=eig(A,B)",Error,Error
+16,16,eig,"(sparse,dense)","(M,M)","[V,D,W]=eig(A,B)",Error,Error
+17,17,eig,"(sparse,sparse)","(M,M)","[V,D,W]=eig(A,B)",Error,Error
+18,0,eigs,dense,M,E=eigs(A),0.234170,Error
+19,1,eigs,sparse,M,E=eigs(A),0.157674,Error
+20,2,eigs,dense,M,"[V,D]=eigs(A)",0.175773,  4.669510725905365e-14
+21,3,eigs,sparse,M,"[V,D]=eigs(A)",0.148916,  6.177628412026160e-14
+22,4,eigs,"(dense,dense)","(M,M)","E=eigs(A,B)",0.236831,Error
+23,5,eigs,"(dense,sparse)","(M,M)","E=eigs(A,B)",0.211861,Error
+24,6,eigs,"(sparse,dense)","(M,M)","E=eigs(A,B)",0.208245,Error
+25,7,eigs,"(sparse,sparse)","(M,M)","E=eigs(A,B)",0.215244,Error
+26,8,eigs,"(dense,dense)","(M,M)","[V,D]=eigs(A,B)",0.215310,  8.665748549244485e-15
+27,9,eigs,"(dense,sparse)","(M,M)","[V,D]=eigs(A,B)",0.202613,  8.995199126961767e-14
+28,10,eigs,"(sparse,dense)","(M,M)","[V,D]=eigs(A,B)",0.165674,  1.062141762075158e-14
+29,11,eigs,"(sparse,sparse)","(M,M)","[V,D]=eigs(A,B)",0.182350,  6.513060219353261e-14
+0,0,cgs,dense\dense,M\v1,,0.061307,  7.365152383487030e+00
+1,1,cgs,dense\sparse,M\v1,,0.059305,  7.365152383487030e+00
+2,2,cgs,sparse\dense,M\v1,,0.058107,  7.365152383487030e+00
+3,3,cgs,sparse\sparse,M\v1,,0.056025,  7.365152383487030e+00
+4,4,cgs,dense\dense,MCol\v1,,Error,Error
+5,5,cgs,dense\sparse,MCol\v1,,Error,Error
+6,6,cgs,sparse\dense,MCol\v1,,Error,Error
+7,7,cgs,sparse\sparse,MCol\v1,,Error,Error
+8,8,cgs,dense\dense,MRow\v2,,Error,Error
+9,9,cgs,dense\sparse,MRow\v2,,Error,Error
+10,10,cgs,sparse\dense,MRow\v2,,Error,Error
+11,11,cgs,sparse\sparse,MRow\v2,,Error,Error
+12,0,pcg,dense\dense,M\v1,,0.047150,  7.396763073236244e+00
+13,1,pcg,dense\sparse,M\v1,,0.046908,  7.396763073236244e+00
+14,2,pcg,sparse\dense,M\v1,,0.045443,  7.396763073236244e+00
+15,3,pcg,sparse\sparse,M\v1,,0.043691,  7.396763073236244e+00
+16,4,pcg,dense\dense,MCol\v1,,Error,Error
+17,5,pcg,dense\sparse,MCol\v1,,Error,Error
+18,6,pcg,sparse\dense,MCol\v1,,Error,Error
+19,7,pcg,sparse\sparse,MCol\v1,,Error,Error
+20,8,pcg,dense\dense,MRow\v2,,Error,Error
+21,9,pcg,dense\sparse,MRow\v2,,Error,Error
+22,10,pcg,sparse\dense,MRow\v2,,Error,Error
+23,11,pcg,sparse\sparse,MRow\v2,,Error,Error
+24,0,bicg,dense\dense,M\v1,,0.062339,  7.396763073236244e+00
+25,1,bicg,dense\sparse,M\v1,,0.057012,  7.396763073236244e+00
+26,2,bicg,sparse\dense,M\v1,,0.052328,  7.396763073236244e+00
+27,3,bicg,sparse\sparse,M\v1,,0.054678,  7.396763073236244e+00
+28,4,bicg,dense\dense,MCol\v1,,Error,Error
+29,5,bicg,dense\sparse,MCol\v1,,Error,Error
+30,6,bicg,sparse\dense,MCol\v1,,Error,Error
+31,7,bicg,sparse\sparse,MCol\v1,,Error,Error
+32,8,bicg,dense\dense,MRow\v2,,Error,Error
+33,9,bicg,dense\sparse,MRow\v2,,Error,Error
+34,10,bicg,sparse\dense,MRow\v2,,Error,Error
+35,11,bicg,sparse\sparse,MRow\v2,,Error,Error
+36,0,bicgstab,dense\dense,M\v1,,0.053329,  6.953925514255335e+00
+37,1,bicgstab,dense\sparse,M\v1,,0.055402,  6.953925514255335e+00
+38,2,bicgstab,sparse\dense,M\v1,,0.048384,  6.953925514255335e+00
+39,3,bicgstab,sparse\sparse,M\v1,,0.051777,  6.953925514255335e+00
+40,4,bicgstab,dense\dense,MCol\v1,,Error,Error
+41,5,bicgstab,dense\sparse,MCol\v1,,Error,Error
+42,6,bicgstab,sparse\dense,MCol\v1,,Error,Error
+43,7,bicgstab,sparse\sparse,MCol\v1,,Error,Error
+44,8,bicgstab,dense\dense,MRow\v2,,Error,Error
+45,9,bicgstab,dense\sparse,MRow\v2,,Error,Error
+46,10,bicgstab,sparse\dense,MRow\v2,,Error,Error
+47,11,bicgstab,sparse\sparse,MRow\v2,,Error,Error
+48,0,bicgstabl,dense\dense,M\v1,,0.073977,  7.396763073236244e+00
+49,1,bicgstabl,dense\sparse,M\v1,,0.075800,  7.396763073236244e+00
+50,2,bicgstabl,sparse\dense,M\v1,,0.066440,  7.396763073236244e+00
+51,3,bicgstabl,sparse\sparse,M\v1,,0.070427,  7.396763073236244e+00
+52,4,bicgstabl,dense\dense,MCol\v1,,Error,Error
+53,5,bicgstabl,dense\sparse,MCol\v1,,Error,Error
+54,6,bicgstabl,sparse\dense,MCol\v1,,Error,Error
+55,7,bicgstabl,sparse\sparse,MCol\v1,,Error,Error
+56,8,bicgstabl,dense\dense,MRow\v2,,Error,Error
+57,9,bicgstabl,dense\sparse,MRow\v2,,Error,Error
+58,10,bicgstabl,sparse\dense,MRow\v2,,Error,Error
+59,11,bicgstabl,sparse\sparse,MRow\v2,,Error,Error
+60,0,gmres,dense\dense,M\v1,,0.063177,  5.867605385328511e+00
+61,1,gmres,dense\sparse,M\v1,,0.063360,  5.867605385328511e+00
+62,2,gmres,sparse\dense,M\v1,,0.060250,  5.867605385328511e+00
+63,3,gmres,sparse\sparse,M\v1,,0.061887,  5.867605385328511e+00
+64,4,gmres,dense\dense,MCol\v1,,Error,Error
+65,5,gmres,dense\sparse,MCol\v1,,Error,Error
+66,6,gmres,sparse\dense,MCol\v1,,Error,Error
+67,7,gmres,sparse\sparse,MCol\v1,,Error,Error
+68,8,gmres,dense\dense,MRow\v2,,Error,Error
+69,9,gmres,dense\sparse,MRow\v2,,Error,Error
+70,10,gmres,sparse\dense,MRow\v2,,Error,Error
+71,11,gmres,sparse\sparse,MRow\v2,,Error,Error
+72,0,minres,dense\dense,M\v1,,0.077095,  8.749785938833893e+00
+73,1,minres,dense\sparse,M\v1,,0.075483,  8.749785938833893e+00
+74,2,minres,sparse\dense,M\v1,,0.070154,  8.749785938833895e+00
+75,3,minres,sparse\sparse,M\v1,,0.075844,  8.749785938833895e+00
+76,4,minres,dense\dense,MCol\v1,,Error,Error
+77,5,minres,dense\sparse,MCol\v1,,Error,Error
+78,6,minres,sparse\dense,MCol\v1,,Error,Error
+79,7,minres,sparse\sparse,MCol\v1,,Error,Error
+80,8,minres,dense\dense,MRow\v2,,Error,Error
+81,9,minres,dense\sparse,MRow\v2,,Error,Error
+82,10,minres,sparse\dense,MRow\v2,,Error,Error
+83,11,minres,sparse\sparse,MRow\v2,,Error,Error
+84,0,lsqr,dense\dense,M\v1,,0.070542,  1.669802056539423e+00
+85,1,lsqr,dense\sparse,M\v1,,0.075162,  1.669802056039368e+00
+86,2,lsqr,sparse\dense,M\v1,,0.072377,  1.669802056113835e+00
+87,3,lsqr,sparse\sparse,M\v1,,0.075320,  1.669802056113835e+00
+88,4,lsqr,dense\dense,MCol\v1,,0.075967,  4.758815517235578e+00
+89,5,lsqr,dense\sparse,MCol\v1,,0.072185,  4.758815412415323e+00
+90,6,lsqr,sparse\dense,MCol\v1,,0.071702,  4.758815520935098e+00
+91,7,lsqr,sparse\sparse,MCol\v1,,0.076822,  4.758815520935098e+00
+92,8,lsqr,dense\dense,MRow\v2,,0.070472,  1.208103388168928e-02
+93,9,lsqr,dense\sparse,MRow\v2,,0.071124,  1.207157053985107e-02
+94,10,lsqr,sparse\dense,MRow\v2,,0.078971,  1.205537444585150e-02
+95,11,lsqr,sparse\sparse,MRow\v2,,0.078746,  1.205537444585150e-02
+96,0,qmr,dense\dense,M\v1,,0.084726,  5.916553377711247e+00
+97,1,qmr,dense\sparse,M\v1,,0.083240,  5.916553377711247e+00
+98,2,qmr,sparse\dense,M\v1,,0.078416,  5.916553377711031e+00
+99,3,qmr,sparse\sparse,M\v1,,0.088393,  5.916553377711031e+00
+100,4,qmr,dense\dense,MCol\v1,,Error,Error
+101,5,qmr,dense\sparse,MCol\v1,,Error,Error
+102,6,qmr,sparse\dense,MCol\v1,,Error,Error
+103,7,qmr,sparse\sparse,MCol\v1,,Error,Error
+104,8,qmr,dense\dense,MRow\v2,,Error,Error
+105,9,qmr,dense\sparse,MRow\v2,,Error,Error
+106,10,qmr,sparse\dense,MRow\v2,,Error,Error
+107,11,qmr,sparse\sparse,MRow\v2,,Error,Error
+108,0,tfqmr,dense\dense,M\v1,,0.074865,  6.064171696829922e+00
+109,1,tfqmr,dense\sparse,M\v1,,0.076047,  6.064171696829922e+00
+110,2,tfqmr,sparse\dense,M\v1,,0.077961,  6.064171696829923e+00
+111,3,tfqmr,sparse\sparse,M\v1,,0.082726,  6.064171696829923e+00
+112,4,tfqmr,dense\dense,MCol\v1,,Error,Error
+113,5,tfqmr,dense\sparse,MCol\v1,,Error,Error
+114,6,tfqmr,sparse\dense,MCol\v1,,Error,Error
+115,7,tfqmr,sparse\sparse,MCol\v1,,Error,Error
+116,8,tfqmr,dense\dense,MRow\v2,,Error,Error
+117,9,tfqmr,dense\sparse,MRow\v2,,Error,Error
+118,10,tfqmr,sparse\dense,MRow\v2,,Error,Error
+119,11,tfqmr,sparse\sparse,MRow\v2,,Error,Error
+120,0,symmlq,dense\dense,M\v1,,0.079050,  6.538651275870627e+00
+121,1,symmlq,dense\sparse,M\v1,,0.074285,  6.538651275870627e+00
+122,2,symmlq,sparse\dense,M\v1,,0.074443,  6.538651275870627e+00
+123,3,symmlq,sparse\sparse,M\v1,,0.080856,  6.538651275870627e+00
+124,4,symmlq,dense\dense,MCol\v1,,Error,Error
+125,5,symmlq,dense\sparse,MCol\v1,,Error,Error
+126,6,symmlq,sparse\dense,MCol\v1,,Error,Error
+127,7,symmlq,sparse\sparse,MCol\v1,,Error,Error
+128,8,symmlq,dense\dense,MRow\v2,,Error,Error
+129,9,symmlq,dense\sparse,MRow\v2,,Error,Error
+130,10,symmlq,sparse\dense,MRow\v2,,Error,Error
+131,11,symmlq,sparse\sparse,MRow\v2,,Error,Error
+0,0,max,dense,M,M=max(X),0.0036810000000000002,Error
+1,1,max,sparse,M,M=max(X),0.002754,Error
+2,2,max,dense,M,"[M,I]=max(X)",0.002869,Error
+3,3,max,sparse,M,"[M,I]=max(X)",0.002933,Error
+4,4,max,dense,M,"M=max(X,[],1)",0.003016,Error
+5,5,max,sparse,M,"M=max(X,[],1)",0.002617,Error
+6,6,max,dense,M,"M=max(X,[],2)",0.003036,Error
+7,7,max,sparse,M,"M=max(X,[],2)",0.002944,Error
+8,8,max,dense,M,"[M,I]=max(X,[],1)",0.0031149999999999997,Error
+9,9,max,sparse,M,"[M,I]=max(X,[],1)",0.0029230000000000003,Error
+10,10,max,dense,M,"[M,I]=max(X,[],2)",0.0031030000000000003,Error
+11,11,max,sparse,M,"[M,I]=max(X,[],2)",0.002739,Error
+12,12,max,dense,Col,M=max(X),0.001497,Error
+13,13,max,sparse,Col,M=max(X),0.003154,Error
+14,14,max,dense,Col,"[M,I]=max(X)",0.0026579999999999998,Error
+15,15,max,sparse,Col,"[M,I]=max(X)",0.0028079999999999997,Error
+16,16,max,dense,Col,"M=max(X,[],1)",0.002972,Error
+17,17,max,sparse,Col,"M=max(X,[],1)",0.0027,Error
+18,18,max,dense,Col,"M=max(X,[],2)",0.002995,Error
+19,19,max,sparse,Col,"M=max(X,[],2)",0.0027760000000000003,Error
+20,20,max,dense,Col,"[M,I]=max(X,[],1)",0.002816,Error
+21,21,max,sparse,Col,"[M,I]=max(X,[],1)",0.0028710000000000003,Error
+22,22,max,dense,Col,"[M,I]=max(X,[],2)",0.0035600000000000002,Error
+23,23,max,sparse,Col,"[M,I]=max(X,[],2)",0.002905,Error
+24,24,max,dense,Row,M=max(X),0.0011220000000000002,Error
+25,25,max,sparse,Row,M=max(X),0.003181,Error
+26,26,max,dense,Row,"[M,I]=max(X)",0.0028350000000000003,Error
+27,27,max,sparse,Row,"[M,I]=max(X)",0.0026739999999999997,Error
+28,28,max,dense,Row,"M=max(X,[],1)",0.003097,Error
+29,29,max,sparse,Row,"M=max(X,[],1)",0.003068,Error
+30,30,max,dense,Row,"M=max(X,[],2)",0.0027660000000000002,Error
+31,31,max,sparse,Row,"M=max(X,[],2)",0.0026780000000000003,Error
+32,32,max,dense,Row,"[M,I]=max(X,[],1)",0.002688,Error
+33,33,max,sparse,Row,"[M,I]=max(X,[],1)",0.002782,Error
+34,34,max,dense,Row,"[M,I]=max(X,[],2)",0.0030789999999999997,Error
+35,35,max,sparse,Row,"[M,I]=max(X,[],2)",0.004052,Error
+36,36,max,"(dense,dense)","(M,M)","M=max(X,Y)",0.001894,Error
+37,37,max,"(dense,sparse)","(M,M)","M=max(X,Y)",0.004359,Error
+38,38,max,"(sparse,dense)","(M,M)","M=max(X,Y)",0.0036369999999999996,Error
+39,39,max,"(sparse,sparse)","(M,M)","M=max(X,Y)",0.0036060000000000003,Error
+40,40,max,"(dense,dense)","(M,Col)","M=max(X,Y)",0.001853,Error
+41,41,max,"(dense,sparse)","(M,Col)","M=max(X,Y)",0.004602,Error
+42,42,max,"(sparse,dense)","(M,Col)","M=max(X,Y)",0.004132,Error
+43,43,max,"(sparse,sparse)","(M,Col)","M=max(X,Y)",0.00402,Error
+44,44,max,"(dense,dense)","(M,Row)","M=max(X,Y)",0.00187,Error
+45,45,max,"(dense,sparse)","(M,Row)","M=max(X,Y)",0.004212,Error
+46,46,max,"(sparse,dense)","(M,Row)","M=max(X,Y)",0.0038659999999999996,Error
+47,47,max,"(sparse,sparse)","(M,Row)","M=max(X,Y)",0.003856,Error
+48,48,max,"(dense,scalar)","(M,s)","M=max(X,Y)",0.001737,Error
+49,49,max,"(sparse,scalar)","(M,s)","M=max(X,Y)",0.00485,Error
+50,50,max,"(dense,dense)","(Col,M)","M=max(X,Y)",0.0019199999999999998,Error
+51,51,max,"(sparse,dense)","(Col,M)","M=max(X,Y)",0.003833,Error
+52,52,max,"(dense,sparse)","(Col,M)","M=max(X,Y)",0.004232,Error
+53,53,max,"(sparse,sparse)","(Col,M)","M=max(X,Y)",0.003958,Error
+54,54,max,"(dense,dense)","(Row,M)","M=max(X,Y)",0.0016769999999999999,Error
+55,55,max,"(sparse,dense)","(Row,M)","M=max(X,Y)",0.004085,Error
+56,56,max,"(dense,sparse)","(Row,M)","M=max(X,Y)",0.003739,Error
+57,57,max,"(sparse,sparse)","(Row,M)","M=max(X,Y)",0.003956,Error
+58,58,max,"(scalar,dense)","(s,M)","M=max(X,Y)",0.001709,Error
+59,59,max,"(scalar,sparse)","(s,M)","M=max(X,Y)",0.005267,Error
+60,60,max,"(dense,dense)","(Col,Col)","M=max(X,Y)",0.001199,Error
+61,61,max,"(dense,sparse)","(Col,Col)","M=max(X,Y)",0.003827,Error
+62,62,max,"(sparse,dense)","(Col,Col)","M=max(X,Y)",0.003461,Error
+63,63,max,"(sparse,sparse)","(Col,Col)","M=max(X,Y)",0.0034130000000000002,Error
+64,64,max,"(dense,dense)","(Col,Row)","M=max(X,Y)",0.00197,Error
+65,65,max,"(dense,sparse)","(Col,Row)","M=max(X,Y)",0.004157,Error
+66,66,max,"(sparse,dense)","(Col,Row)","M=max(X,Y)",0.0038640000000000002,Error
+67,67,max,"(sparse,sparse)","(Col,Row)","M=max(X,Y)",0.004217,Error
+68,68,max,"(dense,scalar)","(Col,s)","M=max(X,Y)",0.001198,Error
+69,69,max,"(sparse,scalar)","(Col,s)","M=max(X,Y)",0.003457,Error
+70,70,max,"(dense,dense)","(Row,Col)","M=max(X,Y)",0.001707,Error
+71,71,max,"(sparse,dense)","(Row,Col)","M=max(X,Y)",0.004168,Error
+72,72,max,"(dense,sparse)","(Row,Col)","M=max(X,Y)",0.005058,Error
+73,73,max,"(sparse,sparse)","(Row,Col)","M=max(X,Y)",0.003527,Error
+74,74,max,"(scalar,dense)","(s,Col)","M=max(X,Y)",0.001377,Error
+75,75,max,"(scalar,sparse)","(s,Col)","M=max(X,Y)",0.0033009999999999997,Error
+76,76,max,"(dense,dense)","(Row,Row)","M=max(X,Y)",0.0012259999999999999,Error
+77,77,max,"(dense,sparse)","(Row,Row)","M=max(X,Y)",0.0034840000000000006,Error
+78,78,max,"(sparse,dense)","(Row,Row)","M=max(X,Y)",0.0037630000000000003,Error
+79,79,max,"(sparse,sparse)","(Row,Row)","M=max(X,Y)",0.00346,Error
+80,80,max,"(dense,scalar)","(Row,s)","M=max(X,Y)",0.001193,Error
+81,81,max,"(sparse,scalar)","(Row,s)","M=max(X,Y)",0.0032920000000000002,Error
+82,82,max,"(scalar,scalar)","(s,s)","M=max(X,Y)",0.0009310000000000001,Error
+83,0,min,dense,M,M=max(X),0.002987,Error
+84,1,min,sparse,M,M=max(X),0.002621,Error
+85,2,min,dense,M,"[M,I]=max(X)",0.003542,Error
+86,3,min,sparse,M,"[M,I]=max(X)",0.003134,Error
+87,4,min,dense,M,"M=max(X,[],1)",0.0035840000000000004,Error
+88,5,min,sparse,M,"M=max(X,[],1)",0.002709,Error
+89,6,min,dense,M,"M=max(X,[],2)",0.003143,Error
+90,7,min,sparse,M,"M=max(X,[],2)",0.003855,Error
+91,8,min,dense,M,"[M,I]=max(X,[],1)",0.003714,Error
+92,9,min,sparse,M,"[M,I]=max(X,[],1)",0.003032,Error
+93,10,min,dense,M,"[M,I]=max(X,[],2)",0.0033399999999999997,Error
+94,11,min,sparse,M,"[M,I]=max(X,[],2)",0.003565,Error
+95,12,min,dense,Col,M=max(X),0.0013570000000000001,Error
+96,13,min,sparse,Col,M=max(X),0.002993,Error
+97,14,min,dense,Col,"[M,I]=max(X)",0.0028420000000000003,Error
+98,15,min,sparse,Col,"[M,I]=max(X)",0.002814,Error
+99,16,min,dense,Col,"M=max(X,[],1)",0.00406,Error
+100,17,min,sparse,Col,"M=max(X,[],1)",0.003116,Error
+101,18,min,dense,Col,"M=max(X,[],2)",0.003746,Error
+102,19,min,sparse,Col,"M=max(X,[],2)",0.00274,Error
+103,20,min,dense,Col,"[M,I]=max(X,[],1)",0.00282,Error
+104,21,min,sparse,Col,"[M,I]=max(X,[],1)",0.002915,Error
+105,22,min,dense,Col,"[M,I]=max(X,[],2)",0.002941,Error
+106,23,min,sparse,Col,"[M,I]=max(X,[],2)",0.002739,Error
+107,24,min,dense,Row,M=max(X),0.001375,Error
+108,25,min,sparse,Row,M=max(X),0.002882,Error
+109,26,min,dense,Row,"[M,I]=max(X)",0.0029519999999999998,Error
+110,27,min,sparse,Row,"[M,I]=max(X)",0.002815,Error
+111,28,min,dense,Row,"M=max(X,[],1)",0.0036850000000000003,Error
+112,29,min,sparse,Row,"M=max(X,[],1)",0.002805,Error
+113,30,min,dense,Row,"M=max(X,[],2)",0.00267,Error
+114,31,min,sparse,Row,"M=max(X,[],2)",0.002688,Error
+115,32,min,dense,Row,"[M,I]=max(X,[],1)",0.0025960000000000002,Error
+116,33,min,sparse,Row,"[M,I]=max(X,[],1)",0.002859,Error
+117,34,min,dense,Row,"[M,I]=max(X,[],2)",0.003486,Error
+118,35,min,sparse,Row,"[M,I]=max(X,[],2)",0.002832,Error
+119,36,min,"(dense,dense)","(M,M)","M=max(X,Y)",0.001791,Error
+120,37,min,"(dense,sparse)","(M,M)","M=max(X,Y)",0.003967,Error
+121,38,min,"(sparse,dense)","(M,M)","M=max(X,Y)",0.003821,Error
+122,39,min,"(sparse,sparse)","(M,M)","M=max(X,Y)",0.003558,Error
+123,40,min,"(dense,dense)","(M,Col)","M=max(X,Y)",0.0018670000000000002,Error
+124,41,min,"(dense,sparse)","(M,Col)","M=max(X,Y)",0.004156,Error
+125,42,min,"(sparse,dense)","(M,Col)","M=max(X,Y)",0.0053170000000000005,Error
+126,43,min,"(sparse,sparse)","(M,Col)","M=max(X,Y)",0.0057399999999999994,Error
+127,44,min,"(dense,dense)","(M,Row)","M=max(X,Y)",0.002314,Error
+128,45,min,"(dense,sparse)","(M,Row)","M=max(X,Y)",0.004519,Error
+129,46,min,"(sparse,dense)","(M,Row)","M=max(X,Y)",0.004193,Error
+130,47,min,"(sparse,sparse)","(M,Row)","M=max(X,Y)",0.004521,Error
+131,48,min,"(dense,scalar)","(M,s)","M=max(X,Y)",0.0018920000000000002,Error
+132,49,min,"(sparse,scalar)","(M,s)","M=max(X,Y)",0.005007999999999999,Error
+133,50,min,"(dense,dense)","(Col,M)","M=max(X,Y)",0.002096,Error
+134,51,min,"(sparse,dense)","(Col,M)","M=max(X,Y)",0.004495,Error
+135,52,min,"(dense,sparse)","(Col,M)","M=max(X,Y)",0.00498,Error
+136,53,min,"(sparse,sparse)","(Col,M)","M=max(X,Y)",0.0039840000000000006,Error
+137,54,min,"(dense,dense)","(Row,M)","M=max(X,Y)",0.001737,Error
+138,55,min,"(sparse,dense)","(Row,M)","M=max(X,Y)",0.004064,Error
+139,56,min,"(dense,sparse)","(Row,M)","M=max(X,Y)",0.004485,Error
+140,57,min,"(sparse,sparse)","(Row,M)","M=max(X,Y)",0.0038659999999999996,Error
+141,58,min,"(scalar,dense)","(s,M)","M=max(X,Y)",0.001859,Error
+142,59,min,"(scalar,sparse)","(s,M)","M=max(X,Y)",0.004681,Error
+143,60,min,"(dense,dense)","(Col,Col)","M=max(X,Y)",0.001268,Error
+144,61,min,"(dense,sparse)","(Col,Col)","M=max(X,Y)",0.003583,Error
+145,62,min,"(sparse,dense)","(Col,Col)","M=max(X,Y)",0.004897,Error
+146,63,min,"(sparse,sparse)","(Col,Col)","M=max(X,Y)",0.003382,Error
+147,64,min,"(dense,dense)","(Col,Row)","M=max(X,Y)",0.001818,Error
+148,65,min,"(dense,sparse)","(Col,Row)","M=max(X,Y)",0.004097,Error
+149,66,min,"(sparse,dense)","(Col,Row)","M=max(X,Y)",0.004457,Error
+150,67,min,"(sparse,sparse)","(Col,Row)","M=max(X,Y)",0.005943,Error
+151,68,min,"(dense,scalar)","(Col,s)","M=max(X,Y)",0.0014529999999999999,Error
+152,69,min,"(sparse,scalar)","(Col,s)","M=max(X,Y)",0.003737,Error
+153,70,min,"(dense,dense)","(Row,Col)","M=max(X,Y)",0.0019149999999999998,Error
+154,71,min,"(sparse,dense)","(Row,Col)","M=max(X,Y)",0.005158,Error
+155,72,min,"(dense,sparse)","(Row,Col)","M=max(X,Y)",0.004235,Error
+156,73,min,"(sparse,sparse)","(Row,Col)","M=max(X,Y)",0.0038929999999999998,Error
+157,74,min,"(scalar,dense)","(s,Col)","M=max(X,Y)",0.001486,Error
+158,75,min,"(scalar,sparse)","(s,Col)","M=max(X,Y)",0.003321,Error
+159,76,min,"(dense,dense)","(Row,Row)","M=max(X,Y)",0.001527,Error
+160,77,min,"(dense,sparse)","(Row,Row)","M=max(X,Y)",0.004037,Error
+161,78,min,"(sparse,dense)","(Row,Row)","M=max(X,Y)",0.004275,Error
+162,79,min,"(sparse,sparse)","(Row,Row)","M=max(X,Y)",0.003742,Error
+163,80,min,"(dense,scalar)","(Row,s)","M=max(X,Y)",0.001523,Error
+164,81,min,"(sparse,scalar)","(Row,s)","M=max(X,Y)",0.00364,Error
+165,82,min,"(scalar,scalar)","(s,s)","M=max(X,Y)",0.000951,Error
+0,0,lu,dense,M,X=lu(A),0.007573,Error
+1,1,lu,dense,M,"[L,U]=lu(A)",0.007615,  9.734156429448578e-15
+2,2,lu,dense,M,"[L,U,P]=lu(A)",0.009332,  9.734156429448571e-15
+3,3,lu,dense,M,"[L,U,P]=lu(A,'vector')",0.010580,  9.734156429448571e-15
+4,4,lu,dense,M,"[L,U,P,Q]=lu(A)",Error,Error
+5,5,lu,dense,M,"[L,U,P,Q]=lu(A,'vector')",Error,Error
+6,6,lu,sparse,M,X=lu(A),0.016014,Error
+7,7,lu,sparse,M,"[L,U]=lu(A)",0.015279,  3.563584558531059e-15
+8,8,lu,sparse,M,"[L,U,P]=lu(A)",0.014737,  3.563584558531058e-15
+9,9,lu,sparse,M,"[L,U,P]=lu(A,'vector')",0.015178,  3.563584558531058e-15
+10,10,lu,sparse,M,"[L,U,P,Q]=lu(A)",0.013215,  2.637706593390150e-13
+11,11,lu,sparse,M,"[L,U,P,Q]=lu(A,'vector')",0.011911,  2.637706593390150e-13
+12,0,ldl,dense,M,L=ldl(A),0.009812,Error
+13,1,ldl,dense,M,"[L,D]=ldl(A)",0.009400,  5.245846357169340e+00
+14,2,ldl,dense,M,"[L,D,P]=ldl(A)",0.009612,  5.245846357169336e+00
+15,3,ldl,dense,M,"[L,D,P]=ldl(A,'vector')",0.009900,  5.245846357169336e+00
+16,4,ldl,sparse,M,L=ldl(A),Error,Error
+17,5,ldl,sparse,M,"[L,D]=ldl(A)",Error,Error
+18,6,ldl,sparse,M,"[L,D,P]=ldl(A)",0.008256,  5.245846357169337e+00
+19,7,ldl,sparse,M,"[L,D,P]=ldl(A,'vector')",0.008174,  5.245846357169337e+00
+20,0,qr,dense,M,X=qr(A),0.007935,  0
+21,1,qr,dense,M,"[Q,R]=qr(A)",0.011929,  5.198340991803619e-15
+22,2,qr,dense,M,"[Q,R,P]=qr(A)",0.012916,  4.305884074865727e-15
+23,3,qr,dense,M,"X=qr(A,0)",0.008356,  0
+24,4,qr,dense,M,"[Q,R]=qr(A,0)",0.013438,  5.198340991803619e-15
+25,5,qr,dense,M,"[Q,R,P]=qr(A,0)",0.010830,  4.305884074865727e-15
+26,6,qr,dense,M,"[Q,R,P]=qr(A,'matrix')",0.011828,  4.305884074865727e-15
+27,7,qr,dense,M,"[Q,R,P]=qr(A,'vector')",0.010528,  4.305884074865727e-15
+28,8,qr,sparse,M,X=qr(A),0.011057,  3.788606143779787e-15
+29,9,qr,sparse,M,"[Q,R]=qr(A)",0.014051,  5.507793064479715e-15
+30,10,qr,sparse,M,"[Q,R,P]=qr(A)",0.013902,  5.243070199420316e-15
+31,11,qr,sparse,M,"X=qr(A,0)",0.010147,  3.788606143779787e-15
+32,12,qr,sparse,M,"[Q,R]=qr(A,0)",0.013489,  5.507793064479715e-15
+33,13,qr,sparse,M,"[Q,R,P]=qr(A,0)",0.015029,  5.243070199420316e-15
+34,14,qr,sparse,M,"[Q,R,P]=qr(A,'matrix')",0.014296,  5.243070199420316e-15
+35,15,qr,sparse,M,"[Q,R,P]=qr(A,'vector')",0.016325,  5.243070199420316e-15
+36,16,qr,dense,MCol,X=qr(A),0.007673,  0
+37,17,qr,dense,MCol,"[Q,R]=qr(A)",0.009916,  3.381224246364987e-15
+38,18,qr,dense,MCol,"[Q,R,P]=qr(A)",0.010006,  2.803741394217896e-15
+39,19,qr,dense,MCol,"X=qr(A,0)",0.008511,Error
+40,20,qr,dense,MCol,"[Q,R]=qr(A,0)",0.008235,  3.385413740563894e-15
+41,21,qr,dense,MCol,"[Q,R,P]=qr(A,0)",0.008547,  2.804254959319598e-15
+42,22,qr,dense,MCol,"[Q,R,P]=qr(A,'matrix')",0.010045,  2.803741394217896e-15
+43,23,qr,dense,MCol,"[Q,R,P]=qr(A,'vector')",0.012271,  2.803741394217896e-15
+44,24,qr,sparse,MCol,X=qr(A),0.008486,  8.433358881046422e+00
+45,25,qr,sparse,MCol,"[Q,R]=qr(A)",0.012038,  4.508889226284746e-15
+46,26,qr,sparse,MCol,"[Q,R,P]=qr(A)",0.012177,  3.716256357796676e-15
+47,27,qr,sparse,MCol,"X=qr(A,0)",0.009554,Error
+48,28,qr,sparse,MCol,"[Q,R]=qr(A,0)",0.010794,  4.508889226284746e-15
+49,29,qr,sparse,MCol,"[Q,R,P]=qr(A,0)",0.012174,  3.716256357796676e-15
+50,30,qr,sparse,MCol,"[Q,R,P]=qr(A,'matrix')",0.012202,  3.716256357796676e-15
+51,31,qr,sparse,MCol,"[Q,R,P]=qr(A,'vector')",0.012290,  3.716256357796676e-15
+52,0,symrcm,dense,M,P=symrcm(S),0.004363,Error
+53,1,symrcm,sparse,M,P=symrcm(S),0.002772,Error
+54,0,dmperm,dense,M,P=dmperm(S),0.002852,Error
+55,1,dmperm,sparse,M,P=dmperm(S),0.002609,Error
+56,2,dmperm,dense,M,"[p,q,r,s,cc,rr]=dmperm(S)",0.003476,Error
+57,3,dmperm,sparse,M,P=dmperm(S),0.004666,Error
+0,0,norm,dense,M,N=norm(V),0.016353,Error
+1,1,norm,sparse,M,N=norm(V),Error,Error
+2,2,norm,dense,M,"N=norm(V,1)",0.004921,Error
+3,3,norm,sparse,M,"N=norm(V,1)",0.002737,Error
+4,4,norm,dense,M,"N=norm(V,Inf)",0.005440,Error
+5,5,norm,sparse,M,"N=norm(V,Inf)",0.003519,Error
+6,6,norm,dense,Col,N=norm(V),0.004962,Error
+7,7,norm,sparse,Col,N=norm(V),0.005260,Error
+8,8,norm,dense,Col,"N=norm(V,1)",0.004949,Error
+9,9,norm,sparse,Col,"N=norm(V,1)",0.006734,Error
+10,10,norm,dense,Col,"N=norm(V,Inf)",0.004139,Error
+11,11,norm,sparse,Col,"N=norm(V,Inf)",0.007182,Error
+12,12,norm,dense,Row,N=norm(V),0.003447,Error
+13,13,norm,sparse,Row,N=norm(V),0.005455,Error
+14,14,norm,dense,Row,"N=norm(V,1)",0.004799,Error
+15,15,norm,sparse,Row,"N=norm(V,1)",0.006450,Error
+16,16,norm,dense,Row,"N=norm(V,Inf)",0.004229,Error
+17,17,norm,sparse,Row,"N=norm(V,Inf)",0.007276,Error
+18,0,vecnorm,dense,M,N=vecnorm(V),0.006213,Error
+19,1,vecnorm,sparse,M,N=vecnorm(V),0.004922,Error
+20,2,vecnorm,dense,M,"N=vecnorm(V,1)",0.009727,Error
+21,3,vecnorm,sparse,M,"N=vecnorm(V,1)",0.007028,Error
+22,4,vecnorm,dense,M,"N=vecnorm(V,Inf)",0.007356,Error
+23,5,vecnorm,sparse,M,"N=vecnorm(V,Inf)",0.007977,Error
+24,6,vecnorm,dense,M,"N=vecnorm(V,1,1)",0.007923,Error
+25,7,vecnorm,sparse,M,"N=vecnorm(V,1,1)",0.006993,Error
+26,8,vecnorm,dense,M,"N=vecnorm(V,2,1)",0.006090,Error
+27,9,vecnorm,sparse,M,"N=vecnorm(V,2,1)",0.005576,Error
+28,10,vecnorm,dense,M,"N=vecnorm(V,Inf,1)",0.006810,Error
+29,11,vecnorm,sparse,M,"N=vecnorm(V,Inf,1)",0.008653,Error
+30,12,vecnorm,dense,M,"N=vecnorm(V,1,2)",0.007357,Error
+31,13,vecnorm,sparse,M,"N=vecnorm(V,1,2)",0.006352,Error
+32,14,vecnorm,dense,M,"N=vecnorm(V,2,2)",0.004084,Error
+33,15,vecnorm,sparse,M,"N=vecnorm(V,2,2)",0.004852,Error
+34,16,vecnorm,dense,M,"N=vecnorm(V,Inf,2)",0.007184,Error
+35,17,vecnorm,sparse,M,"N=vecnorm(V,Inf,2)",0.007203,Error
+36,18,vecnorm,dense,Col,N=vecnorm(V),0.002189,Error
+37,19,vecnorm,sparse,Col,N=vecnorm(V),0.004915,Error
+38,20,vecnorm,dense,Col,"N=vecnorm(V,1)",0.007000,Error
+39,21,vecnorm,sparse,Col,"N=vecnorm(V,1)",0.007041,Error
+40,22,vecnorm,dense,Col,"N=vecnorm(V,Inf)",0.007116,Error
+41,23,vecnorm,sparse,Col,"N=vecnorm(V,Inf)",0.006829,Error
+42,24,vecnorm,dense,Col,"N=vecnorm(V,1,1)",0.006753,Error
+43,25,vecnorm,sparse,Col,"N=vecnorm(V,1,1)",0.006652,Error
+44,26,vecnorm,dense,Col,"N=vecnorm(V,2,1)",0.005074,Error
+45,27,vecnorm,sparse,Col,"N=vecnorm(V,2,1)",0.004862,Error
+46,28,vecnorm,dense,Col,"N=vecnorm(V,Inf,1)",0.006734,Error
+47,29,vecnorm,sparse,Col,"N=vecnorm(V,Inf,1)",0.007049,Error
+48,30,vecnorm,dense,Col,"N=vecnorm(V,1,2)",0.006578,Error
+49,31,vecnorm,sparse,Col,"N=vecnorm(V,1,2)",0.006636,Error
+50,32,vecnorm,dense,Col,"N=vecnorm(V,2,2)",0.004693,Error
+51,33,vecnorm,sparse,Col,"N=vecnorm(V,2,2)",0.004870,Error
+52,34,vecnorm,dense,Col,"N=vecnorm(V,Inf,2)",0.007326,Error
+53,35,vecnorm,sparse,Col,"N=vecnorm(V,Inf,2)",0.006869,Error
+54,36,vecnorm,dense,Row,N=vecnorm(V),0.002405,Error
+55,37,vecnorm,sparse,Row,N=vecnorm(V),0.004693,Error
+56,38,vecnorm,dense,Row,"N=vecnorm(V,1)",0.007449,Error
+57,39,vecnorm,sparse,Row,"N=vecnorm(V,1)",0.007440,Error
+58,40,vecnorm,dense,Row,"N=vecnorm(V,Inf)",0.006670,Error
+59,41,vecnorm,sparse,Row,"N=vecnorm(V,Inf)",0.007060,Error
+60,42,vecnorm,dense,Row,"N=vecnorm(V,1,1)",0.006668,Error
+61,43,vecnorm,sparse,Row,"N=vecnorm(V,1,1)",0.006884,Error
+62,44,vecnorm,dense,Row,"N=vecnorm(V,2,1)",0.005003,Error
+63,45,vecnorm,sparse,Row,"N=vecnorm(V,2,1)",0.004830,Error
+64,46,vecnorm,dense,Row,"N=vecnorm(V,Inf,1)",0.006946,Error
+65,47,vecnorm,sparse,Row,"N=vecnorm(V,Inf,1)",0.007242,Error
+66,48,vecnorm,dense,Row,"N=vecnorm(V,1,2)",0.006776,Error
+67,49,vecnorm,sparse,Row,"N=vecnorm(V,1,2)",0.006934,Error
+68,50,vecnorm,dense,Row,"N=vecnorm(V,2,2)",0.004689,Error
+69,51,vecnorm,sparse,Row,"N=vecnorm(V,2,2)",0.004551,Error
+70,52,vecnorm,dense,Row,"N=vecnorm(V,Inf,2)",0.006749,Error
+71,53,vecnorm,sparse,Row,"N=vecnorm(V,Inf,2)",0.007404,Error
+0,0,svd,dense,M,E=svd(A),0.014696,Error
+1,1,svd,sparse,M,E=svd(A),Error,Error
+2,2,svd,dense,M,"[U,S,V]=svd(A)",0.021381,  8.221998554519825e-14
+3,3,svd,sparse,M,"[U,S,V]=svd(A)",Error,Error
+4,4,svd,dense,M,"[U,S,V]=svd(A,'econ')",0.021719,  8.221998554519825e-14
+5,5,svd,sparse,M,"[U,S,V]=svd(A,'econ')",Error,Error
+6,6,svd,dense,M,"[U,S,V]=svd(A,0)",0.022639,  8.221998554519825e-14
+7,7,svd,sparse,M,"[U,S,V]=svd(A,0)",Error,Error
+8,8,svd,dense,MCol,E=svd(A),0.013577,Error
+9,9,svd,sparse,MCol,E=svd(A),Error,Error
+10,10,svd,dense,MCol,"[U,S,V]=svd(A)",0.014235,  3.944662639933032e-14
+11,11,svd,sparse,MCol,"[U,S,V]=svd(A)",Error,Error
+12,12,svd,dense,MCol,"[U,S,V]=svd(A,'econ')",0.012657,  3.947038847501502e-14
+13,13,svd,sparse,MCol,"[U,S,V]=svd(A,'econ')",Error,Error
+14,14,svd,dense,MCol,"[U,S,V]=svd(A,0)",0.012622,  3.947038847501502e-14
+15,15,svd,sparse,MCol,"[U,S,V]=svd(A,0)",Error,Error
+16,16,svd,dense,MRow,E=svd(A),0.009751,Error
+17,17,svd,sparse,MRow,E=svd(A),Error,Error
+18,18,svd,dense,MRow,"[U,S,V]=svd(A)",0.015232,  4.142977014384780e-14
+19,19,svd,sparse,MRow,"[U,S,V]=svd(A)",Error,Error
+20,20,svd,dense,MRow,"[U,S,V]=svd(A,'econ')",0.013192,  4.143517502367905e-14
+21,21,svd,sparse,MRow,"[U,S,V]=svd(A,'econ')",Error,Error
+22,22,svd,dense,MRow,"[U,S,V]=svd(A,0)",0.014720,  4.142977014384780e-14
+23,23,svd,sparse,MRow,"[U,S,V]=svd(A,0)",Error,Error
+24,24,svd,dense,Col,E=svd(A),0.007348,Error
+25,25,svd,sparse,Col,E=svd(A),Error,Error
+26,26,svd,dense,Col,"[U,S,V]=svd(A)",0.009054,  1.496293273509629e-16
+27,27,svd,sparse,Col,"[U,S,V]=svd(A)",Error,Error
+28,28,svd,dense,Col,"[U,S,V]=svd(A,'econ')",0.009323,  1.496293273509629e-16
+29,29,svd,sparse,Col,"[U,S,V]=svd(A,'econ')",Error,Error
+30,30,svd,dense,Col,"[U,S,V]=svd(A,0)",0.007579,  1.496293273509629e-16
+31,31,svd,sparse,Col,"[U,S,V]=svd(A,0)",Error,Error
+32,32,svd,dense,Row,E=svd(A),0.008786,Error
+33,33,svd,sparse,Row,E=svd(A),Error,Error
+34,34,svd,dense,Row,"[U,S,V]=svd(A)",0.007878,  1.570092458683775e-16
+35,35,svd,sparse,Row,"[U,S,V]=svd(A)",Error,Error
+36,36,svd,dense,Row,"[U,S,V]=svd(A,'econ')",0.007412,  1.570092458683775e-16
+37,37,svd,sparse,Row,"[U,S,V]=svd(A,'econ')",Error,Error
+38,38,svd,dense,Row,"[U,S,V]=svd(A,0)",0.007741,  1.570092458683775e-16
+39,39,svd,sparse,Row,"[U,S,V]=svd(A,0)",Error,Error
+40,0,svds,dense,M,E=svds(A),0.164257,Error
+41,1,svds,sparse,M,E=svds(A),0.145917,Error
+42,2,svds,dense,M,"[U,S,V]=svds(A)",0.148936,  4.244386591168576e+00
+43,3,svds,sparse,M,"[U,S,V]=svds(A)",0.141197,  4.244386591168577e+00
+44,4,svds,dense,M,"[U,S,V]=svds(A,10)",0.154914,  4.138448688917301e+00
+45,5,svds,sparse,M,"[U,S,V]=svds(A,10)",0.148227,  4.138448688917301e+00
+46,6,svds,dense,MCol,E=svds(A),0.147941,Error
+47,7,svds,sparse,MCol,E=svds(A),0.141148,Error
+48,8,svds,dense,MCol,"[U,S,V]=svds(A)",0.153041,  3.605838451903838e+00
+49,9,svds,sparse,MCol,"[U,S,V]=svds(A)",0.145329,  3.605838451903842e+00
+50,10,svds,dense,MCol,"[U,S,V]=svds(A,10)",0.147949,  3.442564696160769e+00
+51,11,svds,sparse,MCol,"[U,S,V]=svds(A,10)",0.145130,  3.442564696160766e+00
+52,12,svds,dense,MRow,E=svds(A),0.151412,Error
+53,13,svds,sparse,MRow,E=svds(A),0.137784,Error
+54,14,svds,dense,MRow,"[U,S,V]=svds(A)",0.150177,  3.663329544763495e+00
+55,15,svds,sparse,MRow,"[U,S,V]=svds(A)",0.139515,  3.663329544763498e+00
+56,16,svds,dense,MRow,"[U,S,V]=svds(A,10)",0.147070,  3.466597379988992e+00
+57,17,svds,sparse,MRow,"[U,S,V]=svds(A,10)",0.142914,  3.466597379988992e+00
+58,18,svds,dense,Col,E=svds(A),0.090919,Error
+59,19,svds,sparse,Col,E=svds(A),0.092577,Error
+60,20,svds,dense,Col,"[U,S,V]=svds(A)",0.090126,  1.496293273509629e-16
+61,21,svds,sparse,Col,"[U,S,V]=svds(A)",0.093370,  2.064248047584582e-16
+62,22,svds,dense,Col,"[U,S,V]=svds(A,10)",0.090714,  1.496293273509629e-16
+63,23,svds,sparse,Col,"[U,S,V]=svds(A,10)",0.092812,  2.064248047584582e-16
+64,24,svds,dense,Row,E=svds(A),0.091258,Error
+65,25,svds,sparse,Row,E=svds(A),0.090996,Error
+66,26,svds,dense,Row,"[U,S,V]=svds(A)",0.089241,  1.570092458683775e-16
+67,27,svds,sparse,Row,"[U,S,V]=svds(A)",0.089851,  2.237726045655905e-16
+68,28,svds,dense,Row,"[U,S,V]=svds(A,10)",0.094718,  1.570092458683775e-16
+69,29,svds,sparse,Row,"[U,S,V]=svds(A,10)",0.093311,  2.237726045655905e-16
+0,0,symbfact,dense,M,count=symbfact(A),0.017535,Error
+1,1,symbfact,sparse,M,count=symbfact(A),0.014657,Error
+2,2,symbfact,dense,M,"count=symbfact(A,'sym')",0.014756,Error
+3,3,symbfact,sparse,M,"count=symbfact(A,'sym')",0.015926,Error
+4,4,symbfact,dense,M,"count=symbfact(A,'col')",0.016041,Error
+5,5,symbfact,sparse,M,"count=symbfact(A,'col')",0.01475,Error
+6,6,symbfact,dense,M,"count=symbfact(A,'row')",0.014455,Error
+7,7,symbfact,sparse,M,"count=symbfact(A,'row')",0.014938,Error
+8,8,symbfact,dense,M,"count=symbfact(A,'lo')",0.014726,Error
+9,9,symbfact,sparse,M,"count=symbfact(A,'lo')",0.014575999999999999,Error
+10,10,symbfact,dense,M,"[counts,parent,post]=symbfact(A)",0.014906,Error
+11,11,symbfact,sparse,M,"[counts,parent,post]=symbfact(A)",0.015276,Error
+12,12,symbfact,dense,M,"[counts,parent,post]=symbfact(A,'sym')",0.014972999999999998,Error
+13,13,symbfact,sparse,M,"[counts,parent,post]=symbfact(A,'sym')",0.014801,Error
+14,14,symbfact,dense,M,"[counts,parent,post]=symbfact(A,'col')",0.014863,Error
+15,15,symbfact,sparse,M,"[counts,parent,post]=symbfact(A,'col')",0.014197,Error
+16,16,symbfact,dense,M,"[counts,parent,post]=symbfact(A,'row')",0.016738,Error
+17,17,symbfact,sparse,M,"[counts,parent,post]=symbfact(A,'row')",0.014778,Error
+18,18,symbfact,dense,M,"[counts,parent,post]=symbfact(A,'lo')",0.014611,Error
+19,19,symbfact,sparse,M,"[counts,parent,post]=symbfact(A,'lo')",0.014449000000000002,Error
+20,0,etree,dense,M,parent=etree(A),0.015155000000000002,Error
+21,1,etree,sparse,M,parent=etree(A),0.014871,Error
+22,2,etree,dense,M,"parent=etree(A,'sym')",0.014639,Error
+23,3,etree,sparse,M,"parent=etree(A,'sym')",0.016244,Error
+24,4,etree,dense,M,"parent=etree(A,'col')",0.01646,Error
+25,5,etree,sparse,M,"parent=etree(A,'col')",0.014653999999999999,Error
+26,6,etree,dense,M,"parent=etree(A,'row')",0.014440999999999999,Error
+27,7,etree,sparse,M,"parent=etree(A,'row')",0.018157,Error
+28,8,etree,dense,M,"parent=etree(A,'lo')",0.015819,Error
+29,9,etree,sparse,M,"parent=etree(A,'lo')",0.014222,Error
+30,10,etree,dense,M,"[parent,post]=etree(A)",0.019101,Error
+31,11,etree,sparse,M,"[parent,post]=etree(A)",0.019013,Error
+32,12,etree,dense,M,"[parent,post]=etree(A,'sym')",0.016383,Error
+33,13,etree,sparse,M,"[parent,post]=etree(A,'sym')",0.017755,Error
+34,14,etree,dense,M,"[parent,post]=etree(A,'col')",0.02281,Error
+35,15,etree,sparse,M,"[parent,post]=etree(A,'col')",0.016097,Error
+36,16,etree,dense,M,"[parent,post]=etree(A,'row')",0.0157,Error
+37,17,etree,sparse,M,"[parent,post]=etree(A,'row')",0.01865,Error
+38,18,etree,dense,M,"[parent,post]=etree(A,'lo')",0.018491,Error
+39,19,etree,sparse,M,"[parent,post]=etree(A,'lo')",0.017138999999999998,Error
