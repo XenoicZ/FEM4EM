@@ -1,0 +1,94 @@
+,Unnamed: 0,函数,稀疏性,运算,接口,时间(s),精度,时间bt,精度bt,时间比,精度比,Issue,Type
+42,15,amultiply,scalar.*sparse,s.*M,,0.017878,  0,Error,Error,,,bt_err,INconsist
+47,20,amultiply,sparse.*scalar,M.*s,,0.017412,  0,Error,Error,,,bt_err,INconsist
+83,2,mldivide,dense\scalar,Col\s,,Error,Error,0.048284,0,,,mt_err,INconsist
+91,10,mldivide,dense\sparse,Col\Col,,0.007513,  0,Error,Error,,,bt_err,INconsist
+96,15,mldivide,scalar\sparse,s\M,,0.017010,  0,Error,Error,,,bt_err,INconsist
+97,16,mldivide,scalar\sparse,s\Col,,0.003879,  0,Error,Error,,,bt_err,INconsist
+98,17,mldivide,scalar\sparse,s\Row,,0.004117,  0,Error,Error,,,bt_err,INconsist
+99,18,mldivide,sparse\dense,M\Col,,0.257577,  0,TIME_OUT,TIME_OUT,,,bt_TIME_OUT,INconsist
+101,20,mldivide,sparse\scalar,M\s,,Error,Error,TIME_OUT,TIME_OUT,,,mt_err,INconsist
+102,21,mldivide,sparse\dense,Col\Col,,0.022478,  2.220446049250313e-16,Error,Error,,,bt_err,INconsist
+106,25,mldivide,sparse\dense,Row\Row,,TIME_OUT,TIME_OUT,Error,Error,,,bt_err,INconsist
+107,26,mldivide,sparse\scalar,Row\s,,0.013786,  0,Error,0,,,bt_err,INconsist
+108,0,mrdivide,dense/dense,Col/Col,,Error,Error,0.008993,0,,,mt_err,INconsist
+112,4,mrdivide,dense/dense,Row/Row,,0.007559,  0,Error,Error,,,bt_err,INconsist
+115,7,mrdivide,scalar/dense,s/Row,,Error,Error,0.001039,0,,,mt_err,INconsist
+118,10,mrdivide,dense/sparse,Col/Col,,TIME_OUT,TIME_OUT,Error,Error,,,bt_err,INconsist
+120,12,mrdivide,dense/sparse,Row/M,,0.212130,  0,Error,Error,,,bt_err,INconsist
+122,14,mrdivide,dense/sparse,Row/Row,,0.018055,  2.220446049250313e-16,Error,Error,,,bt_err,INconsist
+124,16,mrdivide,scalar/sparse,s/Col,,0.012661,  1.814743056344590e+00,Error,Error,,,bt_err,INconsist
+126,18,mrdivide,sparse/dense,M/Col,,Error,Error,TIME_OUT,TIME_OUT,,,mt_err,INconsist
+128,20,mrdivide,sparse/scalar,M/s,,0.033370,  0,TIME_OUT,TIME_OUT,,,bt_TIME_OUT,INconsist
+131,23,mrdivide,sparse/scalar,Col/s,,0.003620,  0,Error,Error,,,bt_err,INconsist
+133,25,mrdivide,sparse/dense,Row/Row,,0.009584,  0,Error,Error,,,bt_err,INconsist
+134,26,mrdivide,sparse/scalar,Row/s,,0.004009,  0,Error,0,,,bt_err,INconsist
+150,15,multiply,scalar*sparse,s*M,,0.016177,  0,Error,Error,,,bt_err,INconsist
+155,20,multiply,sparse*scalar,M*s,,0.019584,  0,Error,Error,,,bt_err,INconsist
+1,1,eig,sparse,M,"[V,D]=eig(A)",Error,Error,TIME_OUT,TIME_OUT,,,mt_err,INconsist
+2,2,eig,sparse,M,"[V,D,W]=eig(A)",Error,Error,TIME_OUT,TIME_OUT,,,mt_err,INconsist
+3,3,eig,"(sparse,sparse)","(M,M)","E=eig(A,B)",Error,Error,TIME_OUT,TIME_OUT,,,mt_err,INconsist
+4,4,eig,"(sparse,sparse)","(M,M)","[V,D]=eig(A,B)",Error,Error,TIME_OUT,TIME_OUT,,,mt_err,INconsist
+6,0,eigs,sparse,M,E=eigs(A),0.702291,Error,Error,Error,,,bt_err,INconsist
+7,1,eigs,sparse,M,"[V,D]=eigs(A)",0.698216,  1.602998951683063e-10,Error,Error,,,bt_err,INconsist
+8,2,eigs,"(sparse,sparse)","(M,M)","[V,D]=eigs(A,B)",1.195184,  8.275711177505678e-13,Error,Error,,,bt_err,INconsist
+0,0,ldl,sparse,M,L=ldl(A),Error,Error,TIME_OUT,TIME_OUT,,,mt_err,INconsist
+1,1,ldl,sparse,M,"[L,D]=ldl(A)",Error,Error,TIME_OUT,TIME_OUT,,,mt_err,INconsist
+10,4,lu,sparse,M,"[L,U,P,Q]=lu(A)",0.892097,  1.996554548975817e-13,TIME_OUT,TIME_OUT,,,bt_TIME_OUT,INconsist
+11,5,lu,sparse,M,"[L,U,P,Q]=lu(A,'vector')",0.810094,  1.996554548975817e-13,TIME_OUT,TIME_OUT,,,bt_TIME_OUT,INconsist
+44,32,max,"(sparse,dense)","(M,Col)","max(X,Y)",Error,Error,TIME_OUT,TIME_OUT,,,mt_err,INconsist
+45,33,max,"(sparse,sparse)","(M,Col)","max(X,Y)",Error,Error,TIME_OUT,TIME_OUT,,,mt_err,INconsist
+46,34,max,"(sparse,dense)","(M,Row)","max(X,Y)",Error,Error,0.129771,Error,,,mt_err,INconsist
+47,35,max,"(sparse,sparse)","(M,Row)","max(X,Y)",Error,Error,0.139554,Error,,,mt_err,INconsist
+49,37,max,"(dense,sparse)","(Col,M)","max(X,Y)",Error,Error,TIME_OUT,TIME_OUT,,,mt_err,INconsist
+50,38,max,"(sparse,sparse)","(Col,M)","max(X,Y)",Error,Error,TIME_OUT,TIME_OUT,,,mt_err,INconsist
+51,39,max,"(dense,sparse)","(Row,M)","max(X,Y)",Error,Error,0.217024,Error,,,mt_err,INconsist
+52,40,max,"(sparse,sparse)","(Row,M)","max(X,Y)",Error,Error,0.176960,Error,,,mt_err,INconsist
+11,9,ldivide,dense.\sparse,Col.\M,,TIME_OUT,TIME_OUT,Error,Error,,,bt_err,INconsist
+14,12,ldivide,dense.\sparse,Row.\M,,0.068699,  0,Error,Error,,,bt_err,INconsist
+17,15,ldivide,scalar.\sparse,s.\M,,0.017301,  0,Error,Error,,,bt_err,INconsist
+31,2,norm,sparse,M,"N=norm(V,Inf)",0.030297,Error,Error,Error,,,bt_err,INconsist
+4,4,qr,sparse,M,"[Q,R]=qr(A,0)",TIME_OUT,TIME_OUT,Error,Error,,,bt_err,INconsist
+5,5,qr,sparse,M,"[Q,R,P]=qr(A,0)",TIME_OUT,TIME_OUT,Error,Error,,,bt_err,INconsist
+26,18,rdivide,sparse./dense,M./Col,,TIME_OUT,TIME_OUT,Error,Error,,,bt_err,INconsist
+27,19,rdivide,sparse./dense,M./Row,,0.071673,  0,Error,Error,,,bt_err,INconsist
+28,20,rdivide,sparse./scalar,M./s,,0.016429,  0,Error,Error,,,bt_err,INconsist
+38,0,svd,sparse,M,E=svd(A),Error,Error,0.287687,Error,,,mt_err,INconsist
+39,1,svd,sparse,M,"[U,S,V]=svd(A)",Error,Error,0.073347,Error,,,mt_err,INconsist
+40,2,svd,sparse,M,"[U,S,V]=svd(A,'econ')",Error,Error,0.076787,Error,,,mt_err,INconsist
+41,3,svd,sparse,M,"[U,S,V]=svd(A,0)",Error,Error,0.074757,Error,,,mt_err,INconsist
+42,4,svd,dense,Col,E=svd(A),0.023808,Error,Error,Error,,,bt_err,INconsist
+43,5,svd,sparse,Col,E=svd(A),Error,Error,0.512856,Error,,,mt_err,INconsist
+45,7,svd,sparse,Col,"[U,S,V]=svd(A)",Error,Error,0.071800,  6.052412488670664e-12,,,mt_err,INconsist
+47,9,svd,sparse,Col,"[U,S,V]=svd(A,'econ')",Error,Error,0.073614,  6.052412488670664e-12,,,mt_err,INconsist
+49,11,svd,sparse,Col,"[U,S,V]=svd(A,0)",Error,Error,0.104996,  6.052412488670664e-12,,,mt_err,INconsist
+50,12,svd,dense,Row,E=svd(A),0.011304,Error,Error,Error,,,bt_err,INconsist
+51,13,svd,sparse,Row,E=svd(A),Error,Error,0.075373,Error,,,mt_err,INconsist
+53,15,svd,sparse,Row,"[U,S,V]=svd(A)",Error,Error,0.060385,  7.028970448695322e-12,,,mt_err,INconsist
+55,17,svd,sparse,Row,"[U,S,V]=svd(A,'econ')",Error,Error,0.072640,  7.028970448695322e-12,,,mt_err,INconsist
+57,19,svd,sparse,Row,"[U,S,V]=svd(A,0)",Error,Error,0.081164,  7.028970448695322e-12,,,mt_err,INconsist
+61,3,svds,dense,Col,E=svds(A),0.088855,Error,Error,Error,,,bt_err,INconsist
+63,5,svds,dense,Col,"[U,S,V]=svds(A)",0.091129,  2.480765796237204e-12,Error,Error,,,bt_err,INconsist
+65,7,svds,dense,Col,"[U,S,V]=svds(A,10)",0.098834,  2.480765796237204e-12,Error,Error,,,bt_err,INconsist
+67,9,svds,dense,Row,E=svds(A),0.092716,Error,Error,Error,,,bt_err,INconsist
+69,11,svds,dense,Row,"[U,S,V]=svds(A)",0.103902,  2.480765796237204e-12,Error,Error,,,bt_err,INconsist
+71,13,svds,dense,Row,"[U,S,V]=svds(A,10)",0.097790,  2.480765796237204e-12,Error,Error,,,bt_err,INconsist
+38,3,vecnorm,sparse,M,"N=vecnorm(V,1,1)",0.010063,Error,Error,Error,,,bt_err,INconsist
+39,4,vecnorm,sparse,M,"N=vecnorm(V,2,1)",0.008710,Error,Error,Error,,,bt_err,INconsist
+40,5,vecnorm,sparse,M,"N=vecnorm(V,Inf,1)",0.010740,Error,Error,Error,,,bt_err,INconsist
+41,6,vecnorm,sparse,M,"N=vecnorm(V,1,2)",0.027981,Error,Error,Error,,,bt_err,INconsist
+42,7,vecnorm,sparse,M,"N=vecnorm(V,2,2)",0.027806,Error,Error,Error,,,bt_err,INconsist
+43,8,vecnorm,sparse,M,"N=vecnorm(V,Inf,2)",0.029292,Error,Error,Error,,,bt_err,INconsist
+51,16,vecnorm,sparse,Col,"N=vecnorm(V,1,1)",0.005032,Error,Error,Error,,,bt_err,INconsist
+53,18,vecnorm,sparse,Col,"N=vecnorm(V,2,1)",0.003918,Error,Error,Error,,,bt_err,INconsist
+55,20,vecnorm,sparse,Col,"N=vecnorm(V,Inf,1)",0.007246,Error,Error,Error,,,bt_err,INconsist
+57,22,vecnorm,sparse,Col,"N=vecnorm(V,1,2)",0.012453,Error,Error,Error,,,bt_err,INconsist
+59,24,vecnorm,sparse,Col,"N=vecnorm(V,2,2)",0.011400,Error,Error,Error,,,bt_err,INconsist
+61,26,vecnorm,sparse,Col,"N=vecnorm(V,Inf,2)",0.013439,Error,Error,Error,,,bt_err,INconsist
+67,32,vecnorm,sparse,Row,"N=vecnorm(V,Inf)",0.008538,Error,Error,Error,,,bt_err,INconsist
+69,34,vecnorm,sparse,Row,"N=vecnorm(V,1,1)",0.009051,Error,Error,Error,,,bt_err,INconsist
+71,36,vecnorm,sparse,Row,"N=vecnorm(V,2,1)",0.008788,Error,Error,Error,,,bt_err,INconsist
+73,38,vecnorm,sparse,Row,"N=vecnorm(V,Inf,1)",0.010311,Error,Error,Error,,,bt_err,INconsist
+75,40,vecnorm,sparse,Row,"N=vecnorm(V,1,2)",0.006555,Error,Error,Error,,,bt_err,INconsist
+77,42,vecnorm,sparse,Row,"N=vecnorm(V,2,2)",0.004958,Error,Error,Error,,,bt_err,INconsist
+79,44,vecnorm,sparse,Row,"N=vecnorm(V,Inf,2)",0.007220,Error,Error,Error,,,bt_err,INconsist

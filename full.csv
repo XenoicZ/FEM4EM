@@ -1,0 +1,566 @@
+,Unnamed: 0,函数,稀疏性,运算,接口,时间(s),精度,时间bt,精度bt,时间比,精度比,Issue,Type
+0,0,add,dense+dense,Col+Col,,0.003462,  0,0.000332,0,10.427710843373493,,good,consist
+1,1,add,dense+dense,Col+Row,,Error,Error,Error,Error,,,err,consist
+2,2,add,dense+scalar,Col+s,,0.001858,  0,0.000488,0,3.8073770491803276,,good,consist
+3,3,add,dense+dense,Row+Col,,Error,Error,Error,Error,,,err,consist
+4,4,add,dense+dense,Row+Row,,0.001880,  0,0.000786,0,2.3918575063613234,,good,consist
+5,5,add,dense+scalar,Row+s,,0.001940,  0,0.000519,0,3.73795761078998,,good,consist
+6,6,add,scalar+dense,s+Col,,0.001946,  0,0.000478,0,4.071129707112971,,good,consist
+7,7,add,scalar+dense,s+Row,,0.001704,  0,0.000680,0,2.505882352941177,,good,consist
+8,8,add,scalar+scalar,s+s,,0.000777,  0,0.000027,0,28.77777777777777,,good,consist
+9,9,add,dense+sparse,Col+M,,Error,Error,Error,Error,,,err,consist
+10,10,add,dense+sparse,Col+Col,,0.005169,  0,0.002386,0,2.166387259010897,,good,consist
+11,11,add,dense+sparse,Col+Row,,Error,Error,Error,Error,,,err,consist
+12,12,add,dense+sparse,Row+M,,Error,Error,Error,Error,,,err,consist
+13,13,add,dense+sparse,Row+Col,,Error,Error,Error,Error,,,err,consist
+14,14,add,dense+sparse,Row+Row,,0.004311,  0,0.002637,0,1.6348122866894197,,good,consist
+15,15,add,scalar+sparse,s+M,,Error,Error,Error,Error,,,err,consist
+16,16,add,scalar+sparse,s+Col,,0.005799,  0,0.002232,0,2.5981182795698925,,good,consist
+17,17,add,scalar+sparse,s+Row,,0.003790,  0,0.002237,0,1.694233348234242,,good,consist
+18,18,add,sparse+dense,M+Col,,Error,Error,Error,Error,,,err,consist
+19,19,add,sparse+dense,M+Row,,Error,Error,Error,Error,,,err,consist
+20,20,add,sparse+scalar,M+s,,Error,Error,Error,Error,,,err,consist
+21,21,add,sparse+dense,Col+Col,,0.003958,  0,0.002624,0,1.5083841463414633,,good,consist
+22,22,add,sparse+dense,Col+Row,,Error,Error,Error,Error,,,err,consist
+23,23,add,sparse+scalar,Col+s,,0.003811,  0,0.002181,0,1.747363594681339,,good,consist
+24,24,add,sparse+dense,Row+Col,,Error,Error,Error,Error,,,err,consist
+25,25,add,sparse+dense,Row+Row,,0.004032,  0,0.002902,0,1.3893866299104065,,good,consist
+26,26,add,sparse+scalar,Row+s,,0.003737,  0,0.003008,0,1.2423537234042554,,good,consist
+27,0,amultiply,dense.*dense,Col.*Col,,0.001902,  0,0.000318,0,5.981132075471698,,good,consist
+28,1,amultiply,dense.*dense,Col.*Row,,Error,Error,Error,Error,,,err,consist
+29,2,amultiply,dense.*scalar,Col.*s,,0.002110,  0,0.000315,0,6.6984126984126995,,good,consist
+30,3,amultiply,dense.*dense,Row.*Col,,Error,Error,Error,Error,,,err,consist
+31,4,amultiply,dense.*dense,Row.*Row,,0.001919,  0,0.000414,0,4.635265700483092,,good,consist
+32,5,amultiply,dense.*scalar,Row.*s,,0.001830,  0,0.000544,0,3.3639705882352944,,good,consist
+33,6,amultiply,scalar.*dense,s.*Col,,0.001857,  0,0.001513,0,1.2273628552544613,,good,consist
+34,7,amultiply,scalar.*dense,s.*Row,,0.001875,  0,0.000668,0,2.80688622754491,,good,consist
+35,8,amultiply,scalar.*scalar,s.*s,,0.000694,  0,0.000039,0,17.794871794871796,,good,consist
+36,9,amultiply,dense.*sparse,Col.*M,,0.021240,  0,0.111458,0,0.1905650558954943,,good,consist
+37,10,amultiply,dense.*sparse,Col.*Col,,0.004978,  0,0.009414,0,0.5287869131081367,,good,consist
+38,11,amultiply,dense.*sparse,Col.*Row,,TIME_OUT,TIME_OUT,TIME_OUT,TIME_OUT,,,TIME_OUT,consist
+39,12,amultiply,dense.*sparse,Row.*M,,0.025753,  0,0.109534,0,0.23511421111253128,,good,consist
+40,13,amultiply,dense.*sparse,Row.*Col,,TIME_OUT,TIME_OUT,TIME_OUT,TIME_OUT,,,TIME_OUT,consist
+41,14,amultiply,dense.*sparse,Row.*Row,,0.006104,  0,0.013848,0,0.44078567302137495,,good,consist
+42,15,amultiply,scalar.*sparse,s.*M,,0.017878,  0,Error,Error,,,bt_err,INconsist
+43,16,amultiply,scalar.*sparse,s.*Col,,0.005599,  0,0.007104,0,0.7881475225225224,,good,consist
+44,17,amultiply,scalar.*sparse,s.*Row,,0.005313,  0,0.012283,0,0.43254905153464135,,good,consist
+45,18,amultiply,sparse.*dense,M.*Col,,0.022256,  0,0.140747,0,0.15812770432051837,,good,consist
+46,19,amultiply,sparse.*dense,M.*Row,,0.022237,  0,0.141748,0,0.15687699297344582,,good,consist
+47,20,amultiply,sparse.*scalar,M.*s,,0.017412,  0,Error,Error,,,bt_err,INconsist
+48,21,amultiply,sparse.*dense,Col.*Col,,0.004872,  0,0.010316,0,0.47227607599844895,,good,consist
+49,22,amultiply,sparse.*dense,Col.*Row,,TIME_OUT,TIME_OUT,TIME_OUT,TIME_OUT,,,TIME_OUT,consist
+50,23,amultiply,sparse.*scalar,Col.*s,,0.005826,  0,0.009927,0,0.5868842550619522,,good,consist
+51,24,amultiply,sparse.*dense,Row.*Col,,TIME_OUT,TIME_OUT,TIME_OUT,TIME_OUT,,,TIME_OUT,consist
+52,25,amultiply,sparse.*dense,Row.*Row,,0.005769,  0,0.008894,0,0.6486395322689454,,good,consist
+53,26,amultiply,sparse.*scalar,Row.*s,,0.004722,  0,0.013133,0,0.3595522729003274,,good,consist
+54,0,minus,dense-dense,Col-Col,,0.001880,  0,0.000658,0,2.857142857142857,,good,consist
+55,1,minus,dense-dense,Col-Row,,Error,Error,Error,Error,,,err,consist
+56,2,minus,dense-scalar,Col-s,,0.001902,  0,0.000927,0,2.051779935275081,,good,consist
+57,3,minus,dense-dense,Row-Col,,Error,Error,Error,Error,,,err,consist
+58,4,minus,dense-dense,Row-Row,,0.001903,  0,0.000874,0,2.177345537757437,,good,consist
+59,5,minus,dense-scalar,Row-s,,0.001867,  0,0.001110,0,1.6819819819819823,,good,consist
+60,6,minus,scalar-dense,s-Col,,0.002018,  0,0.000975,0,2.06974358974359,,good,consist
+61,7,minus,scalar-dense,s-Row,,0.001835,  0,0.001668,0,1.1001199040767387,,good,consist
+62,8,minus,scalar-scalar,s-s,,0.000798,  0,0.000043,0,18.55813953488372,,good,consist
+63,9,minus,dense-sparse,Col-M,,Error,Error,Error,Error,,,err,consist
+64,10,minus,dense-sparse,Col-Col,,0.003937,  0,0.003955,0,0.995448798988622,,good,consist
+65,11,minus,dense-sparse,Col-Row,,Error,Error,Error,Error,,,err,consist
+66,12,minus,dense-sparse,Row-M,,Error,Error,Error,Error,,,err,consist
+67,13,minus,dense-sparse,Row-Col,,Error,Error,Error,Error,,,err,consist
+68,14,minus,dense-sparse,Row-Row,,0.004277,  0,0.005563,0,0.7688297681107317,,good,consist
+69,15,minus,scalar-sparse,s-M,,Error,Error,Error,Error,,,err,consist
+70,16,minus,scalar-sparse,s-Col,,0.006276,  0,0.002815,0,2.2294849023090584,,good,consist
+71,17,minus,scalar-sparse,s-Row,,0.003688,  0,0.003314,0,1.1128545564272783,,good,consist
+72,18,minus,sparse-dense,M-Col,,Error,Error,Error,Error,,,err,consist
+73,19,minus,sparse-dense,M-Row,,Error,Error,Error,Error,,,err,consist
+74,20,minus,sparse-scalar,M-s,,Error,Error,Error,Error,,,err,consist
+75,21,minus,sparse-dense,Col-Col,,0.004211,  0,0.316765,0,0.013293766672454344,,good,consist
+76,22,minus,sparse-dense,Col-Row,,Error,Error,Error,Error,,,err,consist
+77,23,minus,sparse-scalar,Col-s,,0.003899,  0,0.193190,0,0.020182204047828563,,good,consist
+78,24,minus,sparse-dense,Row-Col,,Error,Error,Error,Error,,,err,consist
+79,25,minus,sparse-dense,Row-Row,,0.003837,  0,0.196846,0,0.01949239507025797,,good,consist
+80,26,minus,sparse-scalar,Row-s,,0.004073,  0,0.192904,0,0.02111412930784224,,good,consist
+81,0,mldivide,dense\dense,Col\Col,,0.042760,  0,0.078377,0,0.5455682151651632,,good,consist
+82,1,mldivide,dense\dense,Col\Row,,Error,Error,Error,Error,,,err,consist
+83,2,mldivide,dense\scalar,Col\s,,Error,Error,0.048284,0,,,mt_err,INconsist
+84,3,mldivide,dense\dense,Row\Col,,Error,Error,Error,Error,,,err,consist
+85,4,mldivide,dense\dense,Row\Row,,Error,Error,Error,Error,,,err,consist
+86,5,mldivide,dense\scalar,Row\s,,0.010657,  0,0.001081,0,9.85846438482886,,good,consist
+87,6,mldivide,scalar\dense,s\Col,,0.004646,  0,0.000689,0,6.743105950653121,,good,consist
+88,7,mldivide,scalar\dense,s\Row,,0.001500,  0,0.000866,0,1.7321016166281755,,good,consist
+89,8,mldivide,scalar\scalar,s\s,,0.000702,  0,0.000038,0,18.47368421052631,,good,consist
+90,9,mldivide,dense\sparse,Col\M,,Error,Error,Error,Error,,,err,consist
+91,10,mldivide,dense\sparse,Col\Col,,0.007513,  0,Error,Error,,,bt_err,INconsist
+92,11,mldivide,dense\sparse,Col\Row,,Error,Error,Error,Error,,,err,consist
+93,12,mldivide,dense\sparse,Row\M,,Error,Error,Error,Error,,,err,consist
+94,13,mldivide,dense\sparse,Row\Col,,Error,Error,Error,Error,,,err,consist
+95,14,mldivide,dense\sparse,Row\Row,,Error,Error,Error,Error,,,err,consist
+96,15,mldivide,scalar\sparse,s\M,,0.017010,  0,Error,Error,,,bt_err,INconsist
+97,16,mldivide,scalar\sparse,s\Col,,0.003879,  0,Error,Error,,,bt_err,INconsist
+98,17,mldivide,scalar\sparse,s\Row,,0.004117,  0,Error,Error,,,bt_err,INconsist
+99,18,mldivide,sparse\dense,M\Col,,0.257577,  0,TIME_OUT,TIME_OUT,,,bt_TIME_OUT,INconsist
+100,19,mldivide,sparse\dense,M\Row,,Error,Error,Error,Error,,,err,consist
+101,20,mldivide,sparse\scalar,M\s,,Error,Error,TIME_OUT,TIME_OUT,,,mt_err,INconsist
+102,21,mldivide,sparse\dense,Col\Col,,0.022478,  2.220446049250313e-16,Error,Error,,,bt_err,INconsist
+103,22,mldivide,sparse\dense,Col\Row,,Error,Error,Error,Error,,,err,consist
+104,23,mldivide,sparse\scalar,Col\s,,Error,Error,Error,Error,,,err,consist
+105,24,mldivide,sparse\dense,Row\Col,,Error,Error,Error,Error,,,err,consist
+106,25,mldivide,sparse\dense,Row\Row,,TIME_OUT,TIME_OUT,Error,Error,,,bt_err,INconsist
+107,26,mldivide,sparse\scalar,Row\s,,0.013786,  0,Error,0,,,bt_err,INconsist
+108,0,mrdivide,dense/dense,Col/Col,,Error,Error,0.008993,0,,,mt_err,INconsist
+109,1,mrdivide,dense/dense,Col/Row,,Error,Error,Error,Error,,,err,consist
+110,2,mrdivide,dense/scalar,Col/s,,0.002865,  0,0.001042,0,2.7495201535508635,,good,consist
+111,3,mrdivide,dense/dense,Row/Col,,Error,Error,Error,Error,,,err,consist
+112,4,mrdivide,dense/dense,Row/Row,,0.007559,  0,Error,Error,,,bt_err,INconsist
+113,5,mrdivide,dense/scalar,Row/s,,0.002302,  0,0.001401,0,1.6431120628122768,,good,consist
+114,6,mrdivide,scalar/dense,s/Col,,0.011377,  0,0.001295,0,8.785328185328186,,good,consist
+115,7,mrdivide,scalar/dense,s/Row,,Error,Error,0.001039,0,,,mt_err,INconsist
+116,8,mrdivide,scalar/scalar,s/s,,0.000679,  0,0.000042,0,16.166666666666668,,good,consist
+117,9,mrdivide,dense/sparse,Col/M,,Error,Error,Error,Error,,,err,consist
+118,10,mrdivide,dense/sparse,Col/Col,,TIME_OUT,TIME_OUT,Error,Error,,,bt_err,INconsist
+119,11,mrdivide,dense/sparse,Col/Row,,Error,Error,Error,Error,,,err,consist
+120,12,mrdivide,dense/sparse,Row/M,,0.212130,  0,Error,Error,,,bt_err,INconsist
+121,13,mrdivide,dense/sparse,Row/Col,,Error,Error,Error,Error,,,err,consist
+122,14,mrdivide,dense/sparse,Row/Row,,0.018055,  2.220446049250313e-16,Error,Error,,,bt_err,INconsist
+123,15,mrdivide,scalar/sparse,s/M,,Error,Error,Error,Error,,,err,consist
+124,16,mrdivide,scalar/sparse,s/Col,,0.012661,  1.814743056344590e+00,Error,Error,,,bt_err,INconsist
+125,17,mrdivide,scalar/sparse,s/Row,,Error,Error,Error,Error,,,err,consist
+126,18,mrdivide,sparse/dense,M/Col,,Error,Error,TIME_OUT,TIME_OUT,,,mt_err,INconsist
+127,19,mrdivide,sparse/dense,M/Row,,Error,Error,Error,Error,,,err,consist
+128,20,mrdivide,sparse/scalar,M/s,,0.033370,  0,TIME_OUT,TIME_OUT,,,bt_TIME_OUT,INconsist
+129,21,mrdivide,sparse/dense,Col/Col,,Error,Error,Error,Error,,,err,consist
+130,22,mrdivide,sparse/dense,Col/Row,,Error,Error,Error,Error,,,err,consist
+131,23,mrdivide,sparse/scalar,Col/s,,0.003620,  0,Error,Error,,,bt_err,INconsist
+132,24,mrdivide,sparse/dense,Row/Col,,Error,Error,Error,Error,,,err,consist
+133,25,mrdivide,sparse/dense,Row/Row,,0.009584,  0,Error,Error,,,bt_err,INconsist
+134,26,mrdivide,sparse/scalar,Row/s,,0.004009,  0,Error,0,,,bt_err,INconsist
+135,0,multiply,dense*dense,Col*Col,,Error,Error,Error,Error,,,err,consist
+136,1,multiply,dense*dense,Col*Row,,Error,Error,Error,Error,,,err,consist
+137,2,multiply,dense*scalar,Col*s,,0.001669,  0,0.001337,0,1.2483171278982799,,good,consist
+138,3,multiply,dense*dense,Row*Col,,0.005831,  0,0.008632,0,0.6755097312326229,,good,consist
+139,4,multiply,dense*dense,Row*Row,,Error,Error,Error,Error,,,err,consist
+140,5,multiply,dense*scalar,Row*s,,0.001505,  0,0.001248,0,1.2059294871794872,,good,consist
+141,6,multiply,scalar*dense,s*Col,,0.001564,  0,0.000625,0,2.5024,,good,consist
+142,7,multiply,scalar*dense,s*Row,,0.001566,  0,0.001235,0,1.2680161943319839,,good,consist
+143,8,multiply,scalar*scalar,s*s,,0.000671,  0,0.000043,0,15.604651162790699,,good,consist
+144,9,multiply,dense*sparse,Col*M,,Error,Error,Error,Error,,,err,consist
+145,10,multiply,dense*sparse,Col*Col,,Error,Error,Error,Error,,,err,consist
+146,11,multiply,dense*sparse,Col*Row,,Error,Error,Error,Error,,,err,consist
+147,12,multiply,dense*sparse,Row*M,,0.005597,  0,0.048261,0,0.11597356043181865,,good,consist
+148,13,multiply,dense*sparse,Row*Col,,0.003744,  1.673470251262188e-10,0.007101,  1.673470251262188e-10,0.5272496831432192,1.0,good,consist
+149,14,multiply,dense*sparse,Row*Row,,Error,Error,Error,Error,,,err,consist
+150,15,multiply,scalar*sparse,s*M,,0.016177,  0,Error,Error,,,bt_err,INconsist
+151,16,multiply,scalar*sparse,s*Col,,0.003320,  0,0.007376,0,0.4501084598698482,,good,consist
+152,17,multiply,scalar*sparse,s*Row,,0.004028,  0,0.007389,0,0.5451346596291786,,good,consist
+153,18,multiply,sparse*dense,M*Col,,0.013225,  0,0.069046,0,0.19153897401732176,,good,consist
+154,19,multiply,sparse*dense,M*Row,,Error,Error,Error,Error,,,err,consist
+155,20,multiply,sparse*scalar,M*s,,0.019584,  0,Error,Error,,,bt_err,INconsist
+156,21,multiply,sparse*dense,Col*Col,,Error,Error,Error,Error,,,err,consist
+157,22,multiply,sparse*dense,Col*Row,,Error,Error,Error,Error,,,err,consist
+158,23,multiply,sparse*scalar,Col*s,,0.005277,  0,0.008286,0,0.6368573497465605,,good,consist
+159,24,multiply,sparse*dense,Row*Col,,0.004209,  1.673470251262188e-10,0.005969,  1.673470251262188e-10,0.7051432400737143,1.0,good,consist
+160,25,multiply,sparse*dense,Row*Row,,Error,Error,Error,Error,,,err,consist
+161,26,multiply,sparse*scalar,Row*s,,0.006924,  0,0.007218,0,0.9592684954280963,,good,consist
+0,0,abs,sparse,M,,0.012263,Error,0.051056,Error,0.24018724537762456,,good,consist
+1,1,abs,dense,Col,,0.001387,Error,0.019118,Error,0.07254942985667957,,good,consist
+2,2,abs,sparse,Col,,0.00317,Error,0.00385,Error,0.8233766233766233,,good,consist
+3,3,abs,dense,Row,,0.001527,Error,0.018734,Error,0.08150955482011316,,good,consist
+4,4,abs,sparse,Row,,0.003276,Error,0.0068909999999999996,Error,0.4754026991728341,,good,consist
+5,0,amd,dense,M,P=amd(S),0.03595,Error,0.138674,Error,0.2592410978265573,,good,consist
+6,1,amd,sparse,M,P=amd(S),0.038403,Error,0.126389,Error,0.3038476449691033,,good,consist
+7,0,bicg,sparse\dense,M\v1,,0.120428,  2.695795053506586e+03,3.8123970000000003,  2.665599184853961e+03,0.031588525539181775,1.011327985401631,good,consist
+8,1,bicg,sparse\sparse,M\v1,,0.126165,  2.695795053506586e+03,3.7246269999999995,  2.665599184853961e+03,0.03387319052350746,1.011327985401631,good,consist
+9,0,bicgstab,sparse\dense,M\v1,,0.13808800000000002,  2.568312898543950e+02,2.666315,  2.451665362091524e+02,0.05178982978380275,1.0475788981057812,good,consist
+10,1,bicgstab,sparse\sparse,M\v1,,0.13989400000000002,  2.568312898543950e+02,2.6581069999999998,  2.451665362091524e+02,0.05262918309910024,1.0475788981057812,good,consist
+11,0,bicgstabl,sparse\dense,M\v1,,0.325721,  2.972151890046206e+01,3.8296699999999997,  2.171530810303156e+01,0.08505197575770236,1.3686897169242924,good,consist
+12,1,bicgstabl,sparse\sparse,M\v1,,0.318146,  2.972151890046206e+01,3.8136769999999998,  2.171530810303156e+01,0.0834223768819436,1.3686897169242924,good,consist
+0,0,cgs,sparse\dense,M\v1,,0.140231,  3.628130136990085e+02,2.056066,  4.159942917751264e+02,0.06820354988604452,0.8721586350399586,good,consist
+1,1,cgs,sparse\sparse,M\v1,,0.153790,  3.628130136990085e+02,2.051021,  4.159942917751264e+02,0.07498216741808104,0.8721586350399586,good,consist
+2,0,colamd,sparse,M,P=colamd(S),0.203428,Error,0.343062,Error,0.5929773626924579,,good,consist
+3,1,colamd,sparse,M,"[P,stats]=colamd(S,[10,10,0])",0.188919,Error,0.335855,Error,0.5625016748299118,,good,consist
+4,2,colamd,sparse,M,"[P,stats]=colamd(S,[10,10,1])",0.180940,Error,0.337152,Error,0.5366718868640851,,good,consist
+5,3,colamd,sparse,M,"[P,stats]=colamd(S,[-10,-10,0])",0.197387,Error,0.337631,Error,0.5846234498609427,,good,consist
+6,4,colamd,sparse,M,"[P,stats]=colamd(S,[-10,-10,1])",0.197180,Error,0.336770,Error,0.5855034593342638,,good,consist
+7,0,ctranspose,sparse,M,,0.018309,  0,0.051869,0,0.35298540554088176,,good,consist
+8,1,ctranspose,dense,Col,,0.000686,  0,0.000290,0,2.3655172413793104,,good,consist
+9,2,ctranspose,sparse,Col,,0.002526,  0,0.003622,0,0.6974047487575925,,good,consist
+10,3,ctranspose,dense,Row,,0.000896,  0,0.000414,0,2.164251207729469,,good,consist
+11,4,ctranspose,sparse,Row,,0.002128,  0,0.003344,0,0.6363636363636365,,good,consist
+12,0,diag,sparse,M,"diag(X,0)",0.004353,Error,0.023063,Error,0.18874387547153448,,good,consist
+13,1,diag,sparse,M,"diag(X,1)",0.005707,Error,0.023424,Error,0.24363900273224046,,good,consist
+14,2,diag,dense,Col,"diag(V,0)",Error,Error,Error,Error,,,err,consist
+15,3,diag,dense,Col,"diag(V,1)",Error,Error,Error,Error,,,err,consist
+16,4,diag,sparse,Col,"diag(V,0)",0.002549,Error,0.005164,Error,0.49360960495739736,,good,consist
+17,5,diag,sparse,Col,"diag(V,1)",0.002554,Error,0.005221,Error,0.48917831832982184,,good,consist
+18,6,diag,dense,Row,"diag(V,0)",Error,Error,Error,Error,,,err,consist
+19,7,diag,dense,Row,"diag(V,1)",Error,Error,Error,Error,,,err,consist
+20,8,diag,sparse,Row,"diag(V,0)",0.002253,Error,0.005582,Error,0.40361877463274815,,good,consist
+21,9,diag,sparse,Row,"diag(V,1)",0.002273,Error,0.005598,Error,0.40603787066809577,,good,consist
+22,0,dmperm,sparse,M,P=dmperm(S),0.010381,Error,0.023464,Error,0.44242243436754175,,good,consist
+23,1,dmperm,sparse,M,P=dmperm(S),0.035734,Error,0.055616,Error,0.6425129459148445,,good,consist
+0,0,eig,sparse,M,E=eig(A),TIME_OUT,TIME_OUT,TIME_OUT,TIME_OUT,,,TIME_OUT,consist
+1,1,eig,sparse,M,"[V,D]=eig(A)",Error,Error,TIME_OUT,TIME_OUT,,,mt_err,INconsist
+2,2,eig,sparse,M,"[V,D,W]=eig(A)",Error,Error,TIME_OUT,TIME_OUT,,,mt_err,INconsist
+3,3,eig,"(sparse,sparse)","(M,M)","E=eig(A,B)",Error,Error,TIME_OUT,TIME_OUT,,,mt_err,INconsist
+4,4,eig,"(sparse,sparse)","(M,M)","[V,D]=eig(A,B)",Error,Error,TIME_OUT,TIME_OUT,,,mt_err,INconsist
+5,5,eig,"(sparse,sparse)","(M,M)","[V,D,W]=eig(A,B)",Error,Error,Error,Error,,,err,consist
+6,0,eigs,sparse,M,E=eigs(A),0.702291,Error,Error,Error,,,bt_err,INconsist
+7,1,eigs,sparse,M,"[V,D]=eigs(A)",0.698216,  1.602998951683063e-10,Error,Error,,,bt_err,INconsist
+8,2,eigs,"(sparse,sparse)","(M,M)","[V,D]=eigs(A,B)",1.195184,  8.275711177505678e-13,Error,Error,,,bt_err,INconsist
+9,0,etree,sparse,M,parent=etree(A),0.021984,Error,0.024319,Error,0.9039845388379456,,good,consist
+10,1,etree,sparse,M,"parent=etree(A,'sym')",0.019767,Error,0.023534,Error,0.8399337129259794,,good,consist
+11,2,etree,sparse,M,"parent=etree(A,'col')",0.020970,Error,0.035041,Error,0.598441825290374,,good,consist
+12,3,etree,sparse,M,"parent=etree(A,'row')",0.034022,Error,0.060246,Error,0.5647179895760714,,good,consist
+13,4,etree,sparse,M,"parent=etree(A,'lo')",0.022793,Error,0.045872,Error,0.4968826299267527,,good,consist
+14,5,etree,sparse,M,"[parent,post]=etree(A)",0.023997,Error,0.025654,Error,0.9354096827005535,,good,consist
+15,6,etree,sparse,M,"[parent,post]=etree(A,'sym')",0.020397,Error,0.026018,Error,0.7839572603582134,,good,consist
+16,7,etree,sparse,M,"[parent,post]=etree(A,'col')",0.018604,Error,0.035692,Error,0.5212372520452762,,good,consist
+17,8,etree,sparse,M,"[parent,post]=etree(A,'row')",0.032282,Error,0.061720,Error,0.5230395333765392,,good,consist
+18,9,etree,sparse,M,"[parent,post]=etree(A,'lo')",0.027959,Error,0.047167,Error,0.5927661288612801,,good,consist
+19,0,gmres,sparse\dense,M\v1,,0.113369,  3.905629804703147e+03,1.742488,  6.988633206345680e+02,0.06506156713848245,5.588545985153197,good,consist
+20,1,gmres,sparse\sparse,M\v1,,Error,Error,Error,Error,,,err,consist
+21,0,ichol,sparse\dense,M\v1,,Error,Error,Error,Error,,,err,consist
+22,1,ichol,sparse\sparse,M\v1,,Error,Error,Error,Error,,,err,consist
+0,0,ldl,sparse,M,L=ldl(A),Error,Error,TIME_OUT,TIME_OUT,,,mt_err,INconsist
+1,1,ldl,sparse,M,"[L,D]=ldl(A)",Error,Error,TIME_OUT,TIME_OUT,,,mt_err,INconsist
+2,2,ldl,sparse,M,"[L,D,P]=ldl(A)",3.145090,  1.674551022577298e-13,2.353500,  2.363180171497313e-13,1.3363458678563842,0.7086006571882756,good,consist
+3,3,ldl,sparse,M,"[L,D,P]=ldl(A,'vector')",3.217551,  1.674551022577298e-13,2.354647,Error,1.3664685194850863,,good,consist
+4,0,lsqr,sparse\dense,M\v1,,0.331086,  2.075475112829180e+04,2.088300,  2.185282001651904e+04,0.1585433127424221,0.9497516161576773,good,consist
+5,1,lsqr,sparse\sparse,M\v1,,Error,Error,Error,Error,,,err,consist
+6,0,lu,sparse,M,X=lu(A),TIME_OUT,TIME_OUT,TIME_OUT,TIME_OUT,,,TIME_OUT,consist
+7,1,lu,sparse,M,"[L,U]=lu(A)",TIME_OUT,TIME_OUT,TIME_OUT,TIME_OUT,,,TIME_OUT,consist
+8,2,lu,sparse,M,"[L,U,P]=lu(A)",TIME_OUT,TIME_OUT,TIME_OUT,TIME_OUT,,,TIME_OUT,consist
+9,3,lu,sparse,M,"[L,U,P]=lu(A,'vector')",TIME_OUT,TIME_OUT,TIME_OUT,TIME_OUT,,,TIME_OUT,consist
+10,4,lu,sparse,M,"[L,U,P,Q]=lu(A)",0.892097,  1.996554548975817e-13,TIME_OUT,TIME_OUT,,,bt_TIME_OUT,INconsist
+11,5,lu,sparse,M,"[L,U,P,Q]=lu(A,'vector')",0.810094,  1.996554548975817e-13,TIME_OUT,TIME_OUT,,,bt_TIME_OUT,INconsist
+12,0,max,sparse,M,max(X),0.009803,Error,0.028770,Error,0.3407368786930831,,good,consist
+13,1,max,sparse,M,"[M,I]=max(X)",0.013694,Error,0.036858,Error,0.37153399533344184,,good,consist
+14,2,max,sparse,M,"max(X,[],1)",0.006811,Error,0.036953,Error,0.18431521121424513,,good,consist
+15,3,max,sparse,M,"max(X,[],2)",0.008595,Error,0.049045,Error,0.17524722193903558,,good,consist
+16,4,max,sparse,M,"[M,I]=max(X,[],1)",0.007460,Error,0.028509,Error,0.26167175277982396,,good,consist
+17,5,max,sparse,M,"[M,I]=max(X,[],2)",0.009233,Error,0.056616,Error,0.1630811078140455,,good,consist
+18,6,max,dense,Col,max(X),0.003427,Error,0.009568,Error,0.358173076923077,,good,consist
+19,7,max,sparse,Col,max(X),0.002669,Error,0.007395,Error,0.36091954022988504,,good,consist
+20,8,max,dense,Col,"[M,I]=max(X)",0.005088,Error,0.006773,Error,0.7512180717554998,,good,consist
+21,9,max,sparse,Col,"[M,I]=max(X)",0.002160,Error,0.007557,Error,0.28582770940849545,,good,consist
+22,10,max,dense,Col,"max(X,[],1)",0.003107,Error,0.006567,Error,0.4731231917161565,,good,consist
+23,11,max,sparse,Col,"max(X,[],1)",0.002910,Error,0.007595,Error,0.38314680710994076,,good,consist
+24,12,max,dense,Col,"max(X,[],2)",0.002361,Error,0.006829,Error,0.3457314394494069,,good,consist
+25,13,max,sparse,Col,"max(X,[],2)",0.004693,Error,0.009128,Error,0.5141323400525855,,good,consist
+26,14,max,dense,Col,"[M,I]=max(X,[],1)",0.002465,Error,0.006464,Error,0.38134282178217815,,good,consist
+27,15,max,sparse,Col,"[M,I]=max(X,[],1)",0.002204,Error,0.007430,Error,0.2966352624495289,,good,consist
+28,16,max,dense,Col,"[M,I]=max(X,[],2)",0.002519,Error,0.006917,Error,0.3641752204713026,,good,consist
+29,17,max,sparse,Col,"[M,I]=max(X,[],2)",0.005146,Error,0.009112,Error,0.5647497805092186,,good,consist
+30,18,max,dense,Row,max(X),0.001322,Error,0.006515,Error,0.20291634689178817,,good,consist
+31,19,max,sparse,Row,max(X),0.003290,Error,0.010742,Error,0.3062744367901694,,good,consist
+32,20,max,dense,Row,"[M,I]=max(X)",0.002031,Error,0.006492,Error,0.3128465804066543,,good,consist
+33,21,max,sparse,Row,"[M,I]=max(X)",0.002625,Error,0.010767,Error,0.2438005015324603,,good,consist
+34,22,max,dense,Row,"max(X,[],1)",0.002762,Error,0.006719,Error,0.41107307635064744,,good,consist
+35,23,max,sparse,Row,"max(X,[],1)",0.004174,Error,0.010980,Error,0.3801457194899818,,good,consist
+36,24,max,dense,Row,"max(X,[],2)",0.002935,Error,0.006613,Error,0.4438227733252684,,good,consist
+37,25,max,sparse,Row,"max(X,[],2)",0.003136,Error,0.011947,Error,0.2624926759856031,,good,consist
+38,26,max,dense,Row,"[M,I]=max(X,[],1)",0.002450,Error,0.006635,Error,0.3692539562923889,,good,consist
+39,27,max,sparse,Row,"[M,I]=max(X,[],1)",0.005486,Error,0.010767,Error,0.5095198291074579,,good,consist
+40,28,max,dense,Row,"[M,I]=max(X,[],2)",0.002461,Error,0.006528,Error,0.37699142156862747,,good,consist
+41,29,max,sparse,Row,"[M,I]=max(X,[],2)",0.002836,Error,0.012383,Error,0.22902366147137204,,good,consist
+42,30,max,"(sparse,dense)","(M,M)","max(X,Y)",0.024364,Error,18.196321,Error,0.0013389519782597815,,good,consist
+43,31,max,"(sparse,sparse)","(M,M)","max(X,Y)",0.020409,Error,18.021786,Error,0.0011324626760078054,,good,consist
+44,32,max,"(sparse,dense)","(M,Col)","max(X,Y)",Error,Error,TIME_OUT,TIME_OUT,,,mt_err,INconsist
+45,33,max,"(sparse,sparse)","(M,Col)","max(X,Y)",Error,Error,TIME_OUT,TIME_OUT,,,mt_err,INconsist
+46,34,max,"(sparse,dense)","(M,Row)","max(X,Y)",Error,Error,0.129771,Error,,,mt_err,INconsist
+47,35,max,"(sparse,sparse)","(M,Row)","max(X,Y)",Error,Error,0.139554,Error,,,mt_err,INconsist
+48,36,max,"(sparse,scalar)","(M,s)","max(X,Y)",Error,Error,Error,Error,,,err,consist
+49,37,max,"(dense,sparse)","(Col,M)","max(X,Y)",Error,Error,TIME_OUT,TIME_OUT,,,mt_err,INconsist
+50,38,max,"(sparse,sparse)","(Col,M)","max(X,Y)",Error,Error,TIME_OUT,TIME_OUT,,,mt_err,INconsist
+51,39,max,"(dense,sparse)","(Row,M)","max(X,Y)",Error,Error,0.217024,Error,,,mt_err,INconsist
+52,40,max,"(sparse,sparse)","(Row,M)","max(X,Y)",Error,Error,0.176960,Error,,,mt_err,INconsist
+53,41,max,"(scalar,sparse)","(s,M)","max(X,Y)",Error,Error,Error,Error,,,err,consist
+54,42,max,"(dense,dense)","(Col,Col)","max(X,Y)",0.003404,Error,0.030661,Error,0.11102051466031766,,good,consist
+55,43,max,"(dense,sparse)","(Col,Col)","max(X,Y)",0.004402,Error,0.019936,Error,0.22080658105939005,,good,consist
+56,44,max,"(sparse,dense)","(Col,Col)","max(X,Y)",0.004388,Error,0.015227,Error,0.2881723254744861,,good,consist
+57,45,max,"(sparse,sparse)","(Col,Col)","max(X,Y)",0.004613,Error,0.019207,Error,0.24017285364710783,,good,consist
+58,46,max,"(dense,dense)","(Col,Row)","max(X,Y)",Error,Error,Error,Error,,,err,consist
+59,47,max,"(dense,sparse)","(Col,Row)","max(X,Y)",Error,Error,Error,Error,,,err,consist
+60,48,max,"(sparse,dense)","(Col,Row)","max(X,Y)",Error,Error,Error,Error,,,err,consist
+61,49,max,"(sparse,sparse)","(Col,Row)","max(X,Y)",Error,Error,Error,Error,,,err,consist
+62,50,max,"(dense,scalar)","(Col,s)","max(X,Y)",0.001648,Error,0.007348,Error,0.22427871529667934,,good,consist
+63,51,max,"(sparse,scalar)","(Col,s)","max(X,Y)",0.003907,Error,0.013661,Error,0.2859966327501647,,good,consist
+64,52,max,"(dense,dense)","(Row,Col)","max(X,Y)",Error,Error,Error,Error,,,err,consist
+65,53,max,"(sparse,dense)","(Row,Col)","max(X,Y)",Error,Error,Error,Error,,,err,consist
+66,54,max,"(dense,sparse)","(Row,Col)","max(X,Y)",Error,Error,Error,Error,,,err,consist
+67,55,max,"(sparse,sparse)","(Row,Col)","max(X,Y)",Error,Error,Error,Error,,,err,consist
+68,56,max,"(scalar,dense)","(s,Col)","max(X,Y)",0.001715,Error,0.007817,Error,0.2193936292695407,,good,consist
+69,57,max,"(scalar,sparse)","(s,Col)","max(X,Y)",0.004534,Error,0.012993,Error,0.3489571307627184,,good,consist
+70,58,max,"(dense,dense)","(Row,Row)","max(X,Y)",0.001704,Error,0.007557,Error,0.2254863040889242,,good,consist
+71,59,max,"(dense,sparse)","(Row,Row)","max(X,Y)",0.006318,Error,0.033981,Error,0.18592743003443102,,good,consist
+72,60,max,"(sparse,dense)","(Row,Row)","max(X,Y)",0.004493,Error,0.018888,Error,0.23787590004235493,,good,consist
+73,61,max,"(sparse,sparse)","(Row,Row)","max(X,Y)",0.005100,Error,0.020155,Error,0.2530389481518234,,good,consist
+74,62,max,"(dense,scalar)","(Row,s)","max(X,Y)",0.001751,Error,0.008977,Error,0.19505402695778104,,good,consist
+75,63,max,"(sparse,scalar)","(Row,s)","max(X,Y)",0.004811,Error,0.017334,Error,0.27754701742240684,,good,consist
+76,64,max,"(scalar,scalar)","(s,s)","max(X,Y)",0.000762,Error,0.006644,Error,0.11468994581577363,,good,consist
+77,0,min,sparse,M,min(X),0.009736,Error,0.051305,Error,0.18976707923204367,,good,consist
+78,1,min,sparse,M,"[M,I]=min(X)",0.006153,Error,0.058888,Error,0.10448648281483494,,good,consist
+79,2,min,sparse,M,"min(X,[],1)",0.009820,Error,0.036186,Error,0.27137567014867625,,good,consist
+80,3,min,sparse,M,"min(X,[],2)",0.009571,Error,0.062211,Error,0.15384739033289932,,good,consist
+81,4,min,sparse,M,"[M,I]=min(X,[],1)",0.006410,Error,0.057688,Error,0.11111496325058937,,good,consist
+82,5,min,sparse,M,"[M,I]=min(X,[],2)",0.011321,Error,0.086206,Error,0.13132496577964411,,good,consist
+83,6,min,dense,Col,min(X),0.002818,Error,0.007561,Error,0.3727020235418595,,good,consist
+84,7,min,sparse,Col,min(X),0.002607,Error,0.010747,Error,0.24257932446264074,,good,consist
+85,8,min,dense,Col,"[M,I]=min(X)",0.008314,Error,0.007001,Error,1.1875446364805027,,good,consist
+86,9,min,sparse,Col,"[M,I]=min(X)",0.001916,Error,0.009193,Error,0.20841944958120304,,good,consist
+87,10,min,dense,Col,"min(X,[],1)",0.002894,Error,0.006997,Error,0.41360583107045884,,good,consist
+88,11,min,sparse,Col,"min(X,[],1)",0.002791,Error,0.008729,Error,0.31973880169549773,,good,consist
+89,12,min,dense,Col,"min(X,[],2)",0.002737,Error,0.008317,Error,0.3290850066129615,,good,consist
+90,13,min,sparse,Col,"min(X,[],2)",0.004237,Error,0.014555,Error,0.2911027138440398,,good,consist
+91,14,min,dense,Col,"[M,I]=min(X,[],1)",0.002615,Error,0.007083,Error,0.3691938444162078,,good,consist
+92,15,min,sparse,Col,"[M,I]=min(X,[],1)",0.002251,Error,0.009262,Error,0.2430360613258475,,good,consist
+93,16,min,dense,Col,"[M,I]=min(X,[],2)",0.002796,Error,0.007887,Error,0.35450741726892354,,good,consist
+94,17,min,sparse,Col,"[M,I]=min(X,[],2)",0.004399,Error,0.015222,Error,0.28898962028642755,,good,consist
+95,18,min,dense,Row,min(X),0.001295,Error,0.007213,Error,0.1795369471787051,,good,consist
+96,19,min,sparse,Row,min(X),0.003523,Error,0.011458,Error,0.30747076278582647,,good,consist
+97,20,min,dense,Row,"[M,I]=min(X)",0.002243,Error,0.007179,Error,0.31243905836467467,,good,consist
+98,21,min,sparse,Row,"[M,I]=min(X)",0.002437,Error,0.015583,Error,0.15638837194378488,,good,consist
+99,22,min,dense,Row,"min(X,[],1)",0.002483,Error,0.007875,Error,0.3153015873015873,,good,consist
+100,23,min,sparse,Row,"min(X,[],1)",0.004144,Error,0.011439,Error,0.3622694291459044,,good,consist
+101,24,min,dense,Row,"min(X,[],2)",0.003098,Error,0.006738,Error,0.45978035025230046,,good,consist
+102,25,min,sparse,Row,"min(X,[],2)",0.003634,Error,0.015644,Error,0.23229353106622352,,good,consist
+103,26,min,dense,Row,"[M,I]=min(X,[],1)",0.002462,Error,0.007809,Error,0.31527724420540404,,good,consist
+104,27,min,sparse,Row,"[M,I]=min(X,[],1)",0.004472,Error,0.012258,Error,0.3648229727524882,,good,consist
+105,28,min,dense,Row,"[M,I]=min(X,[],2)",0.003108,Error,0.007361,Error,0.4222252411357152,,good,consist
+106,29,min,sparse,Row,"[M,I]=min(X,[],2)",0.002823,Error,0.022432,Error,0.12584700427960058,,good,consist
+107,30,min,"(sparse,dense)","(M,M)","min(X,Y)",0.020909,Error,13.036041,Error,0.0016039378826746555,,good,consist
+108,31,min,"(sparse,sparse)","(M,M)","min(X,Y)",0.021674,Error,14.227811,Error,0.0015233545061851049,,good,consist
+109,32,min,"(sparse,dense)","(M,Col)","min(X,Y)",7.595115,Error,0.250728,Error,30.292248970996457,,good,consist
+110,33,min,"(sparse,sparse)","(M,Col)","min(X,Y)",12.189393,Error,0.247057,Error,49.33838344997307,,good,consist
+111,34,min,"(sparse,dense)","(M,Row)","min(X,Y)",0.073341,Error,0.139208,Error,0.526844721567726,,good,consist
+112,35,min,"(sparse,sparse)","(M,Row)","min(X,Y)",0.069872,Error,0.111742,Error,0.6252975604517549,,good,consist
+113,36,min,"(sparse,scalar)","(M,s)","min(X,Y)",0.018967,Error,0.082675,Error,0.22941638947686724,,good,consist
+114,37,min,"(dense,sparse)","(Col,M)","min(X,Y)",9.016141,Error,0.231662,Error,38.9193782320795,,good,consist
+115,38,min,"(sparse,sparse)","(Col,M)","min(X,Y)",10.528793,Error,0.204373,Error,51.5175341165418,,good,consist
+116,39,min,"(dense,sparse)","(Row,M)","min(X,Y)",0.067576,Error,0.173817,Error,0.38877670193364283,,good,consist
+117,40,min,"(sparse,sparse)","(Row,M)","min(X,Y)",0.076452,Error,0.130717,Error,0.584866543754829,,good,consist
+118,41,min,"(scalar,sparse)","(s,M)","min(X,Y)",0.018710,Error,0.098793,Error,0.18938588766410577,,good,consist
+119,42,min,"(dense,dense)","(Col,Col)","min(X,Y)",0.004227,Error,0.007980,Error,0.5296992481203009,,good,consist
+120,43,min,"(dense,sparse)","(Col,Col)","min(X,Y)",0.005812,Error,0.016841,Error,0.3451101478534529,,good,consist
+121,44,min,"(sparse,dense)","(Col,Col)","min(X,Y)",0.004360,Error,0.017024,Error,0.25610902255639095,,good,consist
+122,45,min,"(sparse,sparse)","(Col,Col)","min(X,Y)",0.004241,Error,0.020436,Error,0.20752593462517124,,good,consist
+123,46,min,"(dense,dense)","(Col,Row)","min(X,Y)",Error,Error,Error,Error,,,err,consist
+124,47,min,"(dense,sparse)","(Col,Row)","min(X,Y)",Error,Error,Error,Error,,,err,consist
+125,48,min,"(sparse,dense)","(Col,Row)","min(X,Y)",Error,Error,Error,Error,,,err,consist
+126,49,min,"(sparse,sparse)","(Col,Row)","min(X,Y)",Error,Error,Error,Error,,,err,consist
+127,50,min,"(dense,scalar)","(Col,s)","min(X,Y)",0.001594,Error,0.007482,Error,0.21304464047046245,,good,consist
+128,51,min,"(sparse,scalar)","(Col,s)","min(X,Y)",0.004207,Error,0.017603,Error,0.23899335340566946,,good,consist
+129,52,min,"(dense,dense)","(Row,Col)","min(X,Y)",Error,Error,Error,Error,,,err,consist
+130,53,min,"(sparse,dense)","(Row,Col)","min(X,Y)",Error,Error,Error,Error,,,err,consist
+131,54,min,"(dense,sparse)","(Row,Col)","min(X,Y)",Error,Error,Error,Error,,,err,consist
+132,55,min,"(sparse,sparse)","(Row,Col)","min(X,Y)",Error,Error,Error,Error,,,err,consist
+133,56,min,"(scalar,dense)","(s,Col)","min(X,Y)",0.001708,Error,0.007675,Error,0.22254071661237781,,good,consist
+134,57,min,"(scalar,sparse)","(s,Col)","min(X,Y)",0.004401,Error,0.011548,Error,0.38110495323865595,,good,consist
+135,58,min,"(dense,dense)","(Row,Row)","min(X,Y)",0.001681,Error,0.006881,Error,0.2442958872256939,,good,consist
+136,59,min,"(dense,sparse)","(Row,Row)","min(X,Y)",0.005339,Error,0.035326,Error,0.15113514125573232,,good,consist
+137,60,min,"(sparse,dense)","(Row,Row)","min(X,Y)",0.005197,Error,0.026822,Error,0.19375885467153828,,good,consist
+138,61,min,"(sparse,sparse)","(Row,Row)","min(X,Y)",0.004788,Error,0.021141,Error,0.22647935291613455,,good,consist
+139,62,min,"(dense,scalar)","(Row,s)","min(X,Y)",0.001719,Error,0.008591,Error,0.2000931207077174,,good,consist
+140,63,min,"(sparse,scalar)","(Row,s)","min(X,Y)",0.004884,Error,0.014051,Error,0.3475909187958153,,good,consist
+141,64,min,"(scalar,scalar)","(s,s)","min(X,Y)",0.000852,Error,0.006765,Error,0.12594235033259424,,good,consist
+0,0,minres,sparse\dense,M\v1,,0.141847,  6.883675903676244e+02,9.797864,  2.451276927066316e-02,0.014477339142490648,28082.000151303244,good,consist
+1,1,minres,sparse\sparse,M\v1,,Error,Error,Error,Error,,,err,consist
+2,0,ldivide,dense.\dense,Col.\Col,,0.003191,  0,0.041434,0,0.07701404643529468,,good,consist
+3,1,ldivide,dense.\dense,Col.\Row,,Error,Error,Error,Error,,,err,consist
+4,2,ldivide,dense.\scalar,Col.\s,,0.001541,  0,0.029920,0,0.05150401069518717,,good,consist
+5,3,ldivide,dense.\dense,Row.\Col,,Error,Error,Error,Error,,,err,consist
+6,4,ldivide,dense.\dense,Row.\Row,,0.001560,  0,0.000271,0,5.756457564575646,,good,consist
+7,5,ldivide,dense.\scalar,Row.\s,,0.001749,  0,0.000663,0,2.6380090497737556,,good,consist
+8,6,ldivide,scalar.\dense,s.\Col,,0.001793,  0,0.000885,0,2.0259887005649717,,good,consist
+9,7,ldivide,scalar.\dense,s.\Row,,0.001745,  0,0.000650,0,2.684615384615385,,good,consist
+10,8,ldivide,scalar.\scalar,s.\s,,0.001069,  0,0.000079,0,13.531645569620249,,good,consist
+11,9,ldivide,dense.\sparse,Col.\M,,TIME_OUT,TIME_OUT,Error,Error,,,bt_err,INconsist
+12,10,ldivide,dense.\sparse,Col.\Col,,0.004598,  0,0.005447,0,0.8441343859004957,,good,consist
+13,11,ldivide,dense.\sparse,Col.\Row,,Error,Error,Error,Error,,,err,consist
+14,12,ldivide,dense.\sparse,Row.\M,,0.068699,  0,Error,Error,,,bt_err,INconsist
+15,13,ldivide,dense.\sparse,Row.\Col,,Error,Error,Error,Error,,,err,consist
+16,14,ldivide,dense.\sparse,Row.\Row,,0.005964,  0,0.008413,0,0.70890288838702,,good,consist
+17,15,ldivide,scalar.\sparse,s.\M,,0.017301,  0,Error,Error,,,bt_err,INconsist
+18,16,ldivide,scalar.\sparse,s.\Col,,0.004213,  0,0.004907,0,0.858569390666395,,good,consist
+19,17,ldivide,scalar.\sparse,s.\Row,,0.004916,  0,0.007857,0,0.6256841033473336,,good,consist
+20,18,ldivide,sparse.\dense,M.\Col,,Error,Error,Error,Error,,,err,consist
+21,19,ldivide,sparse.\dense,M.\Row,,Error,Error,Error,Error,,,err,consist
+22,20,ldivide,sparse.\scalar,M.\s,,Error,Error,Error,Error,,,err,consist
+23,21,ldivide,sparse.\dense,Col.\Col,,0.005132,  0,0.011865,0,0.43253265908133165,,good,consist
+24,22,ldivide,sparse.\dense,Col.\Row,,Error,Error,Error,Error,,,err,consist
+25,23,ldivide,sparse.\scalar,Col.\s,,0.004257,  0,0.005664,0,0.7515889830508475,,good,consist
+26,24,ldivide,sparse.\dense,Row.\Col,,Error,Error,Error,Error,,,err,consist
+27,25,ldivide,sparse.\dense,Row.\Row,,0.004728,  0,0.015768,0,0.29984779299847797,,good,consist
+28,26,ldivide,sparse.\scalar,Row.\s,,0.004720,  0,0.007889,0,0.598301432374192,,good,consist
+29,0,norm,sparse,M,N=norm(V),Error,Error,Error,Error,,,err,consist
+30,1,norm,sparse,M,"N=norm(V,1)",0.004432,Error,0.137077,Error,0.03233219285511063,,good,consist
+31,2,norm,sparse,M,"N=norm(V,Inf)",0.030297,Error,Error,Error,,,bt_err,INconsist
+32,3,norm,dense,Col,N=norm(V),0.005279,Error,0.003285,Error,1.6070015220700151,,good,consist
+33,4,norm,sparse,Col,N=norm(V),0.003980,Error,0.012966,Error,0.30695665586919635,,good,consist
+34,5,norm,dense,Col,"N=norm(V,1)",0.003724,Error,0.004544,Error,0.819542253521127,,good,consist
+35,6,norm,sparse,Col,"N=norm(V,1)",0.006089,Error,0.017164,Error,0.3547541365649033,,good,consist
+36,7,norm,dense,Col,"N=norm(V,Inf)",0.003788,Error,0.003411,Error,1.110524772793902,,good,consist
+37,8,norm,sparse,Col,"N=norm(V,Inf)",0.006030,Error,0.005695,Error,1.0588235294117645,,good,consist
+38,9,norm,dense,Row,N=norm(V),0.002338,Error,0.008706,Error,0.2685504249942568,,good,consist
+39,10,norm,sparse,Row,N=norm(V),0.003885,Error,0.008008,Error,0.48513986013986016,,good,consist
+40,11,norm,dense,Row,"N=norm(V,1)",0.004735,Error,0.003229,Error,1.4663982657169403,,good,consist
+41,12,norm,sparse,Row,"N=norm(V,1)",0.006215,Error,0.027564,Error,0.22547525758235382,,good,consist
+42,13,norm,dense,Row,"N=norm(V,Inf)",0.004102,Error,0.003589,Error,1.142936751184174,,good,consist
+43,14,norm,sparse,Row,"N=norm(V,Inf)",0.006414,Error,0.008460,Error,0.7581560283687945,,good,consist
+44,0,pcg,sparse\dense,M\v1,,0.108542,  2.695795053506586e+03,3.386850,  2.844100488366601e+03,0.032048068264021144,0.9478550650841495,good,consist
+45,1,pcg,sparse\sparse,M\v1,,Error,Error,Error,Error,,,err,consist
+46,0,qmr,sparse\dense,M\v1,,0.175029,  6.883675903676263e+02,23.046979,  3.983726934235096e+00,0.007594444373815761,172.794873175663,good,consist
+47,1,qmr,sparse\sparse,M\v1,,Error,Error,Error,Error,,,err,consist
+0,0,qr,sparse,M,X=qr(A),TIME_OUT,TIME_OUT,TIME_OUT,TIME_OUT,,,TIME_OUT,consist
+1,1,qr,sparse,M,"[Q,R]=qr(A)",TIME_OUT,TIME_OUT,TIME_OUT,TIME_OUT,,,TIME_OUT,consist
+2,2,qr,sparse,M,"[Q,R,P]=qr(A)",TIME_OUT,TIME_OUT,TIME_OUT,TIME_OUT,,,TIME_OUT,consist
+3,3,qr,sparse,M,"X=qr(A,0)",TIME_OUT,TIME_OUT,TIME_OUT,TIME_OUT,,,TIME_OUT,consist
+4,4,qr,sparse,M,"[Q,R]=qr(A,0)",TIME_OUT,TIME_OUT,Error,Error,,,bt_err,INconsist
+5,5,qr,sparse,M,"[Q,R,P]=qr(A,0)",TIME_OUT,TIME_OUT,Error,Error,,,bt_err,INconsist
+6,6,qr,sparse,M,"[Q,R,P]=qr(A,'matrix')",TIME_OUT,TIME_OUT,TIME_OUT,TIME_OUT,,,TIME_OUT,consist
+7,7,qr,sparse,M,"[Q,R,P]=qr(A,'vector')",TIME_OUT,TIME_OUT,TIME_OUT,TIME_OUT,,,TIME_OUT,consist
+8,0,rdivide,dense./dense,Col./Col,,0.001997,  0,0.014128,0,0.14135050962627407,,good,consist
+9,1,rdivide,dense./dense,Col./Row,,Error,Error,Error,Error,,,err,consist
+10,2,rdivide,dense./scalar,Col./s,,0.001476,  0,0.012398,0,0.11905145991288915,,good,consist
+11,3,rdivide,dense./dense,Row./Col,,Error,Error,Error,Error,,,err,consist
+12,4,rdivide,dense./dense,Row./Row,,0.001538,  0,0.001058,0,1.453686200378072,,good,consist
+13,5,rdivide,dense./scalar,Row./s,,0.001762,  0,0.001216,0,1.449013157894737,,good,consist
+14,6,rdivide,scalar./dense,s./Col,,0.001525,  0,0.000697,0,2.187948350071736,,good,consist
+15,7,rdivide,scalar./dense,s./Row,,0.001494,  0,0.002226,0,0.6711590296495956,,good,consist
+16,8,rdivide,scalar./scalar,s./s,,0.001099,  0,0.000089,0,12.348314606741573,,good,consist
+17,9,rdivide,dense./sparse,Col./M,,Error,Error,Error,Error,,,err,consist
+18,10,rdivide,dense./sparse,Col./Col,,0.004053,  0,0.010279,0,0.39429905632843665,,good,consist
+19,11,rdivide,dense./sparse,Col./Row,,Error,Error,Error,Error,,,err,consist
+20,12,rdivide,dense./sparse,Row./M,,Error,Error,Error,Error,,,err,consist
+21,13,rdivide,dense./sparse,Row./Col,,Error,Error,Error,Error,,,err,consist
+22,14,rdivide,dense./sparse,Row./Row,,0.004045,  0,0.013284,0,0.3045016561276724,,good,consist
+23,15,rdivide,scalar./sparse,s./M,,Error,Error,Error,Error,,,err,consist
+24,16,rdivide,scalar./sparse,s./Col,,0.003976,  0,0.007287,0,0.5456292026897214,,good,consist
+25,17,rdivide,scalar./sparse,s./Row,,0.003932,  0,0.011299,0,0.34799539782281613,,good,consist
+26,18,rdivide,sparse./dense,M./Col,,TIME_OUT,TIME_OUT,Error,Error,,,bt_err,INconsist
+27,19,rdivide,sparse./dense,M./Row,,0.071673,  0,Error,Error,,,bt_err,INconsist
+28,20,rdivide,sparse./scalar,M./s,,0.016429,  0,Error,Error,,,bt_err,INconsist
+29,21,rdivide,sparse./dense,Col./Col,,0.004595,  0,0.009159,0,0.5016923244895731,,good,consist
+30,22,rdivide,sparse./dense,Col./Row,,Error,Error,Error,Error,,,err,consist
+31,23,rdivide,sparse./scalar,Col./s,,0.004046,  0,0.008373,0,0.4832198734026036,,good,consist
+32,24,rdivide,sparse./dense,Row./Col,,Error,Error,Error,Error,,,err,consist
+33,25,rdivide,sparse./dense,Row./Row,,0.004877,  0,0.013201,0,0.36944170896144235,,good,consist
+34,26,rdivide,sparse./scalar,Row./s,,0.004817,  0,0.009835,0,0.48978139298423995,,good,consist
+35,0,spalloc,,,mxn>nzmax,0.009856,Error,0.016201,Error,0.6083575087957533,,good,consist
+36,1,spalloc,,,mxn=nzmax,0.002403,Error,0.000230,Error,10.447826086956523,,good,consist
+37,2,spalloc,,,mxn<nzmax,0.002374,Error,0.031821,Error,0.07460482071587946,,good,consist
+38,0,svd,sparse,M,E=svd(A),Error,Error,0.287687,Error,,,mt_err,INconsist
+39,1,svd,sparse,M,"[U,S,V]=svd(A)",Error,Error,0.073347,Error,,,mt_err,INconsist
+40,2,svd,sparse,M,"[U,S,V]=svd(A,'econ')",Error,Error,0.076787,Error,,,mt_err,INconsist
+41,3,svd,sparse,M,"[U,S,V]=svd(A,0)",Error,Error,0.074757,Error,,,mt_err,INconsist
+42,4,svd,dense,Col,E=svd(A),0.023808,Error,Error,Error,,,bt_err,INconsist
+43,5,svd,sparse,Col,E=svd(A),Error,Error,0.512856,Error,,,mt_err,INconsist
+44,6,svd,dense,Col,"[U,S,V]=svd(A)",Error,Error,Error,Error,,,err,consist
+45,7,svd,sparse,Col,"[U,S,V]=svd(A)",Error,Error,0.071800,  6.052412488670664e-12,,,mt_err,INconsist
+46,8,svd,dense,Col,"[U,S,V]=svd(A,'econ')",0.018657,  2.480765796237204e-12,0.064901,  7.211663701988899e-12,0.2874686060307237,0.34399354972043916,good,consist
+47,9,svd,sparse,Col,"[U,S,V]=svd(A,'econ')",Error,Error,0.073614,  6.052412488670664e-12,,,mt_err,INconsist
+48,10,svd,dense,Col,"[U,S,V]=svd(A,0)",0.012543,  2.480765796237204e-12,0.008152,  7.211663701988899e-12,1.538640824337586,0.34399354972043916,good,consist
+49,11,svd,sparse,Col,"[U,S,V]=svd(A,0)",Error,Error,0.104996,  6.052412488670664e-12,,,mt_err,INconsist
+50,12,svd,dense,Row,E=svd(A),0.011304,Error,Error,Error,,,bt_err,INconsist
+51,13,svd,sparse,Row,E=svd(A),Error,Error,0.075373,Error,,,mt_err,INconsist
+52,14,svd,dense,Row,"[U,S,V]=svd(A)",Error,Error,Error,Error,,,err,consist
+53,15,svd,sparse,Row,"[U,S,V]=svd(A)",Error,Error,0.060385,  7.028970448695322e-12,,,mt_err,INconsist
+54,16,svd,dense,Row,"[U,S,V]=svd(A,'econ')",0.013878,  2.480765796237204e-12,0.009760,  7.211663701988899e-12,1.4219262295081967,0.34399354972043916,good,consist
+55,17,svd,sparse,Row,"[U,S,V]=svd(A,'econ')",Error,Error,0.072640,  7.028970448695322e-12,,,mt_err,INconsist
+56,18,svd,dense,Row,"[U,S,V]=svd(A,0)",Error,Error,Error,Error,,,err,consist
+57,19,svd,sparse,Row,"[U,S,V]=svd(A,0)",Error,Error,0.081164,  7.028970448695322e-12,,,mt_err,INconsist
+58,0,svds,sparse,M,E=svds(A),4.346872,Error,0.072624,Error,59.85448336638027,,good,consist
+59,1,svds,sparse,M,"[U,S,V]=svds(A)",4.204803,Error,0.059923,Error,70.1701016304257,,good,consist
+60,2,svds,sparse,M,"[U,S,V]=svds(A,10)",1.758981,Error,0.069952,Error,25.14554265782251,,good,consist
+61,3,svds,dense,Col,E=svds(A),0.088855,Error,Error,Error,,,bt_err,INconsist
+62,4,svds,sparse,Col,E=svds(A),0.113991,Error,0.072340,Error,1.5757672103953553,,good,consist
+63,5,svds,dense,Col,"[U,S,V]=svds(A)",0.091129,  2.480765796237204e-12,Error,Error,,,bt_err,INconsist
+64,6,svds,sparse,Col,"[U,S,V]=svds(A)",0.101755,  2.933167692563930e-12,0.069979,  6.052412488670664e-12,1.4540790808671173,0.4846278567520707,good,consist
+65,7,svds,dense,Col,"[U,S,V]=svds(A,10)",0.098834,  2.480765796237204e-12,Error,Error,,,bt_err,INconsist
+66,8,svds,sparse,Col,"[U,S,V]=svds(A,10)",0.110143,  2.933167692563930e-12,0.070109,  6.052412488670664e-12,1.5710251180304953,0.4846278567520707,good,consist
+67,9,svds,dense,Row,E=svds(A),0.092716,Error,Error,Error,,,bt_err,INconsist
+68,10,svds,sparse,Row,E=svds(A),0.114295,Error,0.073323,Error,1.5587878291941137,,good,consist
+69,11,svds,dense,Row,"[U,S,V]=svds(A)",0.103902,  2.480765796237204e-12,Error,Error,,,bt_err,INconsist
+70,12,svds,sparse,Row,"[U,S,V]=svds(A)",0.112289,  2.933167692563930e-12,0.070158,  7.028970448695322e-12,1.600515978220588,0.41729691623733717,good,consist
+71,13,svds,dense,Row,"[U,S,V]=svds(A,10)",0.097790,  2.480765796237204e-12,Error,Error,,,bt_err,INconsist
+72,14,svds,sparse,Row,"[U,S,V]=svds(A,10)",0.107753,  2.933167692563930e-12,0.060434,  7.028970448695322e-12,1.782986398385015,0.41729691623733717,good,consist
+0,0,symamd,sparse,M,P=symamd(S),0.169804,Error,0.973718,Error,0.17438724558855845,,good,consist
+1,1,symamd,sparse,M,"[P,stats]=symamd(S,[10,0])",0.134908,Error,0.914057,Error,0.1475925461978848,,good,consist
+2,2,symamd,sparse,M,"[P,stats]=symamd(S,[10,1])",0.132492,Error,0.905770,Error,0.14627554456429334,,good,consist
+3,0,symbfact,dense,M,count=symbfact(A),0.030848,Error,0.158674,Error,0.1944111826764309,,good,consist
+4,1,symbfact,sparse,M,count=symbfact(A),0.028991,Error,0.141418,Error,0.2050021920830446,,good,consist
+5,2,symbfact,dense,M,"count=symbfact(A,'sym')",0.030095,Error,0.145973,Error,0.2061682639940263,,good,consist
+6,3,symbfact,sparse,M,"count=symbfact(A,'sym')",0.028122,Error,0.156127,Error,0.18012259250481982,,good,consist
+7,4,symbfact,dense,M,"count=symbfact(A,'col')",0.035132,Error,0.174238,Error,0.20163225014061223,,good,consist
+8,5,symbfact,sparse,M,"count=symbfact(A,'col')",0.036130,Error,0.178469,Error,0.20244412194834957,,good,consist
+9,6,symbfact,dense,M,"count=symbfact(A,'row')",0.039377,Error,0.256829,Error,0.15331991324967195,,good,consist
+10,7,symbfact,sparse,M,"count=symbfact(A,'row')",0.037954,Error,0.268591,Error,0.1413077876771746,,good,consist
+11,8,symbfact,dense,M,"count=symbfact(A,'lo')",0.029637,Error,0.241603,Error,0.12266817878917066,,good,consist
+12,9,symbfact,sparse,M,"count=symbfact(A,'lo')",0.032221,Error,0.223253,Error,0.14432504826362916,,good,consist
+13,10,symbfact,dense,M,"[counts,parent,post]=symbfact(A)",0.029033,Error,0.145892,Error,0.19900337235763443,,good,consist
+14,11,symbfact,sparse,M,"[counts,parent,post]=symbfact(A)",0.033441,Error,0.153058,Error,0.21848580276757834,,good,consist
+15,12,symbfact,dense,M,"[counts,parent,post]=symbfact(A,'sym')",0.029984,Error,0.158211,Error,0.18951905998950766,,good,consist
+16,13,symbfact,sparse,M,"[counts,parent,post]=symbfact(A,'sym')",0.028592,Error,0.155908,Error,0.1833902044795649,,good,consist
+17,14,symbfact,dense,M,"[counts,parent,post]=symbfact(A,'col')",0.036670,Error,0.179200,Error,0.20463169642857143,,good,consist
+18,15,symbfact,sparse,M,"[counts,parent,post]=symbfact(A,'col')",0.052093,Error,0.186956,Error,0.2786377543379191,,good,consist
+19,16,symbfact,dense,M,"[counts,parent,post]=symbfact(A,'row')",0.034787,Error,0.272765,Error,0.12753469103440687,,good,consist
+20,17,symbfact,sparse,M,"[counts,parent,post]=symbfact(A,'row')",0.035804,Error,0.279266,Error,0.12820751541541042,,good,consist
+21,18,symbfact,dense,M,"[counts,parent,post]=symbfact(A,'lo')",0.029386,Error,0.239436,Error,0.12273008236021317,,good,consist
+22,19,symbfact,sparse,M,"[counts,parent,post]=symbfact(A,'lo')",0.037528,Error,0.249717,Error,0.1502821193591145,,good,consist
+23,0,symmlq,sparse\dense,M\v1,,0.140718,  2.542692322789320e+03,2.604715,  3.682693331085187e+04,0.054024336635677996,0.06904436764600379,good,consist
+24,1,symmlq,sparse\sparse,M\v1,,Error,Error,Error,Error,,,err,consist
+25,0,symrcm,dense,M,P=symrcm(S),0.019132,Error,0.426682,Error,0.044839013597948826,,good,consist
+26,1,symrcm,sparse,M,P=symrcm(S),0.021982,Error,0.426949,Error,0.05148624308758189,,good,consist
+27,0,tfqmr,sparse\dense,M\v1,,0.195702,  2.292215662121446e+02,6.208758,  5.178623781618049e+03,0.03152031372458066,0.04426302737530102,good,consist
+28,1,tfqmr,sparse\sparse,M\v1,,Error,Error,Error,Error,,,err,consist
+29,0,transpose,dense,M,,0.016358,  0,0.194063,0,0.0842922143839887,,good,consist
+30,1,transpose,sparse,M,,0.016556,  0,0.199406,0,0.08302658896923865,,good,consist
+31,2,transpose,dense,Col,,0.000871,  0,0.001407,0,0.6190476190476192,,good,consist
+32,3,transpose,sparse,Col,,0.002277,  0,0.009510,0,0.23943217665615144,,good,consist
+33,4,transpose,dense,Row,,0.000949,  0,0.001144,0,0.8295454545454545,,good,consist
+34,5,transpose,sparse,Row,,0.002035,  0,0.010514,0,0.19355145520258704,,good,consist
+35,0,vecnorm,sparse,M,N=vecnorm(V),0.011472,Error,0.118213,Error,0.0970451642374358,,good,consist
+36,1,vecnorm,sparse,M,"N=vecnorm(V,1)",0.009949,Error,0.119073,Error,0.08355378633275386,,good,consist
+37,2,vecnorm,sparse,M,"N=vecnorm(V,Inf)",0.010578,Error,16.174130,Error,0.0006540073561916469,,good,consist
+38,3,vecnorm,sparse,M,"N=vecnorm(V,1,1)",0.010063,Error,Error,Error,,,bt_err,INconsist
+39,4,vecnorm,sparse,M,"N=vecnorm(V,2,1)",0.008710,Error,Error,Error,,,bt_err,INconsist
+40,5,vecnorm,sparse,M,"N=vecnorm(V,Inf,1)",0.010740,Error,Error,Error,,,bt_err,INconsist
+41,6,vecnorm,sparse,M,"N=vecnorm(V,1,2)",0.027981,Error,Error,Error,,,bt_err,INconsist
+42,7,vecnorm,sparse,M,"N=vecnorm(V,2,2)",0.027806,Error,Error,Error,,,bt_err,INconsist
+43,8,vecnorm,sparse,M,"N=vecnorm(V,Inf,2)",0.029292,Error,Error,Error,,,bt_err,INconsist
+44,9,vecnorm,dense,Col,N=vecnorm(V),0.002370,Error,0.006276,Error,0.3776290630975144,,good,consist
+45,10,vecnorm,sparse,Col,N=vecnorm(V),0.003848,Error,0.012180,Error,0.315927750410509,,good,consist
+46,11,vecnorm,dense,Col,"N=vecnorm(V,1)",0.004938,Error,0.006473,Error,0.762861115402441,,good,consist
+47,12,vecnorm,sparse,Col,"N=vecnorm(V,1)",0.005169,Error,0.011816,Error,0.4374576844955992,,good,consist
+48,13,vecnorm,dense,Col,"N=vecnorm(V,Inf)",0.005030,Error,0.005647,Error,0.8907384451921374,,good,consist
+49,14,vecnorm,sparse,Col,"N=vecnorm(V,Inf)",0.006063,Error,0.038210,Error,0.15867573933525256,,good,consist
+50,15,vecnorm,dense,Col,"N=vecnorm(V,1,1)",0.005502,Error,0.006460,Error,0.851702786377709,,good,consist
+51,16,vecnorm,sparse,Col,"N=vecnorm(V,1,1)",0.005032,Error,Error,Error,,,bt_err,INconsist
+52,17,vecnorm,dense,Col,"N=vecnorm(V,2,1)",0.004110,Error,0.006901,Error,0.5955658600202868,,good,consist
+53,18,vecnorm,sparse,Col,"N=vecnorm(V,2,1)",0.003918,Error,Error,Error,,,bt_err,INconsist
+54,19,vecnorm,dense,Col,"N=vecnorm(V,Inf,1)",0.005667,Error,0.005932,Error,0.9553270397842213,,good,consist
+55,20,vecnorm,sparse,Col,"N=vecnorm(V,Inf,1)",0.007246,Error,Error,Error,,,bt_err,INconsist
+56,21,vecnorm,dense,Col,"N=vecnorm(V,1,2)",0.010628,Error,0.017414,Error,0.610313540829218,,good,consist
+57,22,vecnorm,sparse,Col,"N=vecnorm(V,1,2)",0.012453,Error,Error,Error,,,bt_err,INconsist
+58,23,vecnorm,dense,Col,"N=vecnorm(V,2,2)",0.007310,Error,0.017581,Error,0.41578977305045217,,good,consist
+59,24,vecnorm,sparse,Col,"N=vecnorm(V,2,2)",0.011400,Error,Error,Error,,,bt_err,INconsist
+60,25,vecnorm,dense,Col,"N=vecnorm(V,Inf,2)",0.008264,Error,0.012146,Error,0.6803886053021572,,good,consist
+61,26,vecnorm,sparse,Col,"N=vecnorm(V,Inf,2)",0.013439,Error,Error,Error,,,bt_err,INconsist
+62,27,vecnorm,dense,Row,N=vecnorm(V),0.002314,Error,0.005845,Error,0.3958939264328486,,good,consist
+63,28,vecnorm,sparse,Row,N=vecnorm(V),0.006076,Error,0.021802,Error,0.278690028437758,,good,consist
+64,29,vecnorm,dense,Row,"N=vecnorm(V,1)",0.005774,Error,0.006009,Error,0.9608919953403229,,good,consist
+65,30,vecnorm,sparse,Row,"N=vecnorm(V,1)",0.006641,Error,0.024019,Error,0.2764894458553645,,good,consist
+66,31,vecnorm,dense,Row,"N=vecnorm(V,Inf)",0.005743,Error,0.005936,Error,0.9674865229110511,,good,consist
+67,32,vecnorm,sparse,Row,"N=vecnorm(V,Inf)",0.008538,Error,Error,Error,,,bt_err,INconsist
+68,33,vecnorm,dense,Row,"N=vecnorm(V,1,1)",0.007428,Error,0.005472,Error,1.3574561403508771,,good,consist
+69,34,vecnorm,sparse,Row,"N=vecnorm(V,1,1)",0.009051,Error,Error,Error,,,bt_err,INconsist
+70,35,vecnorm,dense,Row,"N=vecnorm(V,2,1)",0.007765,Error,0.005650,Error,1.3743362831858408,,good,consist
+71,36,vecnorm,sparse,Row,"N=vecnorm(V,2,1)",0.008788,Error,Error,Error,,,bt_err,INconsist
+72,37,vecnorm,dense,Row,"N=vecnorm(V,Inf,1)",0.007476,Error,0.006999,Error,1.0681525932276041,,good,consist
+73,38,vecnorm,sparse,Row,"N=vecnorm(V,Inf,1)",0.010311,Error,Error,Error,,,bt_err,INconsist
+74,39,vecnorm,dense,Row,"N=vecnorm(V,1,2)",0.005136,Error,0.009449,Error,0.5435495819663457,,good,consist
+75,40,vecnorm,sparse,Row,"N=vecnorm(V,1,2)",0.006555,Error,Error,Error,,,bt_err,INconsist
+76,41,vecnorm,dense,Row,"N=vecnorm(V,2,2)",0.003492,Error,0.009032,Error,0.38662533215234723,,good,consist
+77,42,vecnorm,sparse,Row,"N=vecnorm(V,2,2)",0.004958,Error,Error,Error,,,bt_err,INconsist
+78,43,vecnorm,dense,Row,"N=vecnorm(V,Inf,2)",0.005674,Error,0.006721,Error,0.844219610177057,,good,consist
+79,44,vecnorm,sparse,Row,"N=vecnorm(V,Inf,2)",0.007220,Error,Error,Error,,,bt_err,INconsist
